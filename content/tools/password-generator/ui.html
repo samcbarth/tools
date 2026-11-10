@@ -1,0 +1,25 @@
+<div class="tabs" role="tablist">
+<button type="button" role="tab" aria-selected="true" data-p="chars">Random characters</button>
+<button type="button" role="tab" aria-selected="false" data-p="words">Passphrase</button>
+</div>
+<div id="p-chars">
+<div class="field"><label for="p-len">Length <span class="hint" id="p-lenv">20</span></label><input id="p-len" type="range" min="8" max="64" value="20"></div>
+<div class="checks">
+<label class="check"><input id="p-upper" type="checkbox" checked> A-Z</label>
+<label class="check"><input id="p-lower" type="checkbox" checked> a-z</label>
+<label class="check"><input id="p-digits" type="checkbox" checked> 0-9</label>
+<label class="check"><input id="p-symbols" type="checkbox" checked> Symbols</label>
+<label class="check"><input id="p-similar" type="checkbox"> Avoid look-alikes (0 O l 1 I)</label>
+</div>
+</div>
+<div id="p-words" hidden>
+<div class="row">
+<div><label for="p-wc">Number of words</label><input id="p-wc" type="number" min="3" max="12" value="5"></div>
+<div><label for="p-sep">Separator</label><select id="p-sep"><option value="-">Hyphen</option><option value=" ">Space</option><option value=".">Period</option><option value="_">Underscore</option></select></div>
+<div style="align-self:end"><label class="check"><input id="p-cap" type="checkbox" checked> Capitalize and add a number</label></div>
+</div>
+</div>
+<div id="p-out" class="out" style="font-size:1.15rem" aria-live="polite"></div>
+<div class="meter"><i id="p-bar"></i></div>
+<div id="p-strength" class="status"></div>
+<div class="btns"><button class="btn" id="p-gen" type="button">Generate new</button><button class="btn secondary" id="p-copy" type="button">Copy</button></div>

@@ -1,0 +1,23 @@
+<div class="tabs" role="tablist">
+<button type="button" role="tab" aria-selected="true" data-q="url">Link or text</button>
+<button type="button" role="tab" aria-selected="false" data-q="wifi">Wi-Fi</button>
+<button type="button" role="tab" aria-selected="false" data-q="email">Email</button>
+</div>
+<div id="q-url"><div class="field"><label for="q-text">URL or text</label><input id="q-text" type="text" value="https://tools.samcbarth.com/"></div></div>
+<div id="q-wifi" hidden><div class="row">
+<div><label for="q-ssid">Network name (SSID)</label><input id="q-ssid" type="text" value="CafeGuest"></div>
+<div><label for="q-pass">Password</label><input id="q-pass" type="text" value=""></div>
+<div><label for="q-sec">Security</label><select id="q-sec"><option value="WPA">WPA/WPA2/WPA3</option><option value="WEP">WEP</option><option value="nopass">None</option></select></div>
+</div></div>
+<div id="q-email" hidden><div class="row">
+<div><label for="q-to">To</label><input id="q-to" type="email" value="hello@example.com"></div>
+<div><label for="q-sub">Subject</label><input id="q-sub" type="text" value="Question"></div>
+</div></div>
+<div class="row">
+<div><label for="q-ec">Error correction</label><select id="q-ec"><option value="L">Low (7%)</option><option value="M" selected>Medium (15%)</option><option value="Q">Quartile (25%)</option><option value="H">High (30%)</option></select></div>
+<div><label for="q-size">Size in pixels</label><input id="q-size" type="number" min="100" max="2000" step="10" value="400"></div>
+<div><label for="q-fg">Colors</label><input id="q-fg" type="color" value="#000000" aria-label="Foreground color"> <input id="q-bg" type="color" value="#ffffff" aria-label="Background color"></div>
+</div>
+<div class="qr-out" id="q-out"></div>
+<div id="q-status" class="status"></div>
+<div class="btns"><button class="btn" id="q-png" type="button">Download PNG</button><button class="btn secondary" id="q-svg" type="button">Download SVG</button></div>
