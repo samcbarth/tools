@@ -40,11 +40,12 @@ def _asset_version():
 
 ASSET_V = _asset_version()
 
-GTM = '''<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+GTM = '''<script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRBNP313Y"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  gtag('config', 'G-VCRBNP313Y');
 </script>'''
 
 NETWORK = [
