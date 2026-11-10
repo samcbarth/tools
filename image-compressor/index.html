@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Compressor and WebP Converter (No Upload)</title>
+<meta name="description" content="Compress JPG, PNG and WebP images and convert them to WebP, JPEG or PNG in your browser. Resize to a max width, compare before and after, and download. Nothing is uploaded.">
+<link rel="canonical" href="https://tools.samcbarth.com/image-compressor/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Toolbench">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Image Compressor and WebP Converter (No Upload)">
+<meta property="og:description" content="Compress JPG, PNG and WebP images and convert them to WebP, JPEG or PNG in your browser. Resize to a max width, compare before and after, and download. Nothing is uploaded.">
+<meta property="og:url" content="https://tools.samcbarth.com/image-compressor/">
+<meta property="og:image" content="https://tools.samcbarth.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e4f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Toolbench Dispatch RSS" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Toolbench Dispatch JSON Feed" href="/news/feed.json">
+<link rel="stylesheet" href="/assets/style.css?v=2d4ed37da8">
+<script>try{var t=localStorage.getItem('tb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Image Compressor and WebP Converter",
+ "description": "Compress JPG, PNG and WebP images and convert them to WebP, JPEG or PNG in your browser. Resize to a max width, compare before and after, and download. Nothing is uploaded.",
+ "url": "https://tools.samcbarth.com/image-compressor/",
+ "applicationCategory": "MultimediaApplication",
+ "operatingSystem": "Any (runs in a web browser)",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Sam Barth",
+  "url": "https://samcbarth.com/"
+ },
+ "dateModified": "2026-11-09"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "Image Compressor and WebP Converter (No Upload)",
+ "url": "https://tools.samcbarth.com/image-compressor/",
+ "description": "Compress JPG, PNG and WebP images and convert them to WebP, JPEG or PNG in your browser. Resize to a max width, compare before and after, and download. Nothing is uploaded.",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Toolbench",
+  "url": "https://tools.samcbarth.com/"
+ }
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Toolbench",
+   "item": "https://tools.samcbarth.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Images and design",
+   "item": "https://tools.samcbarth.com/#images"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Image Compressor and WebP Converter"
+  }
+ ]
+}</script>
+<script src="/assets/config.js?v=2d4ed37da8" defer></script>
+<script src="/assets/site.js?v=2d4ed37da8" defer></script>
+<script src="/assets/tools/image-compressor.js?v=2d4ed37da8" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">TB</span>Toolbench</a>
+<nav class="site-nav" aria-label="Main">
+<a href="/" aria-current="page">All tools</a>
+<a href="/news/">News</a>
+<a href="/about/">About</a>
+<button class="theme-btn" type="button">Dark mode</button>
+</nav>
+</div></header>
+<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Toolbench</a></li><li><a href="/#images">Images and design</a></li><li aria-current="page">Image Compressor and WebP Converter</li></ol></nav>
+<div class="layout has-side">
+<main id="main">
+<h1>Image compressor and WebP converter</h1>
+<p class="lede">Drop in one or more images, pick WebP or JPEG and a quality, and download smaller files. Your images never leave your device.</p>
+<p class="privacy-note">Runs entirely in your browser. Nothing you type, paste or open here is uploaded to any server.</p>
+<section class="tool" aria-label="Image Compressor and WebP Converter" id="tool">
+<label class="drop" id="i-drop" for="i-file">Drop images here or click to choose (JPG, PNG, WebP, GIF first frame)
+<input id="i-file" type="file" accept="image/*" multiple hidden></label>
+<div class="row" style="margin-top:12px">
+<div><label for="i-fmt">Output format</label><select id="i-fmt"><option value="image/webp">WebP</option><option value="image/jpeg">JPEG</option><option value="image/png">PNG (lossless)</option></select></div>
+<div><label for="i-q">Quality <span class="hint" id="i-qv">80</span></label><input id="i-q" type="range" min="10" max="100" value="80"></div>
+<div><label for="i-w">Max width in pixels <span class="hint">(0 keeps size)</span></label><input id="i-w" type="number" min="0" value="1600"></div>
+</div>
+<div id="i-status" class="status"></div>
+<div id="i-list"></div>
+<div class="btns"><button class="btn secondary" id="i-all" type="button" disabled>Download all</button></div>
+
+</section>
+<article class="prose">
+<h2>How do I compress an image for the web?</h2>
+<p class="answer">Resize it to the largest width it will be shown at, then save it as WebP at around 75 to 85 quality. Drop the image here, keep the defaults, and download the smaller file.</p>
+<ol><li>Drop images onto the box or click to choose them.</li><li>Pick WebP for most web use, JPEG for older systems, or PNG for lossless graphics.</li><li>Set quality; 80 is a good start.</li><li>Set a max width, for example 1600 for full-width images or 800 for blog inline images.</li><li>Compare the before and after, then download.</li></ol>
+<div class="ad-slot" data-slot="after_intro"></div>
+<h2>Examples</h2>
+<h3>Phone photo for a blog post</h3><p>A 4032 x 3024 phone photo resized to 1600 pixels wide and saved as WebP at quality 80 is usually a small fraction of the original size. The tool shows the exact saving for your file.</p>
+
+<div class="ad-slot" data-slot="mid_content"></div>
+<h2>Frequently asked questions</h2>
+<h3>Are my images uploaded?</h3><p>No. The browser&#x27;s canvas does the resizing and encoding on your device.</p><h3>Why did my PNG get bigger?</h3><p>PNG is lossless, so re-saving a photo as PNG can grow it. Use WebP or JPEG for photos and keep PNG for logos and screenshots with flat colors.</p><h3>Does it keep EXIF data like location?</h3><p>No. Re-encoding through a canvas drops EXIF metadata, including GPS location, which is usually what you want for web images.</p><h3>Do all browsers support WebP?</h3><p>All current major browsers display WebP. Saving to WebP depends on your browser&#x27;s encoder; if it is missing, the tool tells you and you can pick JPEG.</p>
+
+<div class="ad-slot" data-slot="end_content"></div>
+</article>
+<h2>Related tools</h2>
+<div class="cards"><a class="card" href="/og-preview/"><h3>Open Graph Preview</h3><p>See your social link card and fix og:title, og:image and more.</p></a><a class="card" href="/color-contrast-checker/"><h3>Color Contrast Checker</h3><p>Test text and background colors against WCAG AA and AAA.</p></a><a class="card" href="/qr-code-generator/"><h3>QR Code Generator</h3><p>Make QR codes for links, Wi-Fi and email as PNG or SVG.</p></a><a class="card" href="/meta-length-checker/"><h3>Meta Title and Description Length Checker</h3><p>Measure title tags and meta descriptions in pixels and characters.</p></a></div>
+</main>
+<aside class="side"><div class="side-inner"><p class="side-title">More Images and design tools</p><ul class="side-list"><li><a href="/color-contrast-checker/">Color Contrast Checker</a></li></ul><p class="side-title">Latest news</p><ul class="side-list"><li><a href="/news/google-ai-plus-loses-pro-models/">Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</a></li><li><a href="/news/hubspot-q3-2026-results/">HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</a></li><li><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></li><li><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></li></ul><div class="ad-slot" data-slot="sidebar"></div></div></aside>
+</div></div>
+<footer class="site-foot"><div class="wrap">
+<div class="foot-links">
+<a href="/">All tools</a><a href="/news/">News</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/feed.xml">RSS</a><a href="/news/feed.json">JSON Feed</a><a href="/llms.txt">llms.txt</a>
+</div>
+<nav class="network" aria-label="samcbarth.com sites"><p>More free sites from samcbarth.com</p><ul><li><a href="https://realestate.samcbarth.com/">Real Estate</a></li><li><span aria-current="true">Tools</span></li><li><a href="https://games.samcbarth.com/">Games</a></li><li><a href="https://streaming.samcbarth.com/">Streaming</a></li><li><a href="https://homerepair.samcbarth.com/">Home Repair</a></li><li><a href="https://deals.samcbarth.com/">Deals</a></li><li><a href="https://news.samcbarth.com/">News</a></li></ul></nav>
+<p class="copyright">&copy; 2026 Sam Barth. Every tool here runs in your browser; your input is not uploaded.</p>
+</div></footer>
+</body>
+</html>

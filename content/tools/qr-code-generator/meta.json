@@ -1,0 +1,68 @@
+{
+ "slug": "qr-code-generator",
+ "name": "QR Code Generator",
+ "category": "utilities",
+ "order": 1,
+ "app_category": "UtilitiesApplication",
+ "vendor": [
+  "qrcode.js"
+ ],
+ "title": "Free QR Code Generator: URL, Wi-Fi and Email, PNG or SVG",
+ "description": "Make QR codes for links, text, Wi-Fi logins and email in your browser. Choose colors and error correction, and download PNG or SVG. No sign-up, no tracking redirect.",
+ "h1": "QR code generator",
+ "card": "Make QR codes for links, Wi-Fi and email as PNG or SVG.",
+ "lede": "Type a link or text, or fill in Wi-Fi or email details, and download a QR code as a PNG or a scalable SVG.",
+ "keywords": [
+  "qr code",
+  "qr generator",
+  "wifi qr",
+  "svg qr",
+  "png qr",
+  "static qr"
+ ],
+ "answer_q": "How do I make a QR code for a link?",
+ "answer": "Paste the full URL, including https://, then download the code as PNG for screens or SVG for print. The codes made here are static: they point straight at your link and never expire.",
+ "steps": [
+  "Choose Link or text, Wi-Fi, or Email.",
+  "Enter the details.",
+  "Pick error correction; Medium suits most uses, High if you will put a logo over it.",
+  "Keep dark modules on a light background for reliable scanning.",
+  "Download PNG or SVG and test-scan it before printing."
+ ],
+ "examples": [
+  {
+   "title": "Wi-Fi login",
+   "input": "Network: CafeGuest\nPassword: latte2026\nSecurity: WPA",
+   "output": "WIFI:T:WPA;S:CafeGuest;P:latte2026;;"
+  },
+  {
+   "title": "Tracking scans",
+   "text": "To count scans in analytics, encode a link with UTM tags, for example `utm_medium=qr`. Build it with the [UTM builder](/utm-builder/) first."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Do these QR codes expire?",
+   "a": "No. They are static codes that contain your text or link directly, with no redirect service in between."
+  },
+  {
+   "q": "PNG or SVG?",
+   "a": "SVG scales to any size without blur, which is best for print. PNG is easiest for slides, documents and websites."
+  },
+  {
+   "q": "Can I change the colors?",
+   "a": "Yes, but keep strong contrast and a darker foreground than background. Inverted or low-contrast codes fail on some scanners."
+  },
+  {
+   "q": "Is my Wi-Fi password sent anywhere?",
+   "a": "No. The code is drawn in your browser. It is still readable by anyone who scans the printed code, so only share guest network details."
+  }
+ ],
+ "related": [
+  "utm-builder",
+  "password-generator",
+  "color-contrast-checker",
+  "image-compressor"
+ ],
+ "updated": "2026-11-09"
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSV Cleaner: Remove Duplicates, Blank Rows and Extra Spaces</title>
+<meta name="description" content="Clean a CSV in your browser: trim spaces, drop empty rows, remove duplicates by any column (case-insensitive), tidy headers, and download the result. Nothing is uploaded.">
+<link rel="canonical" href="https://tools.samcbarth.com/csv-cleaner/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Toolbench">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CSV Cleaner: Remove Duplicates, Blank Rows and Extra Spaces">
+<meta property="og:description" content="Clean a CSV in your browser: trim spaces, drop empty rows, remove duplicates by any column (case-insensitive), tidy headers, and download the result. Nothing is uploaded.">
+<meta property="og:url" content="https://tools.samcbarth.com/csv-cleaner/">
+<meta property="og:image" content="https://tools.samcbarth.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e4f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Toolbench Dispatch RSS" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Toolbench Dispatch JSON Feed" href="/news/feed.json">
+<link rel="stylesheet" href="/assets/style.css?v=2d4ed37da8">
+<script>try{var t=localStorage.getItem('tb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "CSV Cleaner and Deduper",
+ "description": "Clean a CSV in your browser: trim spaces, drop empty rows, remove duplicates by any column (case-insensitive), tidy headers, and download the result. Nothing is uploaded.",
+ "url": "https://tools.samcbarth.com/csv-cleaner/",
+ "applicationCategory": "BusinessApplication",
+ "operatingSystem": "Any (runs in a web browser)",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Sam Barth",
+  "url": "https://samcbarth.com/"
+ },
+ "dateModified": "2026-11-09"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "CSV Cleaner: Remove Duplicates, Blank Rows and Extra Spaces",
+ "url": "https://tools.samcbarth.com/csv-cleaner/",
+ "description": "Clean a CSV in your browser: trim spaces, drop empty rows, remove duplicates by any column (case-insensitive), tidy headers, and download the result. Nothing is uploaded.",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Toolbench",
+  "url": "https://tools.samcbarth.com/"
+ }
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Toolbench",
+   "item": "https://tools.samcbarth.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Data and developer",
+   "item": "https://tools.samcbarth.com/#data"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "CSV Cleaner and Deduper"
+  }
+ ]
+}</script>
+<script src="/assets/config.js?v=2d4ed37da8" defer></script>
+<script src="/assets/site.js?v=2d4ed37da8" defer></script>
+<script src="/assets/tools/csv-cleaner.js?v=2d4ed37da8" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">TB</span>Toolbench</a>
+<nav class="site-nav" aria-label="Main">
+<a href="/" aria-current="page">All tools</a>
+<a href="/news/">News</a>
+<a href="/about/">About</a>
+<button class="theme-btn" type="button">Dark mode</button>
+</nav>
+</div></header>
+<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Toolbench</a></li><li><a href="/#data">Data and developer</a></li><li aria-current="page">CSV Cleaner and Deduper</li></ol></nav>
+<div class="layout has-side">
+<main id="main">
+<h1>CSV cleaner and dedupe tool</h1>
+<p class="lede">Open or paste a CSV, choose a column to dedupe on (email is picked automatically), and download a clean file ready for import.</p>
+<p class="privacy-note">Runs entirely in your browser. Nothing you type, paste or open here is uploaded to any server.</p>
+<section class="tool" aria-label="CSV Cleaner and Deduper" id="tool">
+<div class="field"><label for="c-in">Paste CSV <span class="hint">(or open a file; the first row should be headers)</span></label>
+<textarea id="c-in" class="mono">Email, First Name ,Company,Phone
+jane@acme.com,Jane,Acme Inc,405-555-0100
+ JANE@ACME.COM ,jane,Acme Inc,405-555-0100
+bob@globex.com,Bob ,Globex,
+,,,
+sam@initech.com,Sam,"Initech, LLC",405-555-0199</textarea>
+<input id="c-file" type="file" accept=".csv,.tsv,.txt,text/csv" aria-label="Open a CSV file"></div>
+<div class="row">
+<div><label for="c-delim">Delimiter</label><select id="c-delim"><option value="auto">Detect</option><option value=",">Comma</option><option value=";">Semicolon</option><option value="&#9;">Tab</option><option value="|">Pipe</option></select></div>
+<div><label for="c-key">Dedupe on column</label><select id="c-key"><option value="__row">Whole row</option></select></div>
+</div>
+<div class="checks">
+<label class="check"><input id="c-trim" type="checkbox" checked> Trim spaces</label>
+<label class="check"><input id="c-blank" type="checkbox" checked> Remove empty rows</label>
+<label class="check"><input id="c-dedupe" type="checkbox" checked> Remove duplicates</label>
+<label class="check"><input id="c-ci" type="checkbox" checked> Ignore case when deduping</label>
+<label class="check"><input id="c-headers" type="checkbox" checked> Tidy header names</label>
+</div>
+<div class="btns"><button class="btn" id="c-run" type="button">Clean CSV</button></div>
+<div class="stats" id="c-stats"></div>
+<div class="table-wrap" id="c-preview"></div>
+<label for="c-out">Clean CSV</label>
+<textarea id="c-out" class="mono" readonly></textarea>
+<div class="btns"><button class="btn secondary" id="c-copy" type="button">Copy</button><button class="btn secondary" id="c-dl" type="button">Download CSV</button></div>
+
+</section>
+<article class="prose">
+<h2>How do I remove duplicates from a CSV file?</h2>
+<p class="answer">Pick the column that identifies a record, usually email, and keep only the first row for each value, ignoring case and extra spaces. Open your file here, choose that column, and download the cleaned CSV.</p>
+<ol><li>Paste the CSV or open the file. The delimiter is detected automatically.</li><li>Choose the column to dedupe on, or Whole row.</li><li>Keep trim, empty row removal and case-insensitive matching on.</li><li>Check the counts and the preview table.</li><li>Download the clean CSV. It opens in Excel with accents intact.</li></ol>
+<div class="ad-slot" data-slot="after_intro"></div>
+<h2>Examples</h2>
+<h3>Duplicate contact with different spacing and case</h3><p><strong>Input</strong></p><pre>Email,First Name
+jane@acme.com,Jane
+ JANE@ACME.COM ,jane</pre><p><strong>Result</strong></p><pre>Email,First Name
+jane@acme.com,Jane</pre>
+
+<div class="ad-slot" data-slot="mid_content"></div>
+<h2>Frequently asked questions</h2>
+<h3>Is there a file size limit?</h3><p>Only your device&#x27;s memory. Files with tens of thousands of rows are fine on a normal laptop.</p><h3>Which duplicate is kept?</h3><p>The first one in the file. Sort the file first if you want to keep, for example, the most recent record.</p><h3>Does it change my original file?</h3><p>No. You get a new download. The original file on your computer is not touched.</p><h3>Why do accents look wrong when I open the result in Excel?</h3><p>The download includes a byte order mark so Excel reads it as UTF-8. If you copy and paste instead, use Excel&#x27;s Data, From Text/CSV import and pick UTF-8.</p>
+
+<div class="ad-slot" data-slot="end_content"></div>
+</article>
+<h2>Related tools</h2>
+<div class="cards"><a class="card" href="/email-list-cleaner/"><h3>Email List Cleaner</h3><p>Extract, dedupe and fix typos in email lists before import.</p></a><a class="card" href="/csv-json-converter/"><h3>CSV to JSON Converter</h3><p>Convert CSV to JSON and back, with types and nested keys.</p></a><a class="card" href="/json-formatter/"><h3>JSON Formatter and Validator</h3><p>Pretty print, validate and minify JSON with clear error positions.</p></a><a class="card" href="/case-converter/"><h3>Case Converter</h3><p>Switch text between title, sentence, camel, snake and more.</p></a></div>
+</main>
+<aside class="side"><div class="side-inner"><p class="side-title">More Data and developer tools</p><ul class="side-list"><li><a href="/csv-json-converter/">CSV to JSON Converter</a></li><li><a href="/json-formatter/">JSON Formatter and Validator</a></li><li><a href="/regex-tester/">Regex Tester</a></li></ul><p class="side-title">Latest news</p><ul class="side-list"><li><a href="/news/google-ai-plus-loses-pro-models/">Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</a></li><li><a href="/news/hubspot-q3-2026-results/">HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</a></li><li><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></li><li><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></li></ul><div class="ad-slot" data-slot="sidebar"></div></div></aside>
+</div></div>
+<footer class="site-foot"><div class="wrap">
+<div class="foot-links">
+<a href="/">All tools</a><a href="/news/">News</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/feed.xml">RSS</a><a href="/news/feed.json">JSON Feed</a><a href="/llms.txt">llms.txt</a>
+</div>
+<nav class="network" aria-label="samcbarth.com sites"><p>More free sites from samcbarth.com</p><ul><li><a href="https://realestate.samcbarth.com/">Real Estate</a></li><li><span aria-current="true">Tools</span></li><li><a href="https://games.samcbarth.com/">Games</a></li><li><a href="https://streaming.samcbarth.com/">Streaming</a></li><li><a href="https://homerepair.samcbarth.com/">Home Repair</a></li><li><a href="https://deals.samcbarth.com/">Deals</a></li><li><a href="https://news.samcbarth.com/">News</a></li></ul></nav>
+<p class="copyright">&copy; 2026 Sam Barth. Every tool here runs in your browser; your input is not uploaded.</p>
+</div></footer>
+</body>
+</html>

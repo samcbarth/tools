@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Email List Cleaner: Extract, Dedupe and Fix Emails Free</title>
+<meta name="description" content="Paste any text or CSV to pull out email addresses, remove duplicates and invalid formats, fix common domain typos like gmial.com, and download a clean list. Runs in your browser.">
+<link rel="canonical" href="https://tools.samcbarth.com/email-list-cleaner/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Toolbench">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Email List Cleaner: Extract, Dedupe and Fix Emails Free">
+<meta property="og:description" content="Paste any text or CSV to pull out email addresses, remove duplicates and invalid formats, fix common domain typos like gmial.com, and download a clean list. Runs in your browser.">
+<meta property="og:url" content="https://tools.samcbarth.com/email-list-cleaner/">
+<meta property="og:image" content="https://tools.samcbarth.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e4f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Toolbench Dispatch RSS" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Toolbench Dispatch JSON Feed" href="/news/feed.json">
+<link rel="stylesheet" href="/assets/style.css?v=2d4ed37da8">
+<script>try{var t=localStorage.getItem('tb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Email List Cleaner",
+ "description": "Paste any text or CSV to pull out email addresses, remove duplicates and invalid formats, fix common domain typos like gmial.com, and download a clean list. Runs in your browser.",
+ "url": "https://tools.samcbarth.com/email-list-cleaner/",
+ "applicationCategory": "BusinessApplication",
+ "operatingSystem": "Any (runs in a web browser)",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Sam Barth",
+  "url": "https://samcbarth.com/"
+ },
+ "dateModified": "2026-11-09"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "Email List Cleaner: Extract, Dedupe and Fix Emails Free",
+ "url": "https://tools.samcbarth.com/email-list-cleaner/",
+ "description": "Paste any text or CSV to pull out email addresses, remove duplicates and invalid formats, fix common domain typos like gmial.com, and download a clean list. Runs in your browser.",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Toolbench",
+  "url": "https://tools.samcbarth.com/"
+ }
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Toolbench",
+   "item": "https://tools.samcbarth.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Marketing",
+   "item": "https://tools.samcbarth.com/#marketing"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Email List Cleaner"
+  }
+ ]
+}</script>
+<script src="/assets/config.js?v=2d4ed37da8" defer></script>
+<script src="/assets/site.js?v=2d4ed37da8" defer></script>
+<script src="/assets/tools/email-list-cleaner.js?v=2d4ed37da8" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">TB</span>Toolbench</a>
+<nav class="site-nav" aria-label="Main">
+<a href="/" aria-current="page">All tools</a>
+<a href="/news/">News</a>
+<a href="/about/">About</a>
+<button class="theme-btn" type="button">Dark mode</button>
+</nav>
+</div></header>
+<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Toolbench</a></li><li><a href="/#marketing">Marketing</a></li><li aria-current="page">Email List Cleaner</li></ol></nav>
+<div class="layout has-side">
+<main id="main">
+<h1>Email list cleaner</h1>
+<p class="lede">Paste a list, a CSV or even an email thread. The tool finds every address, removes duplicates and broken formats, and fixes common domain typos.</p>
+<p class="privacy-note">Runs entirely in your browser. Nothing you type, paste or open here is uploaded to any server.</p>
+<section class="tool" aria-label="Email List Cleaner" id="tool">
+<div class="field"><label for="e-in">Paste emails <span class="hint">(one per line, comma separated, or a whole CSV or email thread)</span></label>
+<textarea id="e-in" class="mono" placeholder="Jane.Doe@Example.com, bob@gmial.com&#10;&lt;info@acme.io&gt;&#10;not-an-email"></textarea>
+<input id="e-file" type="file" accept=".csv,.txt,text/plain,text/csv" aria-label="Open a CSV or text file"></div>
+<div class="checks">
+<label class="check"><input id="e-lower" type="checkbox" checked> Lowercase</label>
+<label class="check"><input id="e-dedupe" type="checkbox" checked> Remove duplicates</label>
+<label class="check"><input id="e-typos" type="checkbox" checked> Fix common domain typos</label>
+<label class="check"><input id="e-role" type="checkbox"> Remove role addresses (info@, sales@...)</label>
+<label class="check"><input id="e-sort" type="checkbox"> Sort A to Z</label>
+</div>
+<div class="btns"><button class="btn" id="e-run" type="button">Clean list</button></div>
+<div class="stats" id="e-stats"></div>
+<label for="e-out">Clean list</label>
+<textarea id="e-out" class="mono" readonly></textarea>
+<div class="btns"><button class="btn secondary" id="e-copy" type="button">Copy</button><button class="btn secondary" id="e-csv" type="button">Download CSV</button></div>
+<details><summary>Removed or changed entries</summary><div id="e-log" class="out"></div></details>
+
+</section>
+<article class="prose">
+<h2>How do I clean an email list before importing it?</h2>
+<p class="answer">Pull out the addresses, lowercase them, remove duplicates and invalid formats, and fix obvious domain typos before you import. Paste the list here and the tool does all five steps at once.</p>
+<ol><li>Paste your list or open a CSV or text file.</li><li>Leave lowercase, dedupe and typo fixing on unless you have a reason not to.</li><li>Turn on role address removal if you are building a sales list and want people, not shared inboxes.</li><li>Check the removed entries under the list to see what changed.</li><li>Copy the list or download it as a one-column CSV.</li></ol>
+<div class="ad-slot" data-slot="after_intro"></div>
+<h2>Examples</h2>
+<h3>Messy pasted list</h3><p><strong>Input</strong></p><pre>Jane.Doe@Example.com, bob@gmial.com
+&lt;info@acme.io&gt;
+not-an-email
+jane.doe@example.com</pre><p><strong>Result</strong></p><pre>jane.doe@example.com
+bob@gmail.com
+info@acme.io</pre>
+
+<div class="ad-slot" data-slot="mid_content"></div>
+<h2>Frequently asked questions</h2>
+<h3>Does this verify that a mailbox exists?</h3><p>No. It checks the format and fixes known typos. Checking whether a mailbox accepts mail needs an SMTP check from a server, which would mean uploading your list. This tool never does that.</p><h3>Is it safe to paste a customer list here?</h3><p>Yes. Everything runs in your browser and nothing is sent anywhere. You can disconnect from the internet after the page loads and it still works.</p><h3>Which typos does it fix?</h3><p>Common misspellings of gmail.com, hotmail.com, yahoo.com, outlook.com and icloud.com, such as <code>gmial.com</code> and <code>hotmial.com</code>. Each fix is listed so you can review it.</p><h3>What is a role address?</h3><p>A shared inbox like <code>info@</code>, <code>sales@</code> or <code>support@</code>. Many email platforms advise against sending marketing email to them because they tend to have more complaints and bounces.</p>
+
+<div class="ad-slot" data-slot="end_content"></div>
+</article>
+<h2>Related tools</h2>
+<div class="cards"><a class="card" href="/csv-cleaner/"><h3>CSV Cleaner and Deduper</h3><p>Trim, dedupe and drop blank rows from a CSV without uploading it.</p></a><a class="card" href="/csv-json-converter/"><h3>CSV to JSON Converter</h3><p>Convert CSV to JSON and back, with types and nested keys.</p></a><a class="card" href="/case-converter/"><h3>Case Converter</h3><p>Switch text between title, sentence, camel, snake and more.</p></a><a class="card" href="/regex-tester/"><h3>Regex Tester</h3><p>Test regular expressions with highlights, groups and replace.</p></a></div>
+</main>
+<aside class="side"><div class="side-inner"><p class="side-title">More Marketing tools</p><ul class="side-list"><li><a href="/utm-builder/">UTM Builder</a></li><li><a href="/hubspot-seat-cost-calculator/">HubSpot Seat Cost Calculator</a></li><li><a href="/og-preview/">Open Graph Preview</a></li></ul><p class="side-title">Latest news</p><ul class="side-list"><li><a href="/news/google-ai-plus-loses-pro-models/">Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</a></li><li><a href="/news/hubspot-q3-2026-results/">HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</a></li><li><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></li><li><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></li></ul><div class="ad-slot" data-slot="sidebar"></div></div></aside>
+</div></div>
+<footer class="site-foot"><div class="wrap">
+<div class="foot-links">
+<a href="/">All tools</a><a href="/news/">News</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/feed.xml">RSS</a><a href="/news/feed.json">JSON Feed</a><a href="/llms.txt">llms.txt</a>
+</div>
+<nav class="network" aria-label="samcbarth.com sites"><p>More free sites from samcbarth.com</p><ul><li><a href="https://realestate.samcbarth.com/">Real Estate</a></li><li><span aria-current="true">Tools</span></li><li><a href="https://games.samcbarth.com/">Games</a></li><li><a href="https://streaming.samcbarth.com/">Streaming</a></li><li><a href="https://homerepair.samcbarth.com/">Home Repair</a></li><li><a href="https://deals.samcbarth.com/">Deals</a></li><li><a href="https://news.samcbarth.com/">News</a></li></ul></nav>
+<p class="copyright">&copy; 2026 Sam Barth. Every tool here runs in your browser; your input is not uploaded.</p>
+</div></footer>
+</body>
+</html>

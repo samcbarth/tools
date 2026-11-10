@@ -1,0 +1,62 @@
+{
+ "slug": "csv-cleaner",
+ "name": "CSV Cleaner and Deduper",
+ "category": "data",
+ "order": 1,
+ "app_category": "BusinessApplication",
+ "title": "CSV Cleaner: Remove Duplicates, Blank Rows and Extra Spaces",
+ "description": "Clean a CSV in your browser: trim spaces, drop empty rows, remove duplicates by any column (case-insensitive), tidy headers, and download the result. Nothing is uploaded.",
+ "h1": "CSV cleaner and dedupe tool",
+ "card": "Trim, dedupe and drop blank rows from a CSV without uploading it.",
+ "lede": "Open or paste a CSV, choose a column to dedupe on (email is picked automatically), and download a clean file ready for import.",
+ "keywords": [
+  "csv",
+  "dedupe",
+  "remove duplicates",
+  "clean csv",
+  "excel",
+  "import file",
+  "spreadsheet"
+ ],
+ "answer_q": "How do I remove duplicates from a CSV file?",
+ "answer": "Pick the column that identifies a record, usually email, and keep only the first row for each value, ignoring case and extra spaces. Open your file here, choose that column, and download the cleaned CSV.",
+ "steps": [
+  "Paste the CSV or open the file. The delimiter is detected automatically.",
+  "Choose the column to dedupe on, or Whole row.",
+  "Keep trim, empty row removal and case-insensitive matching on.",
+  "Check the counts and the preview table.",
+  "Download the clean CSV. It opens in Excel with accents intact."
+ ],
+ "examples": [
+  {
+   "title": "Duplicate contact with different spacing and case",
+   "input": "Email,First Name\njane@acme.com,Jane\n JANE@ACME.COM ,jane",
+   "output": "Email,First Name\njane@acme.com,Jane"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Is there a file size limit?",
+   "a": "Only your device's memory. Files with tens of thousands of rows are fine on a normal laptop."
+  },
+  {
+   "q": "Which duplicate is kept?",
+   "a": "The first one in the file. Sort the file first if you want to keep, for example, the most recent record."
+  },
+  {
+   "q": "Does it change my original file?",
+   "a": "No. You get a new download. The original file on your computer is not touched."
+  },
+  {
+   "q": "Why do accents look wrong when I open the result in Excel?",
+   "a": "The download includes a byte order mark so Excel reads it as UTF-8. If you copy and paste instead, use Excel's Data, From Text/CSV import and pick UTF-8."
+  }
+ ],
+ "related": [
+  "email-list-cleaner",
+  "csv-json-converter",
+  "json-formatter",
+  "case-converter"
+ ],
+ "updated": "2026-11-09"
+}

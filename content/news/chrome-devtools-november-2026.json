@@ -1,0 +1,29 @@
+{
+ "title": "Chrome DevTools update adds more tools for AI coding agents",
+ "date": "2026-10-20",
+ "tags": [
+  "Dev tools",
+  "Chrome"
+ ],
+ "summary": "Chrome's November 2026 DevTools update, covering Chrome 155 and 156, expands DevTools for agents with CSS style inspection, configuration file support and chunked trace parsing, and adds a visual position-area editor for CSS anchors.",
+ "body": [
+  "The Chrome for Developers blog published its \"New in DevTools\" round-up for November 2026 on October 20, covering Chrome 155 and 156.",
+  "DevTools for agents, the MCP server that lets coding agents drive DevTools, gains CSS style inspection, configuration file support, and chunked trace parsing for large performance traces.",
+  "For people using DevTools directly, the Elements panel gets a visual editor for the CSS anchor `position-area` property, and the Application panel adds diagnostics for Web Install manifests."
+ ],
+ "why": [
+  "If you use an AI coding assistant on front-end work, it can now inspect computed styles and read long performance traces through DevTools instead of guessing from source code.",
+  "Anchor positioning is becoming practical for tooltips and menus without JavaScript, and the new editor makes the `position-area` grid easier to reason about."
+ ],
+ "sources": [
+  {
+   "name": "Chrome for Developers: New in DevTools, November 2026",
+   "url": "https://developer.chrome.com/blog/new-in-devtools-november-2026"
+  }
+ ],
+ "related_tools": [
+  "color-contrast-checker",
+  "json-formatter",
+  "regex-tester"
+ ]
+}

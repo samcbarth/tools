@@ -1,0 +1,70 @@
+{
+ "slug": "robots-sitemap-checker",
+ "name": "robots.txt and Sitemap Checker",
+ "category": "seo",
+ "order": 4,
+ "app_category": "DeveloperApplication",
+ "title": "robots.txt Tester and XML Sitemap Checker",
+ "description": "Test whether a URL is allowed for Googlebot, GPTBot or any user agent under a robots.txt file, and check an XML sitemap for duplicates, relative URLs and bad dates. Runs in your browser.",
+ "h1": "robots.txt tester and sitemap checker",
+ "card": "Test robots.txt rules for any bot and validate XML sitemaps.",
+ "lede": "Paste a robots.txt file to test any path for any crawler, or paste a sitemap to find duplicates, relative URLs and invalid dates.",
+ "keywords": [
+  "robots.txt",
+  "robots tester",
+  "sitemap validator",
+  "xml sitemap",
+  "gptbot",
+  "googlebot",
+  "crawl"
+ ],
+ "answer_q": "How do I check if robots.txt blocks a page?",
+ "answer": "Find the group for the crawler's user agent (or the * group if there is none), then apply the longest matching Allow or Disallow rule; a tie goes to Allow. Paste the file here, type the bot and path, and the tool applies those rules for you.",
+ "steps": [
+  "Paste the robots.txt content, or enter the site and press Fetch if the site allows cross-site reads.",
+  "Type the user agent, for example `Googlebot` or `GPTBot`.",
+  "Type a path or full URL to test.",
+  "Read the verdict and the rule that decided it.",
+  "Switch to the Sitemap tab to paste and check your sitemap XML."
+ ],
+ "examples": [
+  {
+   "title": "Longest match wins",
+   "input": "User-agent: *\nDisallow: /admin/\nAllow: /admin/public/\n\nPath: /admin/public/help",
+   "output": "ALLOWED. The longest matching rule is Allow: /admin/public/"
+  }
+ ],
+ "sections": [
+  {
+   "h": "Why does Fetch sometimes fail?",
+   "p": [
+    "This tool asks for the file straight from your browser and never sends your request through a server. Browsers only let one site read another site's files when that site allows it (CORS), and most do not for robots.txt. When that happens, open the file in a new tab, copy it, and paste it in."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does Disallow remove a page from Google?",
+   "a": "No. Disallow stops crawling, but a blocked URL can still be indexed from links. To keep a page out of results, allow crawling and add a noindex tag."
+  },
+  {
+   "q": "How do I block AI crawlers?",
+   "a": "Add a group for each crawler you want to block, for example `User-agent: GPTBot` followed by `Disallow: /`. Check each AI company's documentation for its crawler names."
+  },
+  {
+   "q": "What does a $ at the end of a rule mean?",
+   "a": "It anchors the rule to the end of the URL. `Disallow: /*.pdf$` blocks URLs ending in .pdf but not /file.pdf?download=1."
+  },
+  {
+   "q": "How big can a sitemap be?",
+   "a": "The sitemaps.org protocol allows up to 50,000 URLs and 50 MB uncompressed per file. Larger sites split into several sitemaps listed in a sitemap index."
+  }
+ ],
+ "related": [
+  "llms-txt-generator",
+  "json-ld-schema-generator",
+  "regex-tester",
+  "meta-length-checker"
+ ],
+ "updated": "2026-11-09"
+}

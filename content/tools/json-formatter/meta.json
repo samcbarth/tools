@@ -1,0 +1,66 @@
+{
+ "slug": "json-formatter",
+ "name": "JSON Formatter and Validator",
+ "category": "data",
+ "order": 3,
+ "app_category": "DeveloperApplication",
+ "title": "JSON Formatter and Validator: Pretty Print or Minify JSON",
+ "description": "Format, validate and minify JSON in your browser. Shows the line and column of syntax errors, can sort keys, and downloads the result. Nothing is uploaded.",
+ "h1": "JSON formatter and validator",
+ "card": "Pretty print, validate and minify JSON with clear error positions.",
+ "lede": "Paste JSON to format it with 2 spaces, 4 spaces or tabs, minify it, or find exactly where a syntax error is.",
+ "keywords": [
+  "json",
+  "format json",
+  "pretty print",
+  "validate json",
+  "minify",
+  "json lint"
+ ],
+ "answer_q": "How do I validate and format JSON?",
+ "answer": "Parse it with a strict JSON parser; if it parses, re-print it with indentation. Paste your JSON here and it is checked and formatted as you type, with the line and column of any error.",
+ "steps": [
+  "Paste JSON or open a .json file.",
+  "Read the status line: valid, or the error and where it is.",
+  "Pick an indent and whether to sort keys.",
+  "Press Format or Minify.",
+  "Copy or download the result."
+ ],
+ "examples": [
+  {
+   "title": "A common error",
+   "input": "{\"name\": \"Acme\", \"seats\": 5,}",
+   "output": "Invalid JSON. Look for a trailing comma before } or ]."
+  },
+  {
+   "title": "Minified",
+   "input": "{\n  \"a\": 1,\n  \"b\": [1, 2]\n}",
+   "output": "{\"a\":1,\"b\":[1,2]}"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Why is my JSON invalid when it works in JavaScript?",
+   "a": "JSON is stricter than JavaScript: keys need double quotes, strings cannot use single quotes, and trailing commas and comments are not allowed."
+  },
+  {
+   "q": "Does sorting keys change the data?",
+   "a": "No. Object key order has no meaning in JSON. Sorting just makes two files easier to compare."
+  },
+  {
+   "q": "Can it handle large files?",
+   "a": "Files of several megabytes are fine. Very large files depend on your device's memory."
+  },
+  {
+   "q": "Is my JSON sent anywhere?",
+   "a": "No. Parsing and formatting happen in your browser."
+  }
+ ],
+ "related": [
+  "csv-json-converter",
+  "json-ld-schema-generator",
+  "regex-tester",
+  "timestamp-converter"
+ ],
+ "updated": "2026-11-09"
+}

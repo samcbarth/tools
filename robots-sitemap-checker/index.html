@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>robots.txt Tester and XML Sitemap Checker</title>
+<meta name="description" content="Test whether a URL is allowed for Googlebot, GPTBot or any user agent under a robots.txt file, and check an XML sitemap for duplicates, relative URLs and bad dates. Runs in your browser.">
+<link rel="canonical" href="https://tools.samcbarth.com/robots-sitemap-checker/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Toolbench">
+<meta property="og:type" content="website">
+<meta property="og:title" content="robots.txt Tester and XML Sitemap Checker">
+<meta property="og:description" content="Test whether a URL is allowed for Googlebot, GPTBot or any user agent under a robots.txt file, and check an XML sitemap for duplicates, relative URLs and bad dates. Runs in your browser.">
+<meta property="og:url" content="https://tools.samcbarth.com/robots-sitemap-checker/">
+<meta property="og:image" content="https://tools.samcbarth.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e4f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Toolbench Dispatch RSS" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Toolbench Dispatch JSON Feed" href="/news/feed.json">
+<link rel="stylesheet" href="/assets/style.css?v=2d4ed37da8">
+<script>try{var t=localStorage.getItem('tb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "robots.txt and Sitemap Checker",
+ "description": "Test whether a URL is allowed for Googlebot, GPTBot or any user agent under a robots.txt file, and check an XML sitemap for duplicates, relative URLs and bad dates. Runs in your browser.",
+ "url": "https://tools.samcbarth.com/robots-sitemap-checker/",
+ "applicationCategory": "DeveloperApplication",
+ "operatingSystem": "Any (runs in a web browser)",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Sam Barth",
+  "url": "https://samcbarth.com/"
+ },
+ "dateModified": "2026-11-09"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "robots.txt Tester and XML Sitemap Checker",
+ "url": "https://tools.samcbarth.com/robots-sitemap-checker/",
+ "description": "Test whether a URL is allowed for Googlebot, GPTBot or any user agent under a robots.txt file, and check an XML sitemap for duplicates, relative URLs and bad dates. Runs in your browser.",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Toolbench",
+  "url": "https://tools.samcbarth.com/"
+ }
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Toolbench",
+   "item": "https://tools.samcbarth.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "SEO and AI search",
+   "item": "https://tools.samcbarth.com/#seo"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "robots.txt and Sitemap Checker"
+  }
+ ]
+}</script>
+<script src="/assets/config.js?v=2d4ed37da8" defer></script>
+<script src="/assets/site.js?v=2d4ed37da8" defer></script>
+<script src="/assets/tools/robots-sitemap-checker.js?v=2d4ed37da8" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">TB</span>Toolbench</a>
+<nav class="site-nav" aria-label="Main">
+<a href="/" aria-current="page">All tools</a>
+<a href="/news/">News</a>
+<a href="/about/">About</a>
+<button class="theme-btn" type="button">Dark mode</button>
+</nav>
+</div></header>
+<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Toolbench</a></li><li><a href="/#seo">SEO and AI search</a></li><li aria-current="page">robots.txt and Sitemap Checker</li></ol></nav>
+<div class="layout has-side">
+<main id="main">
+<h1>robots.txt tester and sitemap checker</h1>
+<p class="lede">Paste a robots.txt file to test any path for any crawler, or paste a sitemap to find duplicates, relative URLs and invalid dates.</p>
+<p class="privacy-note">Runs entirely in your browser. Nothing you type, paste or open here is uploaded to any server.</p>
+<section class="tool" aria-label="robots.txt and Sitemap Checker" id="tool">
+<div class="tabs" role="tablist">
+<button type="button" role="tab" aria-selected="true" data-tab="robots">robots.txt</button>
+<button type="button" role="tab" aria-selected="false" data-tab="sitemap">Sitemap</button>
+</div>
+<div id="r-robots">
+<div class="row two">
+<div><label for="r-site">Site to fetch <span class="hint">(optional)</span></label><input id="r-site" type="url" placeholder="https://example.com"></div>
+<div style="align-self:end"><button class="btn secondary" id="r-fetch" type="button">Fetch robots.txt</button></div>
+</div>
+<div class="field"><label for="r-text">robots.txt content <span class="hint">(fetched, or pasted)</span></label>
+<textarea id="r-text" class="mono">User-agent: *
+Disallow: /admin/
+Disallow: /*?sessionid=
+Allow: /admin/public/
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://example.com/sitemap.xml</textarea></div>
+<div class="row two">
+<div><label for="r-ua">User agent to test</label><input id="r-ua" type="text" value="Googlebot" list="r-uas"></div>
+<div><label for="r-path">URL or path to test</label><input id="r-path" type="text" value="/admin/settings"></div>
+</div>
+<datalist id="r-uas"><option value="Googlebot"><option value="Bingbot"><option value="GPTBot"><option value="ClaudeBot"><option value="PerplexityBot"><option value="Google-Extended"><option value="CCBot"></datalist>
+<div id="r-verdict" class="out"></div>
+<h3>What the file says</h3>
+<div id="r-report"></div>
+</div>
+<div id="r-sitemap" hidden>
+<div class="row two">
+<div><label for="x-url">Sitemap URL to fetch <span class="hint">(optional)</span></label><input id="x-url" type="url" placeholder="https://example.com/sitemap.xml"></div>
+<div style="align-self:end"><button class="btn secondary" id="x-fetch" type="button">Fetch sitemap</button></div>
+</div>
+<div class="field"><label for="x-text">Sitemap XML <span class="hint">(fetched, or pasted)</span></label>
+<textarea id="x-text" class="mono">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;&lt;loc&gt;https://example.com/&lt;/loc&gt;&lt;lastmod&gt;2026-11-01&lt;/lastmod&gt;&lt;/url&gt;
+  &lt;url&gt;&lt;loc&gt;https://example.com/pricing&lt;/loc&gt;&lt;lastmod&gt;11/01/2026&lt;/lastmod&gt;&lt;/url&gt;
+  &lt;url&gt;&lt;loc&gt;/about&lt;/loc&gt;&lt;/url&gt;
+  &lt;url&gt;&lt;loc&gt;https://example.com/pricing&lt;/loc&gt;&lt;/url&gt;
+&lt;/urlset&gt;</textarea></div>
+<div class="stats" id="x-stats"></div>
+<div id="x-report"></div>
+</div>
+<div id="r-status" class="status"></div>
+
+</section>
+<article class="prose">
+<h2>How do I check if robots.txt blocks a page?</h2>
+<p class="answer">Find the group for the crawler&#x27;s user agent (or the * group if there is none), then apply the longest matching Allow or Disallow rule; a tie goes to Allow. Paste the file here, type the bot and path, and the tool applies those rules for you.</p>
+<ol><li>Paste the robots.txt content, or enter the site and press Fetch if the site allows cross-site reads.</li><li>Type the user agent, for example <code>Googlebot</code> or <code>GPTBot</code>.</li><li>Type a path or full URL to test.</li><li>Read the verdict and the rule that decided it.</li><li>Switch to the Sitemap tab to paste and check your sitemap XML.</li></ol>
+<div class="ad-slot" data-slot="after_intro"></div>
+<h2>Examples</h2>
+<h3>Longest match wins</h3><p><strong>Input</strong></p><pre>User-agent: *
+Disallow: /admin/
+Allow: /admin/public/
+
+Path: /admin/public/help</pre><p><strong>Result</strong></p><pre>ALLOWED. The longest matching rule is Allow: /admin/public/</pre>
+<h2>Why does Fetch sometimes fail?</h2><p>This tool asks for the file straight from your browser and never sends your request through a server. Browsers only let one site read another site&#x27;s files when that site allows it (CORS), and most do not for robots.txt. When that happens, open the file in a new tab, copy it, and paste it in.</p>
+<div class="ad-slot" data-slot="mid_content"></div>
+<h2>Frequently asked questions</h2>
+<h3>Does Disallow remove a page from Google?</h3><p>No. Disallow stops crawling, but a blocked URL can still be indexed from links. To keep a page out of results, allow crawling and add a noindex tag.</p><h3>How do I block AI crawlers?</h3><p>Add a group for each crawler you want to block, for example <code>User-agent: GPTBot</code> followed by <code>Disallow: /</code>. Check each AI company&#x27;s documentation for its crawler names.</p><h3>What does a $ at the end of a rule mean?</h3><p>It anchors the rule to the end of the URL. <code>Disallow: /*.pdf$</code> blocks URLs ending in .pdf but not /file.pdf?download=1.</p><h3>How big can a sitemap be?</h3><p>The sitemaps.org protocol allows up to 50,000 URLs and 50 MB uncompressed per file. Larger sites split into several sitemaps listed in a sitemap index.</p>
+<h2>Related news</h2><ul class="news-list"><li><h3><a href="/news/google-september-2026-spam-update-complete/">Google&#x27;s September 2026 spam update finished after nearly two weeks</a></h3><div class="meta-line">October 8, 2026</div></li><li><h3><a href="/news/hubspot-domains-tls-1-2/">HubSpot-hosted domains now require TLS 1.2 or newer</a></h3><div class="meta-line">October 6, 2026</div></li></ul>
+<div class="ad-slot" data-slot="end_content"></div>
+</article>
+<h2>Related tools</h2>
+<div class="cards"><a class="card" href="/llms-txt-generator/"><h3>llms.txt Generator</h3><p>Write an llms.txt file that points AI assistants to your key pages.</p></a><a class="card" href="/json-ld-schema-generator/"><h3>JSON-LD Schema Generator</h3><p>Create LocalBusiness, Article and Product structured data.</p></a><a class="card" href="/regex-tester/"><h3>Regex Tester</h3><p>Test regular expressions with highlights, groups and replace.</p></a><a class="card" href="/meta-length-checker/"><h3>Meta Title and Description Length Checker</h3><p>Measure title tags and meta descriptions in pixels and characters.</p></a></div>
+</main>
+<aside class="side"><div class="side-inner"><p class="side-title">More SEO and AI search tools</p><ul class="side-list"><li><a href="/meta-length-checker/">Meta Title and Description Length Checker</a></li><li><a href="/json-ld-schema-generator/">JSON-LD Schema Generator</a></li><li><a href="/llms-txt-generator/">llms.txt Generator</a></li><li><a href="/slug-generator/">URL Slug Generator</a></li></ul><p class="side-title">Latest news</p><ul class="side-list"><li><a href="/news/google-ai-plus-loses-pro-models/">Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</a></li><li><a href="/news/hubspot-q3-2026-results/">HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</a></li><li><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></li><li><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></li></ul><div class="ad-slot" data-slot="sidebar"></div></div></aside>
+</div></div>
+<footer class="site-foot"><div class="wrap">
+<div class="foot-links">
+<a href="/">All tools</a><a href="/news/">News</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/feed.xml">RSS</a><a href="/news/feed.json">JSON Feed</a><a href="/llms.txt">llms.txt</a>
+</div>
+<nav class="network" aria-label="samcbarth.com sites"><p>More free sites from samcbarth.com</p><ul><li><a href="https://realestate.samcbarth.com/">Real Estate</a></li><li><span aria-current="true">Tools</span></li><li><a href="https://games.samcbarth.com/">Games</a></li><li><a href="https://streaming.samcbarth.com/">Streaming</a></li><li><a href="https://homerepair.samcbarth.com/">Home Repair</a></li><li><a href="https://deals.samcbarth.com/">Deals</a></li><li><a href="https://news.samcbarth.com/">News</a></li></ul></nav>
+<p class="copyright">&copy; 2026 Sam Barth. Every tool here runs in your browser; your input is not uploaded.</p>
+</div></footer>
+</body>
+</html>

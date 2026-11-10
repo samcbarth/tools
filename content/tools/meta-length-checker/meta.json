@@ -1,0 +1,61 @@
+{
+ "slug": "meta-length-checker",
+ "name": "Meta Title and Description Length Checker",
+ "category": "seo",
+ "order": 1,
+ "app_category": "DeveloperApplication",
+ "title": "Meta Title and Description Length Checker (Pixels and Characters)",
+ "description": "Check title tag and meta description length in characters and estimated pixels, and preview the search snippet. Free and runs in your browser.",
+ "h1": "Meta title and description length checker",
+ "card": "Measure title tags and meta descriptions in pixels and characters.",
+ "lede": "Type a title and description to see character counts, estimated pixel width, and a search snippet preview with likely truncation.",
+ "keywords": [
+  "meta description length",
+  "title tag length",
+  "serp preview",
+  "snippet",
+  "seo title",
+  "pixels"
+ ],
+ "answer_q": "How long should a meta title and description be?",
+ "answer": "Keep title tags under about 600 pixels, roughly 50 to 60 characters, and meta descriptions under about 920 pixels, roughly 150 to 160 characters. Search engines cut by pixel width, so wide letters like W and M use up the space faster.",
+ "steps": [
+  "Type or paste your title tag.",
+  "Paste the meta description.",
+  "Watch the bars: green is fine, amber is close, red will likely be cut off.",
+  "Put the most important words first so they survive truncation.",
+  "Check the preview for an awkward cut."
+ ],
+ "examples": [
+  {
+   "title": "A title that runs long",
+   "input": "The Complete Beginner's Guide to Building UTM Links for Every Marketing Channel",
+   "output": "About 750 pixels, likely shown as: The Complete Beginner's Guide to Building UTM Links for ..."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Why measure pixels instead of characters?",
+   "a": "Search results truncate by display width. A title full of narrow letters like i and l fits more characters than one full of W and M."
+  },
+  {
+   "q": "Will Google always show my meta description?",
+   "a": "No. Google often writes its own snippet from page text when it thinks that better matches the query. A clear, accurate description still raises the chance yours is used."
+  },
+  {
+   "q": "Is there a penalty for long titles?",
+   "a": "No. Long titles are simply cut off in the result. The risk is that the cut hides the words that make people click."
+  },
+  {
+   "q": "Are these limits exact?",
+   "a": "They are estimates based on common desktop result widths and a 20 pixel title font. Treat them as a guide, not a rule."
+  }
+ ],
+ "related": [
+  "og-preview",
+  "slug-generator",
+  "word-counter",
+  "json-ld-schema-generator"
+ ],
+ "updated": "2026-11-09"
+}

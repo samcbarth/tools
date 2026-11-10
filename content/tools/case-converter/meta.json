@@ -1,0 +1,62 @@
+{
+ "slug": "case-converter",
+ "name": "Case Converter",
+ "category": "text",
+ "order": 2,
+ "app_category": "UtilitiesApplication",
+ "title": "Case Converter: Title Case, Sentence Case, camelCase and More",
+ "description": "Convert text to Title Case, Sentence case, UPPERCASE, lowercase, camelCase, PascalCase, snake_case, kebab-case or CONSTANT_CASE. Runs in your browser.",
+ "h1": "Case converter",
+ "card": "Switch text between title, sentence, camel, snake and more.",
+ "lede": "Paste text and click a case. Title Case keeps short words like and, of and the lowercase unless they start or end the line.",
+ "keywords": [
+  "title case",
+  "sentence case",
+  "uppercase",
+  "lowercase",
+  "camelcase",
+  "snake case",
+  "kebab case"
+ ],
+ "answer_q": "How do I convert text to title case?",
+ "answer": "Capitalize the first letter of each major word and leave short words such as a, and, of and the in lowercase unless they come first or last. Paste your text and press Title Case.",
+ "steps": [
+  "Paste the text.",
+  "Click the case you want.",
+  "Check the result, especially names and acronyms.",
+  "Copy the result."
+ ],
+ "examples": [
+  {
+   "title": "Title Case",
+   "input": "how to write a great subject line for your next email campaign",
+   "output": "How to Write a Great Subject Line for Your Next Email Campaign"
+  },
+  {
+   "title": "Code cases",
+   "input": "customer lifetime value",
+   "output": "camelCase: customerLifetimeValue\nsnake_case: customer_lifetime_value\nCONSTANT_CASE: CUSTOMER_LIFETIME_VALUE"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Which title case style does it follow?",
+   "a": "A general headline style close to AP and Chicago: short articles, conjunctions and prepositions stay lowercase in the middle. Style guides differ on some words, so check headlines that must follow one exactly."
+  },
+  {
+   "q": "Will it keep acronyms like SEO in capitals?",
+   "a": "Title and sentence case lowercase everything first, so acronyms need fixing by hand afterwards."
+  },
+  {
+   "q": "Does it work on many lines at once?",
+   "a": "Yes. Each line is converted on its own, so you can paste a list of headlines."
+  }
+ ],
+ "related": [
+  "slug-generator",
+  "word-counter",
+  "csv-cleaner",
+  "regex-tester"
+ ],
+ "updated": "2026-11-09"
+}

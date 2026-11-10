@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSV to JSON Converter (and JSON to CSV), Free and Private</title>
+<meta name="description" content="Convert CSV to JSON with typed numbers and booleans and optional nested keys, or JSON to CSV with flattened columns. Copy or download. Runs in your browser.">
+<link rel="canonical" href="https://tools.samcbarth.com/csv-json-converter/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Toolbench">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CSV to JSON Converter (and JSON to CSV), Free and Private">
+<meta property="og:description" content="Convert CSV to JSON with typed numbers and booleans and optional nested keys, or JSON to CSV with flattened columns. Copy or download. Runs in your browser.">
+<meta property="og:url" content="https://tools.samcbarth.com/csv-json-converter/">
+<meta property="og:image" content="https://tools.samcbarth.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e4f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Toolbench Dispatch RSS" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Toolbench Dispatch JSON Feed" href="/news/feed.json">
+<link rel="stylesheet" href="/assets/style.css?v=2d4ed37da8">
+<script>try{var t=localStorage.getItem('tb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "CSV to JSON Converter",
+ "description": "Convert CSV to JSON with typed numbers and booleans and optional nested keys, or JSON to CSV with flattened columns. Copy or download. Runs in your browser.",
+ "url": "https://tools.samcbarth.com/csv-json-converter/",
+ "applicationCategory": "DeveloperApplication",
+ "operatingSystem": "Any (runs in a web browser)",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Sam Barth",
+  "url": "https://samcbarth.com/"
+ },
+ "dateModified": "2026-11-09"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "CSV to JSON Converter (and JSON to CSV), Free and Private",
+ "url": "https://tools.samcbarth.com/csv-json-converter/",
+ "description": "Convert CSV to JSON with typed numbers and booleans and optional nested keys, or JSON to CSV with flattened columns. Copy or download. Runs in your browser.",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Toolbench",
+  "url": "https://tools.samcbarth.com/"
+ }
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Toolbench",
+   "item": "https://tools.samcbarth.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Data and developer",
+   "item": "https://tools.samcbarth.com/#data"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "CSV to JSON Converter"
+  }
+ ]
+}</script>
+<script src="/assets/config.js?v=2d4ed37da8" defer></script>
+<script src="/assets/site.js?v=2d4ed37da8" defer></script>
+<script src="/assets/tools/csv-json-converter.js?v=2d4ed37da8" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">TB</span>Toolbench</a>
+<nav class="site-nav" aria-label="Main">
+<a href="/" aria-current="page">All tools</a>
+<a href="/news/">News</a>
+<a href="/about/">About</a>
+<button class="theme-btn" type="button">Dark mode</button>
+</nav>
+</div></header>
+<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Toolbench</a></li><li><a href="/#data">Data and developer</a></li><li aria-current="page">CSV to JSON Converter</li></ol></nav>
+<div class="layout has-side">
+<main id="main">
+<h1>CSV to JSON and JSON to CSV converter</h1>
+<p class="lede">Paste CSV to get a JSON array of objects, or switch direction to turn JSON into a CSV with one column per key.</p>
+<p class="privacy-note">Runs entirely in your browser. Nothing you type, paste or open here is uploaded to any server.</p>
+<section class="tool" aria-label="CSV to JSON Converter" id="tool">
+<div class="tabs" role="tablist">
+<button type="button" role="tab" aria-selected="true" data-dir="c2j">CSV to JSON</button>
+<button type="button" role="tab" aria-selected="false" data-dir="j2c">JSON to CSV</button>
+</div>
+<div class="row two">
+<div class="field"><label for="k-in" id="k-in-label">CSV input</label>
+<textarea id="k-in" class="mono">name,email,plan,seats,active
+Acme,ops@acme.com,Pro,5,true
+"Globex, Inc",it@globex.com,Starter,2,false</textarea>
+<input id="k-file" type="file" accept=".csv,.json,.txt" aria-label="Open a file"></div>
+<div class="field"><label for="k-out" id="k-out-label">JSON output</label>
+<textarea id="k-out" class="mono" readonly></textarea></div>
+</div>
+<div class="checks" id="k-c2j-opts">
+<label class="check"><input id="k-types" type="checkbox" checked> Convert numbers and true/false</label>
+<label class="check"><input id="k-nested" type="checkbox"> Nest keys with dots (address.city)</label>
+<label class="check"><input id="k-arrays" type="checkbox"> Output arrays instead of objects</label>
+</div>
+<div class="checks" id="k-j2c-opts" hidden>
+<label class="check"><input id="k-flat" type="checkbox" checked> Flatten nested objects to dot keys</label>
+<label class="check"><span>Delimiter</span> <select id="k-delim" style="width:auto"><option value=",">Comma</option><option value=";">Semicolon</option><option value="&#9;">Tab</option></select></label>
+</div>
+<div class="btns"><button class="btn" id="k-copy" type="button">Copy output</button><button class="btn secondary" id="k-dl" type="button">Download</button><button class="btn ghost" id="k-swap" type="button">Use output as input</button></div>
+<div id="k-status" class="status"></div>
+
+</section>
+<article class="prose">
+<h2>How do I convert CSV to JSON?</h2>
+<p class="answer">Treat the first row as keys and turn each following row into an object with those keys. Paste your CSV here and the JSON appears on the right, with numbers and true or false converted to real types.</p>
+<ol><li>Choose CSV to JSON or JSON to CSV.</li><li>Paste your data or open a file.</li><li>Set options: typed values, dot-key nesting, or flattening.</li><li>Copy or download the output.</li><li>Use Use output as input to round-trip and check the data.</li></ol>
+<div class="ad-slot" data-slot="after_intro"></div>
+<h2>Examples</h2>
+<h3>CSV to JSON</h3><p><strong>Input</strong></p><pre>name,seats,active
+Acme,5,true</pre><p><strong>Result</strong></p><pre>[
+  {
+    &quot;name&quot;: &quot;Acme&quot;,
+    &quot;seats&quot;: 5,
+    &quot;active&quot;: true
+  }
+]</pre><h3>Nested keys</h3><p>With nesting on, a header named <code>address.city</code> becomes <code>{&quot;address&quot;: {&quot;city&quot;: ...}}</code>. In the other direction, flattening turns nested objects back into dot columns.</p>
+
+<div class="ad-slot" data-slot="mid_content"></div>
+<h2>Frequently asked questions</h2>
+<h3>Does it handle commas inside quotes?</h3><p>Yes. The parser follows the common CSV rules: quoted fields can hold commas, line breaks and doubled quotes.</p><h3>Why did a ZIP code lose its leading zero?</h3><p>Values with a leading zero, like 01234, stay as text. Turn off Convert numbers if other ID columns must stay exactly as typed.</p><h3>What JSON shapes can I convert to CSV?</h3><p>An array of objects works best. An object holding one array is also accepted. Arrays inside a record are written into one cell as JSON text.</p><h3>Is my data uploaded?</h3><p>No. The conversion runs in your browser.</p>
+<h2>Related news</h2><ul class="news-list"><li><h3><a href="/news/hubspot-pipelines-api-v1-sunset/">HubSpot Pipelines API v1 shuts off December 4, 2026</a></h3><div class="meta-line">August 14, 2026</div></li></ul>
+<div class="ad-slot" data-slot="end_content"></div>
+</article>
+<h2>Related tools</h2>
+<div class="cards"><a class="card" href="/json-formatter/"><h3>JSON Formatter and Validator</h3><p>Pretty print, validate and minify JSON with clear error positions.</p></a><a class="card" href="/csv-cleaner/"><h3>CSV Cleaner and Deduper</h3><p>Trim, dedupe and drop blank rows from a CSV without uploading it.</p></a><a class="card" href="/email-list-cleaner/"><h3>Email List Cleaner</h3><p>Extract, dedupe and fix typos in email lists before import.</p></a><a class="card" href="/regex-tester/"><h3>Regex Tester</h3><p>Test regular expressions with highlights, groups and replace.</p></a></div>
+</main>
+<aside class="side"><div class="side-inner"><p class="side-title">More Data and developer tools</p><ul class="side-list"><li><a href="/csv-cleaner/">CSV Cleaner and Deduper</a></li><li><a href="/json-formatter/">JSON Formatter and Validator</a></li><li><a href="/regex-tester/">Regex Tester</a></li></ul><p class="side-title">Latest news</p><ul class="side-list"><li><a href="/news/google-ai-plus-loses-pro-models/">Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</a></li><li><a href="/news/hubspot-q3-2026-results/">HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</a></li><li><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></li><li><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></li></ul><div class="ad-slot" data-slot="sidebar"></div></div></aside>
+</div></div>
+<footer class="site-foot"><div class="wrap">
+<div class="foot-links">
+<a href="/">All tools</a><a href="/news/">News</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/feed.xml">RSS</a><a href="/news/feed.json">JSON Feed</a><a href="/llms.txt">llms.txt</a>
+</div>
+<nav class="network" aria-label="samcbarth.com sites"><p>More free sites from samcbarth.com</p><ul><li><a href="https://realestate.samcbarth.com/">Real Estate</a></li><li><span aria-current="true">Tools</span></li><li><a href="https://games.samcbarth.com/">Games</a></li><li><a href="https://streaming.samcbarth.com/">Streaming</a></li><li><a href="https://homerepair.samcbarth.com/">Home Repair</a></li><li><a href="https://deals.samcbarth.com/">Deals</a></li><li><a href="https://news.samcbarth.com/">News</a></li></ul></nav>
+<p class="copyright">&copy; 2026 Sam Barth. Every tool here runs in your browser; your input is not uploaded.</p>
+</div></footer>
+</body>
+</html>

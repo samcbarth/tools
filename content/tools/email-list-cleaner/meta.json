@@ -1,0 +1,61 @@
+{
+ "slug": "email-list-cleaner",
+ "name": "Email List Cleaner",
+ "category": "marketing",
+ "order": 2,
+ "app_category": "BusinessApplication",
+ "title": "Email List Cleaner: Extract, Dedupe and Fix Emails Free",
+ "description": "Paste any text or CSV to pull out email addresses, remove duplicates and invalid formats, fix common domain typos like gmial.com, and download a clean list. Runs in your browser.",
+ "h1": "Email list cleaner",
+ "card": "Extract, dedupe and fix typos in email lists before import.",
+ "lede": "Paste a list, a CSV or even an email thread. The tool finds every address, removes duplicates and broken formats, and fixes common domain typos.",
+ "keywords": [
+  "email list",
+  "dedupe emails",
+  "extract emails",
+  "email typo",
+  "clean list",
+  "import"
+ ],
+ "answer_q": "How do I clean an email list before importing it?",
+ "answer": "Pull out the addresses, lowercase them, remove duplicates and invalid formats, and fix obvious domain typos before you import. Paste the list here and the tool does all five steps at once.",
+ "steps": [
+  "Paste your list or open a CSV or text file.",
+  "Leave lowercase, dedupe and typo fixing on unless you have a reason not to.",
+  "Turn on role address removal if you are building a sales list and want people, not shared inboxes.",
+  "Check the removed entries under the list to see what changed.",
+  "Copy the list or download it as a one-column CSV."
+ ],
+ "examples": [
+  {
+   "title": "Messy pasted list",
+   "input": "Jane.Doe@Example.com, bob@gmial.com\n<info@acme.io>\nnot-an-email\njane.doe@example.com",
+   "output": "jane.doe@example.com\nbob@gmail.com\ninfo@acme.io"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does this verify that a mailbox exists?",
+   "a": "No. It checks the format and fixes known typos. Checking whether a mailbox accepts mail needs an SMTP check from a server, which would mean uploading your list. This tool never does that."
+  },
+  {
+   "q": "Is it safe to paste a customer list here?",
+   "a": "Yes. Everything runs in your browser and nothing is sent anywhere. You can disconnect from the internet after the page loads and it still works."
+  },
+  {
+   "q": "Which typos does it fix?",
+   "a": "Common misspellings of gmail.com, hotmail.com, yahoo.com, outlook.com and icloud.com, such as `gmial.com` and `hotmial.com`. Each fix is listed so you can review it."
+  },
+  {
+   "q": "What is a role address?",
+   "a": "A shared inbox like `info@`, `sales@` or `support@`. Many email platforms advise against sending marketing email to them because they tend to have more complaints and bounces."
+  }
+ ],
+ "related": [
+  "csv-cleaner",
+  "csv-json-converter",
+  "case-converter",
+  "regex-tester"
+ ],
+ "updated": "2026-11-09"
+}

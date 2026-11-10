@@ -1,0 +1,61 @@
+{
+ "slug": "slug-generator",
+ "name": "URL Slug Generator",
+ "category": "seo",
+ "order": 5,
+ "app_category": "DeveloperApplication",
+ "title": "URL Slug Generator: Turn Titles into Clean URLs",
+ "description": "Convert titles into clean, lowercase URL slugs. Strips accents and punctuation, optional stop word removal and length limit, bulk mode. Runs in your browser.",
+ "h1": "URL slug generator",
+ "card": "Turn titles into short, clean, lowercase URL slugs.",
+ "lede": "Paste one title or many, one per line, and get clean hyphenated slugs with accents and punctuation removed.",
+ "keywords": [
+  "slug",
+  "url slug",
+  "permalink",
+  "seo url",
+  "kebab case",
+  "friendly url"
+ ],
+ "answer_q": "How do I make a good URL slug?",
+ "answer": "Use a few lowercase words that describe the page, separated by hyphens, with no accents, punctuation or dates that will go stale. This tool converts any title into that format.",
+ "steps": [
+  "Paste a title, or several on separate lines.",
+  "Keep the hyphen separator, which search engines read as a space.",
+  "Set a max length if your CMS has a limit.",
+  "Turn on stop word removal for shorter slugs.",
+  "Copy the results."
+ ],
+ "examples": [
+  {
+   "title": "Accents, symbols and punctuation",
+   "input": "Café & Crème Brûlée: A Beginner's Guide",
+   "output": "cafe-and-creme-brulee-a-beginners-guide"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Hyphens or underscores?",
+   "a": "Hyphens. Google's URL guidance recommends hyphens to separate words, because underscores can join words together."
+  },
+  {
+   "q": "Should I remove stop words?",
+   "a": "It is optional. Removing words like the and of shortens slugs, but keep them if the slug reads badly without them."
+  },
+  {
+   "q": "Should I change slugs on pages that are already live?",
+   "a": "Only with a 301 redirect from the old URL, or you lose links and rankings that point to it."
+  },
+  {
+   "q": "Does it handle non-English letters?",
+   "a": "It strips accents (é to e) and maps a few special letters like ß to ss. Scripts without a Latin form are removed, so check slugs for those pages by hand."
+  }
+ ],
+ "related": [
+  "case-converter",
+  "meta-length-checker",
+  "utm-builder",
+  "word-counter"
+ ],
+ "updated": "2026-11-09"
+}

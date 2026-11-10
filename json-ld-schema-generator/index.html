@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JSON-LD Schema Generator: Local Business, Article, Product</title>
+<meta name="description" content="Generate valid JSON-LD structured data for a local business, article or product. Fill in a form, copy the script tag, and paste it into your page. Runs in your browser.">
+<link rel="canonical" href="https://tools.samcbarth.com/json-ld-schema-generator/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Toolbench">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JSON-LD Schema Generator: Local Business, Article, Product">
+<meta property="og:description" content="Generate valid JSON-LD structured data for a local business, article or product. Fill in a form, copy the script tag, and paste it into your page. Runs in your browser.">
+<meta property="og:url" content="https://tools.samcbarth.com/json-ld-schema-generator/">
+<meta property="og:image" content="https://tools.samcbarth.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e4f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Toolbench Dispatch RSS" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Toolbench Dispatch JSON Feed" href="/news/feed.json">
+<link rel="stylesheet" href="/assets/style.css?v=2d4ed37da8">
+<script>try{var t=localStorage.getItem('tb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "JSON-LD Schema Generator",
+ "description": "Generate valid JSON-LD structured data for a local business, article or product. Fill in a form, copy the script tag, and paste it into your page. Runs in your browser.",
+ "url": "https://tools.samcbarth.com/json-ld-schema-generator/",
+ "applicationCategory": "DeveloperApplication",
+ "operatingSystem": "Any (runs in a web browser)",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Sam Barth",
+  "url": "https://samcbarth.com/"
+ },
+ "dateModified": "2026-11-09"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "JSON-LD Schema Generator: Local Business, Article, Product",
+ "url": "https://tools.samcbarth.com/json-ld-schema-generator/",
+ "description": "Generate valid JSON-LD structured data for a local business, article or product. Fill in a form, copy the script tag, and paste it into your page. Runs in your browser.",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Toolbench",
+  "url": "https://tools.samcbarth.com/"
+ }
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Toolbench",
+   "item": "https://tools.samcbarth.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "SEO and AI search",
+   "item": "https://tools.samcbarth.com/#seo"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "JSON-LD Schema Generator"
+  }
+ ]
+}</script>
+<script src="/assets/config.js?v=2d4ed37da8" defer></script>
+<script src="/assets/site.js?v=2d4ed37da8" defer></script>
+<script src="/assets/tools/json-ld-schema-generator.js?v=2d4ed37da8" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">TB</span>Toolbench</a>
+<nav class="site-nav" aria-label="Main">
+<a href="/" aria-current="page">All tools</a>
+<a href="/news/">News</a>
+<a href="/about/">About</a>
+<button class="theme-btn" type="button">Dark mode</button>
+</nav>
+</div></header>
+<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Toolbench</a></li><li><a href="/#seo">SEO and AI search</a></li><li aria-current="page">JSON-LD Schema Generator</li></ol></nav>
+<div class="layout has-side">
+<main id="main">
+<h1>JSON-LD schema generator</h1>
+<p class="lede">Pick a schema type, fill in the fields you have, and copy a ready-to-paste JSON-LD script tag. Empty fields are left out automatically.</p>
+<p class="privacy-note">Runs entirely in your browser. Nothing you type, paste or open here is uploaded to any server.</p>
+<section class="tool" aria-label="JSON-LD Schema Generator" id="tool">
+<div class="tabs" role="tablist">
+<button type="button" role="tab" aria-selected="true" data-type="LocalBusiness">Local business</button>
+<button type="button" role="tab" aria-selected="false" data-type="Article">Article</button>
+<button type="button" role="tab" aria-selected="false" data-type="Product">Product</button>
+</div>
+<div id="s-form"></div>
+<label for="s-out">JSON-LD <span class="hint">(paste inside your page &lt;head&gt; or &lt;body&gt;)</span></label>
+<pre id="s-out" class="out"></pre>
+<div class="btns"><button class="btn" id="s-copy" type="button">Copy code</button></div>
+<div id="s-status" class="status"></div>
+
+</section>
+<article class="prose">
+<h2>How do I add schema markup to my page?</h2>
+<p class="answer">Create a JSON-LD script with the schema.org type that matches your page, then paste it into the page&#x27;s HTML. This tool builds that script from a form so you do not have to write the JSON by hand.</p>
+<ol><li>Choose Local business, Article or Product.</li><li>Fill in the fields. Required ones are marked.</li><li>Copy the code.</li><li>Paste it into the head or body of the matching page, or into your CMS&#x27;s header HTML setting for that page.</li><li>After publishing, run the page through Google&#x27;s Rich Results Test and the Schema Markup Validator.</li></ol>
+<div class="ad-slot" data-slot="after_intro"></div>
+<h2>Examples</h2>
+<h3>Local business output (shortened)</h3><p><strong>Result</strong></p><pre>&lt;script type=&quot;application/ld+json&quot;&gt;
+{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;LocalBusiness&quot;,
+  &quot;name&quot;: &quot;Acme Plumbing&quot;,
+  &quot;telephone&quot;: &quot;+1-405-555-0100&quot;,
+  &quot;address&quot;: {
+    &quot;@type&quot;: &quot;PostalAddress&quot;,
+    &quot;addressLocality&quot;: &quot;Oklahoma City&quot;,
+    &quot;addressRegion&quot;: &quot;OK&quot;
+  }
+}
+&lt;/script&gt;</pre>
+
+<div class="ad-slot" data-slot="mid_content"></div>
+<h2>Frequently asked questions</h2>
+<h3>Does schema markup improve rankings?</h3><p>Google says structured data helps it understand a page and can make the page eligible for rich results. It is not described as a direct ranking boost.</p><h3>Should I add a rating to Product schema?</h3><p>Only if the page shows real reviews from customers. Marking up ratings that are not visible on the page breaks Google&#x27;s structured data guidelines.</p><h3>Where does JSON-LD go in HubSpot?</h3><p>In HubSpot, add it to the page&#x27;s Settings, Advanced, Head HTML, or to a module in the template if every page of that type needs it.</p><h3>Can I have more than one schema block on a page?</h3><p>Yes. Pages often carry several, for example BreadcrumbList plus Article. Each should describe content that is on the page.</p>
+<h2>Related news</h2><ul class="news-list"><li><h3><a href="/news/google-ai-plus-loses-pro-models/">Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</a></h3><div class="meta-line">November 8, 2026</div></li><li><h3><a href="/news/google-september-2026-spam-update-complete/">Google&#x27;s September 2026 spam update finished after nearly two weeks</a></h3><div class="meta-line">October 8, 2026</div></li></ul>
+<div class="ad-slot" data-slot="end_content"></div>
+</article>
+<h2>Related tools</h2>
+<div class="cards"><a class="card" href="/llms-txt-generator/"><h3>llms.txt Generator</h3><p>Write an llms.txt file that points AI assistants to your key pages.</p></a><a class="card" href="/og-preview/"><h3>Open Graph Preview</h3><p>See your social link card and fix og:title, og:image and more.</p></a><a class="card" href="/meta-length-checker/"><h3>Meta Title and Description Length Checker</h3><p>Measure title tags and meta descriptions in pixels and characters.</p></a><a class="card" href="/json-formatter/"><h3>JSON Formatter and Validator</h3><p>Pretty print, validate and minify JSON with clear error positions.</p></a></div>
+</main>
+<aside class="side"><div class="side-inner"><p class="side-title">More SEO and AI search tools</p><ul class="side-list"><li><a href="/meta-length-checker/">Meta Title and Description Length Checker</a></li><li><a href="/llms-txt-generator/">llms.txt Generator</a></li><li><a href="/robots-sitemap-checker/">robots.txt and Sitemap Checker</a></li><li><a href="/slug-generator/">URL Slug Generator</a></li></ul><p class="side-title">Latest news</p><ul class="side-list"><li><a href="/news/google-ai-plus-loses-pro-models/">Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</a></li><li><a href="/news/hubspot-q3-2026-results/">HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</a></li><li><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></li><li><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></li></ul><div class="ad-slot" data-slot="sidebar"></div></div></aside>
+</div></div>
+<footer class="site-foot"><div class="wrap">
+<div class="foot-links">
+<a href="/">All tools</a><a href="/news/">News</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/feed.xml">RSS</a><a href="/news/feed.json">JSON Feed</a><a href="/llms.txt">llms.txt</a>
+</div>
+<nav class="network" aria-label="samcbarth.com sites"><p>More free sites from samcbarth.com</p><ul><li><a href="https://realestate.samcbarth.com/">Real Estate</a></li><li><span aria-current="true">Tools</span></li><li><a href="https://games.samcbarth.com/">Games</a></li><li><a href="https://streaming.samcbarth.com/">Streaming</a></li><li><a href="https://homerepair.samcbarth.com/">Home Repair</a></li><li><a href="https://deals.samcbarth.com/">Deals</a></li><li><a href="https://news.samcbarth.com/">News</a></li></ul></nav>
+<p class="copyright">&copy; 2026 Sam Barth. Every tool here runs in your browser; your input is not uploaded.</p>
+</div></footer>
+</body>
+</html>

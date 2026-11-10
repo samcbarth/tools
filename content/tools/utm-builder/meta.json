@@ -1,0 +1,69 @@
+{
+ "slug": "utm-builder",
+ "name": "UTM Builder",
+ "category": "marketing",
+ "order": 1,
+ "app_category": "BusinessApplication",
+ "title": "UTM Builder: Free Campaign URL Generator for GA4",
+ "description": "Build clean UTM links for email, social and ads. Adds utm_source, utm_medium and utm_campaign, keeps them lowercase, and warns about mistakes. Runs in your browser.",
+ "h1": "UTM builder",
+ "card": "Tag campaign links with clean, consistent UTM parameters.",
+ "lede": "Paste a page URL, fill in source, medium and campaign, and copy a tagged link that GA4 and HubSpot can attribute.",
+ "keywords": [
+  "utm",
+  "campaign url",
+  "ga4",
+  "tracking link",
+  "google analytics",
+  "utm_source"
+ ],
+ "answer_q": "How do I build a UTM link?",
+ "answer": "Add `utm_source`, `utm_medium` and `utm_campaign` to the end of your page URL as query parameters, all in lowercase. This tool does it for you: fill in the fields and copy the result.",
+ "steps": [
+  "Paste the landing page URL into Website URL.",
+  "Enter where the click comes from in Campaign source, for example `linkedin` or `newsletter`.",
+  "Enter the type of traffic in Campaign medium, for example `email`, `social` or `cpc`.",
+  "Name the campaign, then add term or content only if you need to split results further.",
+  "Copy the tagged URL and use it in your post, email or ad."
+ ],
+ "examples": [
+  {
+   "title": "LinkedIn post for a product launch",
+   "input": "URL: https://example.com/pricing\nSource: linkedin\nMedium: social\nCampaign: spring launch",
+   "output": "https://example.com/pricing?utm_source=linkedin&utm_medium=social&utm_campaign=spring-launch"
+  },
+  {
+   "title": "Two buttons in one email",
+   "text": "Use utm_content to tell links in the same email apart, for example `hero-button` and `footer-link`. Source, medium and campaign stay the same so the email reports as one campaign."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Which UTM parameters are required?",
+   "a": "GA4 needs `utm_source` and `utm_medium` to place a visit in a channel. `utm_campaign` is strongly recommended. `utm_term`, `utm_content` and `utm_id` are optional."
+  },
+  {
+   "q": "Should UTM values be lowercase?",
+   "a": "Yes. Analytics tools treat `Email` and `email` as different values, so mixed case splits your reports. The tool lowercases by default."
+  },
+  {
+   "q": "Can I put UTM links on my own website?",
+   "a": "No. Tagging internal links starts a new session and overwrites the original source, so a visitor from Google can end up credited to your own banner. Use UTMs only on links from outside your site."
+  },
+  {
+   "q": "Does this work with HubSpot?",
+   "a": "Yes. HubSpot reads the same UTM parameters on page views and form submissions, and its own tracking URL builder produces the same format."
+  },
+  {
+   "q": "What happens if the URL already has a query string or #anchor?",
+   "a": "The tool keeps existing parameters and the anchor, and replaces only UTM parameters you fill in."
+  }
+ ],
+ "related": [
+  "qr-code-generator",
+  "og-preview",
+  "slug-generator",
+  "meta-length-checker"
+ ],
+ "updated": "2026-11-09"
+}

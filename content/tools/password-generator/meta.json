@@ -1,0 +1,60 @@
+{
+ "slug": "password-generator",
+ "name": "Password Generator",
+ "category": "utilities",
+ "order": 2,
+ "app_category": "SecurityApplication",
+ "title": "Strong Password and Passphrase Generator (Runs Offline)",
+ "description": "Generate strong random passwords or word passphrases with your browser's cryptographic random number generator. Shows entropy in bits. Nothing is sent or stored.",
+ "h1": "Password and passphrase generator",
+ "card": "Create strong random passwords and passphrases on your device.",
+ "lede": "Create a random password of any length and character mix, or an easier-to-type passphrase, using the Web Crypto random generator.",
+ "keywords": [
+  "password generator",
+  "passphrase",
+  "random password",
+  "strong password",
+  "secure",
+  "entropy"
+ ],
+ "answer_q": "How long should a strong password be?",
+ "answer": "At least 16 random characters, or a passphrase of 5 or more random words, gives well over 70 bits of entropy. Generate one here and store it in a password manager.",
+ "steps": [
+  "Choose random characters or a passphrase.",
+  "Set the length or number of words.",
+  "Untick character sets a site does not allow.",
+  "Check the strength line.",
+  "Copy it straight into your password manager."
+ ],
+ "examples": [
+  {
+   "title": "Passphrase",
+   "output": "Lake-Harp-Mint-Cube-Wolf-42"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Is this random enough?",
+   "a": "Yes. It uses `crypto.getRandomValues`, the browser's cryptographically secure generator, with rejection sampling so every character is equally likely."
+  },
+  {
+   "q": "Is the password sent or saved?",
+   "a": "No. It is created on your device, shown on screen, and gone when you leave the page."
+  },
+  {
+   "q": "What does bits of entropy mean?",
+   "a": "It measures how many guesses an attacker would need: each extra bit doubles the work. 70 bits or more is strong for online accounts."
+  },
+  {
+   "q": "Passphrase or random characters?",
+   "a": "Both can be strong. Passphrases are easier to type and remember; random characters pack more strength into fewer characters."
+  }
+ ],
+ "related": [
+  "qr-code-generator",
+  "timestamp-converter",
+  "regex-tester",
+  "word-counter"
+ ],
+ "updated": "2026-11-09"
+}

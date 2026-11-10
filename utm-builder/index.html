@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UTM Builder: Free Campaign URL Generator for GA4</title>
+<meta name="description" content="Build clean UTM links for email, social and ads. Adds utm_source, utm_medium and utm_campaign, keeps them lowercase, and warns about mistakes. Runs in your browser.">
+<link rel="canonical" href="https://tools.samcbarth.com/utm-builder/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Toolbench">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UTM Builder: Free Campaign URL Generator for GA4">
+<meta property="og:description" content="Build clean UTM links for email, social and ads. Adds utm_source, utm_medium and utm_campaign, keeps them lowercase, and warns about mistakes. Runs in your browser.">
+<meta property="og:url" content="https://tools.samcbarth.com/utm-builder/">
+<meta property="og:image" content="https://tools.samcbarth.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e4f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Toolbench Dispatch RSS" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Toolbench Dispatch JSON Feed" href="/news/feed.json">
+<link rel="stylesheet" href="/assets/style.css?v=2d4ed37da8">
+<script>try{var t=localStorage.getItem('tb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "UTM Builder",
+ "description": "Build clean UTM links for email, social and ads. Adds utm_source, utm_medium and utm_campaign, keeps them lowercase, and warns about mistakes. Runs in your browser.",
+ "url": "https://tools.samcbarth.com/utm-builder/",
+ "applicationCategory": "BusinessApplication",
+ "operatingSystem": "Any (runs in a web browser)",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Sam Barth",
+  "url": "https://samcbarth.com/"
+ },
+ "dateModified": "2026-11-09"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "UTM Builder: Free Campaign URL Generator for GA4",
+ "url": "https://tools.samcbarth.com/utm-builder/",
+ "description": "Build clean UTM links for email, social and ads. Adds utm_source, utm_medium and utm_campaign, keeps them lowercase, and warns about mistakes. Runs in your browser.",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Toolbench",
+  "url": "https://tools.samcbarth.com/"
+ }
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Toolbench",
+   "item": "https://tools.samcbarth.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Marketing",
+   "item": "https://tools.samcbarth.com/#marketing"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "UTM Builder"
+  }
+ ]
+}</script>
+<script src="/assets/config.js?v=2d4ed37da8" defer></script>
+<script src="/assets/site.js?v=2d4ed37da8" defer></script>
+<script src="/assets/tools/utm-builder.js?v=2d4ed37da8" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">TB</span>Toolbench</a>
+<nav class="site-nav" aria-label="Main">
+<a href="/" aria-current="page">All tools</a>
+<a href="/news/">News</a>
+<a href="/about/">About</a>
+<button class="theme-btn" type="button">Dark mode</button>
+</nav>
+</div></header>
+<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Toolbench</a></li><li><a href="/#marketing">Marketing</a></li><li aria-current="page">UTM Builder</li></ol></nav>
+<div class="layout has-side">
+<main id="main">
+<h1>UTM builder</h1>
+<p class="lede">Paste a page URL, fill in source, medium and campaign, and copy a tagged link that GA4 and HubSpot can attribute.</p>
+<p class="privacy-note">Runs entirely in your browser. Nothing you type, paste or open here is uploaded to any server.</p>
+<section class="tool" aria-label="UTM Builder" id="tool">
+<div class="field"><label for="u-url">Website URL <span class="hint">(the page people land on)</span></label>
+<input id="u-url" type="url" placeholder="https://example.com/pricing" autocomplete="off"></div>
+<div class="row">
+<div><label for="u-source">Campaign source <span class="hint">utm_source, required</span></label><input id="u-source" type="text" placeholder="linkedin"></div>
+<div><label for="u-medium">Campaign medium <span class="hint">utm_medium, required</span></label><input id="u-medium" type="text" placeholder="social" list="u-mediums"></div>
+<div><label for="u-campaign">Campaign name <span class="hint">utm_campaign</span></label><input id="u-campaign" type="text" placeholder="spring-launch"></div>
+</div>
+<datalist id="u-mediums"><option value="email"><option value="social"><option value="paid_social"><option value="cpc"><option value="display"><option value="affiliate"><option value="referral"><option value="organic"><option value="sms"><option value="qr"></datalist>
+<div class="row">
+<div><label for="u-term">Campaign term <span class="hint">utm_term, optional</span></label><input id="u-term" type="text" placeholder="crm software"></div>
+<div><label for="u-content">Campaign content <span class="hint">utm_content, optional</span></label><input id="u-content" type="text" placeholder="hero-button"></div>
+<div><label for="u-id">Campaign ID <span class="hint">utm_id, optional</span></label><input id="u-id" type="text" placeholder="q2-2026"></div>
+</div>
+<div class="checks">
+<label class="check"><input id="u-lower" type="checkbox" checked> Force lowercase</label>
+<label class="check"><input id="u-spaces" type="checkbox" checked> Replace spaces with hyphens</label>
+</div>
+<label for="u-out">Your tagged URL</label>
+<div id="u-out" class="out" aria-live="polite"></div>
+<div class="btns"><button class="btn" id="u-copy" type="button">Copy URL</button><button class="btn ghost" id="u-reset" type="button">Clear</button></div>
+<div id="u-warn" class="status"></div>
+
+</section>
+<article class="prose">
+<h2>How do I build a UTM link?</h2>
+<p class="answer">Add <code>utm_source</code>, <code>utm_medium</code> and <code>utm_campaign</code> to the end of your page URL as query parameters, all in lowercase. This tool does it for you: fill in the fields and copy the result.</p>
+<ol><li>Paste the landing page URL into Website URL.</li><li>Enter where the click comes from in Campaign source, for example <code>linkedin</code> or <code>newsletter</code>.</li><li>Enter the type of traffic in Campaign medium, for example <code>email</code>, <code>social</code> or <code>cpc</code>.</li><li>Name the campaign, then add term or content only if you need to split results further.</li><li>Copy the tagged URL and use it in your post, email or ad.</li></ol>
+<div class="ad-slot" data-slot="after_intro"></div>
+<h2>Examples</h2>
+<h3>LinkedIn post for a product launch</h3><p><strong>Input</strong></p><pre>URL: https://example.com/pricing
+Source: linkedin
+Medium: social
+Campaign: spring launch</pre><p><strong>Result</strong></p><pre>https://example.com/pricing?utm_source=linkedin&amp;utm_medium=social&amp;utm_campaign=spring-launch</pre><h3>Two buttons in one email</h3><p>Use utm_content to tell links in the same email apart, for example <code>hero-button</code> and <code>footer-link</code>. Source, medium and campaign stay the same so the email reports as one campaign.</p>
+
+<div class="ad-slot" data-slot="mid_content"></div>
+<h2>Frequently asked questions</h2>
+<h3>Which UTM parameters are required?</h3><p>GA4 needs <code>utm_source</code> and <code>utm_medium</code> to place a visit in a channel. <code>utm_campaign</code> is strongly recommended. <code>utm_term</code>, <code>utm_content</code> and <code>utm_id</code> are optional.</p><h3>Should UTM values be lowercase?</h3><p>Yes. Analytics tools treat <code>Email</code> and <code>email</code> as different values, so mixed case splits your reports. The tool lowercases by default.</p><h3>Can I put UTM links on my own website?</h3><p>No. Tagging internal links starts a new session and overwrites the original source, so a visitor from Google can end up credited to your own banner. Use UTMs only on links from outside your site.</p><h3>Does this work with HubSpot?</h3><p>Yes. HubSpot reads the same UTM parameters on page views and form submissions, and its own tracking URL builder produces the same format.</p><h3>What happens if the URL already has a query string or #anchor?</h3><p>The tool keeps existing parameters and the anchor, and replaces only UTM parameters you fill in.</p>
+<h2>Related news</h2><ul class="news-list"><li><h3><a href="/news/hubspot-q3-2026-results/">HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</a></h3><div class="meta-line">November 4, 2026</div></li></ul>
+<div class="ad-slot" data-slot="end_content"></div>
+</article>
+<h2>Related tools</h2>
+<div class="cards"><a class="card" href="/qr-code-generator/"><h3>QR Code Generator</h3><p>Make QR codes for links, Wi-Fi and email as PNG or SVG.</p></a><a class="card" href="/og-preview/"><h3>Open Graph Preview</h3><p>See your social link card and fix og:title, og:image and more.</p></a><a class="card" href="/slug-generator/"><h3>URL Slug Generator</h3><p>Turn titles into short, clean, lowercase URL slugs.</p></a><a class="card" href="/meta-length-checker/"><h3>Meta Title and Description Length Checker</h3><p>Measure title tags and meta descriptions in pixels and characters.</p></a></div>
+</main>
+<aside class="side"><div class="side-inner"><p class="side-title">More Marketing tools</p><ul class="side-list"><li><a href="/email-list-cleaner/">Email List Cleaner</a></li><li><a href="/hubspot-seat-cost-calculator/">HubSpot Seat Cost Calculator</a></li><li><a href="/og-preview/">Open Graph Preview</a></li></ul><p class="side-title">Latest news</p><ul class="side-list"><li><a href="/news/google-ai-plus-loses-pro-models/">Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</a></li><li><a href="/news/hubspot-q3-2026-results/">HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</a></li><li><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></li><li><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></li></ul><div class="ad-slot" data-slot="sidebar"></div></div></aside>
+</div></div>
+<footer class="site-foot"><div class="wrap">
+<div class="foot-links">
+<a href="/">All tools</a><a href="/news/">News</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/feed.xml">RSS</a><a href="/news/feed.json">JSON Feed</a><a href="/llms.txt">llms.txt</a>
+</div>
+<nav class="network" aria-label="samcbarth.com sites"><p>More free sites from samcbarth.com</p><ul><li><a href="https://realestate.samcbarth.com/">Real Estate</a></li><li><span aria-current="true">Tools</span></li><li><a href="https://games.samcbarth.com/">Games</a></li><li><a href="https://streaming.samcbarth.com/">Streaming</a></li><li><a href="https://homerepair.samcbarth.com/">Home Repair</a></li><li><a href="https://deals.samcbarth.com/">Deals</a></li><li><a href="https://news.samcbarth.com/">News</a></li></ul></nav>
+<p class="copyright">&copy; 2026 Sam Barth. Every tool here runs in your browser; your input is not uploaded.</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{
+ "slug": "word-counter",
+ "name": "Word and Character Counter",
+ "category": "text",
+ "order": 1,
+ "app_category": "UtilitiesApplication",
+ "title": "Word Counter and Character Counter with Platform Limits",
+ "description": "Count words, characters, sentences and paragraphs, estimate reading time, and see how your text fits limits for meta descriptions, X posts and LinkedIn. Runs in your browser.",
+ "h1": "Word and character counter",
+ "card": "Count words and characters and check common length limits.",
+ "lede": "Paste or type text to get word, character, sentence and paragraph counts, reading time, and how close you are to common length limits.",
+ "keywords": [
+  "word count",
+  "character count",
+  "letter count",
+  "reading time",
+  "limit",
+  "linkedin",
+  "twitter"
+ ],
+ "answer_q": "How do I count words and characters?",
+ "answer": "Paste your text here; words, characters with and without spaces, sentences, paragraphs and reading time update as you type. Emoji and accented letters count as one character each.",
+ "steps": [
+  "Paste or type your text.",
+  "Read the counts at the top.",
+  "Check the bars for the platform you are writing for.",
+  "Use the most used words list to spot repetition.",
+  "Clear and start again with one click."
+ ],
+ "examples": [
+  {
+   "title": "Meta description check",
+   "text": "A 172 character description shows as over by 12 against the 160 character guidance, so trim a clause before publishing."
+  }
+ ],
+ "faq": [
+  {
+   "q": "How is reading time worked out?",
+   "a": "Word count divided by 238 words per minute, a commonly cited average silent reading speed for adults reading non-fiction."
+  },
+  {
+   "q": "Do emoji count as one character?",
+   "a": "Here, yes. Some platforms count certain emoji as two characters, so leave a small margin under hard limits."
+  },
+  {
+   "q": "What counts as a word?",
+   "a": "Runs of letters or numbers, using your browser's word segmenter where available. Hyphenated words and contractions count as one."
+  },
+  {
+   "q": "Is my text stored?",
+   "a": "No. Nothing is saved or sent. Closing the tab clears it."
+  }
+ ],
+ "related": [
+  "case-converter",
+  "meta-length-checker",
+  "slug-generator",
+  "regex-tester"
+ ],
+ "updated": "2026-11-09"
+}

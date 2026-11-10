@@ -1,0 +1,29 @@
+{
+ "title": "HubSpot sets February 2027 shutdown for design manager serverless functions",
+ "date": "2026-11-03",
+ "tags": [
+  "Dev tools",
+  "HubSpot"
+ ],
+ "summary": "HubSpot is retiring serverless functions built in the design manager and Node.js 20 and earlier for workflow custom code actions. Existing design manager functions stop running on February 1, 2027.",
+ "body": [
+  "HubSpot's developer changelog announced on November 3, 2026 that serverless functions built in the design manager, and Node.js 20 and earlier for workflow custom code actions, are being sunset. Node.js 24 is now available for custom code actions.",
+  "From November 3, new design manager serverless functions and new Node.js 20 custom code actions can no longer be created. From November 17, 2026, existing ones can no longer be edited, though they keep running.",
+  "On February 1, 2027, design manager serverless functions stop running and requests to `/_hcms/api/` endpoints fail. HubSpot asks developers to rebuild those functions in developer projects and to move custom code actions to Node.js 24. Projects on older platform versions should be upgraded with `hs project migrate`."
+ ],
+ "why": [
+  "Forms, calculators and lookups on HubSpot CMS sites often call a `/_hcms/api/` function. If one of yours does, it will break on February 1, 2027 unless it is moved.",
+  "Workflow custom code that uses callback-style handlers needs updating and testing on Node.js 24 before the edit freeze makes changes harder."
+ ],
+ "sources": [
+  {
+   "name": "HubSpot Developer Changelog: Sunsetting design manager serverless functions and older Node.js runtimes",
+   "url": "https://developers.hubspot.com/changelog/sunsetting-design-manager-serverless-functions-and-older-node.js-runtimes-for-custom-code-actions"
+  }
+ ],
+ "related_tools": [
+  "json-formatter",
+  "timestamp-converter",
+  "regex-tester"
+ ]
+}

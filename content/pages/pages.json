@@ -1,0 +1,6 @@
+[
+ {"slug": "about", "title": "About Toolbench", "description": "Who builds Toolbench, why every tool runs in your browser, and how the tools and news are checked.", "active": "about"},
+ {"slug": "contact", "title": "Contact", "description": "How to reach Sam Barth about Toolbench: report a bug, suggest a tool, or ask about HubSpot help."},
+ {"slug": "privacy", "title": "Privacy Policy", "description": "What Toolbench collects (analytics and, later, Google ads cookies), what it never collects (anything you enter in a tool), and your choices."},
+ {"slug": "terms", "title": "Terms of Use", "description": "Terms for using the free tools and news on tools.samcbarth.com."}
+]

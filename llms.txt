@@ -1,0 +1,52 @@
+# Toolbench (tools.samcbarth.com)
+
+> Free browser tools for marketers, developers and small business. Every tool runs in the visitor's browser; input is never uploaded. Free, no sign-up.
+
+Built and maintained by Sam Barth, a HubSpot consultant. Each tool page has the tool, an answer-first how-to, examples and an FAQ.
+
+## Marketing
+- [UTM Builder](https://tools.samcbarth.com/utm-builder/): Build clean UTM links for email, social and ads. Adds utm_source, utm_medium and utm_campaign, keeps them lowercase, and warns about mistakes. Runs in your browser.
+- [Email List Cleaner](https://tools.samcbarth.com/email-list-cleaner/): Paste any text or CSV to pull out email addresses, remove duplicates and invalid formats, fix common domain typos like gmial.com, and download a clean list. Runs in your browser.
+- [HubSpot Seat Cost Calculator](https://tools.samcbarth.com/hubspot-seat-cost-calculator/): Estimate HubSpot cost by hub, tier and seat count using the prices on HubSpot's public pricing pages, including required onboarding fees. Last checked November 9, 2026.
+- [Open Graph Preview](https://tools.samcbarth.com/og-preview/): Preview how your page looks as a link card when shared, check og:title, og:description and og:image, and copy ready-made Open Graph tags. Runs in your browser.
+
+## SEO and AI search
+- [Meta Title and Description Length Checker](https://tools.samcbarth.com/meta-length-checker/): Check title tag and meta description length in characters and estimated pixels, and preview the search snippet. Free and runs in your browser.
+- [JSON-LD Schema Generator](https://tools.samcbarth.com/json-ld-schema-generator/): Generate valid JSON-LD structured data for a local business, article or product. Fill in a form, copy the script tag, and paste it into your page. Runs in your browser.
+- [llms.txt Generator](https://tools.samcbarth.com/llms-txt-generator/): Generate an llms.txt file in the proposed llmstxt.org format: site name, summary and sectioned links for AI assistants. Copy or download it. Runs in your browser.
+- [robots.txt and Sitemap Checker](https://tools.samcbarth.com/robots-sitemap-checker/): Test whether a URL is allowed for Googlebot, GPTBot or any user agent under a robots.txt file, and check an XML sitemap for duplicates, relative URLs and bad dates. Runs in your browser.
+- [URL Slug Generator](https://tools.samcbarth.com/slug-generator/): Convert titles into clean, lowercase URL slugs. Strips accents and punctuation, optional stop word removal and length limit, bulk mode. Runs in your browser.
+
+## Data and developer
+- [CSV Cleaner and Deduper](https://tools.samcbarth.com/csv-cleaner/): Clean a CSV in your browser: trim spaces, drop empty rows, remove duplicates by any column (case-insensitive), tidy headers, and download the result. Nothing is uploaded.
+- [CSV to JSON Converter](https://tools.samcbarth.com/csv-json-converter/): Convert CSV to JSON with typed numbers and booleans and optional nested keys, or JSON to CSV with flattened columns. Copy or download. Runs in your browser.
+- [JSON Formatter and Validator](https://tools.samcbarth.com/json-formatter/): Format, validate and minify JSON in your browser. Shows the line and column of syntax errors, can sort keys, and downloads the result. Nothing is uploaded.
+- [Regex Tester](https://tools.samcbarth.com/regex-tester/): Test JavaScript regular expressions with live match highlighting, capture groups, flags and a replace preview. Free and runs in your browser.
+
+## Text and writing
+- [Word and Character Counter](https://tools.samcbarth.com/word-counter/): Count words, characters, sentences and paragraphs, estimate reading time, and see how your text fits limits for meta descriptions, X posts and LinkedIn. Runs in your browser.
+- [Case Converter](https://tools.samcbarth.com/case-converter/): Convert text to Title Case, Sentence case, UPPERCASE, lowercase, camelCase, PascalCase, snake_case, kebab-case or CONSTANT_CASE. Runs in your browser.
+
+## Images and design
+- [Image Compressor and WebP Converter](https://tools.samcbarth.com/image-compressor/): Compress JPG, PNG and WebP images and convert them to WebP, JPEG or PNG in your browser. Resize to a max width, compare before and after, and download. Nothing is uploaded.
+- [Color Contrast Checker](https://tools.samcbarth.com/color-contrast-checker/): Check the contrast ratio between text and background colors against WCAG 2 AA and AAA, preview the text, and get the nearest passing color. Runs in your browser.
+
+## Utilities
+- [QR Code Generator](https://tools.samcbarth.com/qr-code-generator/): Make QR codes for links, text, Wi-Fi logins and email in your browser. Choose colors and error correction, and download PNG or SVG. No sign-up, no tracking redirect.
+- [Password Generator](https://tools.samcbarth.com/password-generator/): Generate strong random passwords or word passphrases with your browser's cryptographic random number generator. Shows entropy in bits. Nothing is sent or stored.
+- [Unix Timestamp Converter](https://tools.samcbarth.com/timestamp-converter/): Convert Unix timestamps in seconds, milliseconds or microseconds to readable dates in UTC and your time zone, and turn any date into a timestamp. Runs in your browser.
+
+## Toolbench Dispatch
+- [Google AI Plus subscribers lose Pro model choice in AI Mode on November 13](https://tools.samcbarth.com/news/google-ai-plus-loses-pro-models/): Starting November 13, 2026, Google AI Plus subscribers can only pick Flash and Flash-Lite models in the Gemini app and in AI Mode in Google Search. Pro model selection moves to the Google AI Pro plan and above.
+- [HubSpot reports Q3 2026 revenue of $947.6 million, up 17%](https://tools.samcbarth.com/news/hubspot-q3-2026-results/): HubSpot's third quarter 2026 revenue was $947.6 million, up 17% year over year, and it ended September with 311,704 customers, according to its results release filed with the SEC.
+- [HubSpot sets February 2027 shutdown for design manager serverless functions](https://tools.samcbarth.com/news/hubspot-sunsets-design-manager-serverless-node20/): HubSpot is retiring serverless functions built in the design manager and Node.js 20 and earlier for workflow custom code actions. Existing design manager functions stop running on February 1, 2027.
+- [Chrome DevTools update adds more tools for AI coding agents](https://tools.samcbarth.com/news/chrome-devtools-november-2026/): Chrome's November 2026 DevTools update, covering Chrome 155 and 156, expands DevTools for agents with CSS style inspection, configuration file support and chunked trace parsing, and adds a visual position-area editor for CSS anchors.
+- [Google's September 2026 spam update finished after nearly two weeks](https://tools.samcbarth.com/news/google-september-2026-spam-update-complete/): Google's September 2026 spam update, its fourth spam update of the year, started September 24 and finished on October 8, 2026, a rollout of almost two weeks.
+- [HubSpot-hosted domains now require TLS 1.2 or newer](https://tools.samcbarth.com/news/hubspot-domains-tls-1-2/): HubSpot automatically raised the minimum TLS version for domains it hosts to TLS 1.2 on October 14, 2026, for accounts that had allowed TLS 1.0 or 1.1. No action was required.
+- [HubSpot Pipelines API v1 shuts off December 4, 2026](https://tools.samcbarth.com/news/hubspot-pipelines-api-v1-sunset/): HubSpot will sunset its Pipelines API v1 on December 4, 2026. Integrations still calling it need to move to a 2026-03 or newer version of the Pipelines API.
+
+## Site
+- [About](https://tools.samcbarth.com/about/)
+- [Privacy Policy](https://tools.samcbarth.com/privacy/)
+- [JSON Feed](https://tools.samcbarth.com/news/feed.json)
+- [RSS](https://tools.samcbarth.com/feed.xml)

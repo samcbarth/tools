@@ -1,0 +1,32 @@
+{
+ "title": "Google's September 2026 spam update finished after nearly two weeks",
+ "date": "2026-10-08",
+ "tags": [
+  "SEO and AI search",
+  "Google"
+ ],
+ "summary": "Google's September 2026 spam update, its fourth spam update of the year, started September 24 and finished on October 8, 2026, a rollout of almost two weeks.",
+ "body": [
+  "Google began rolling out the September 2026 spam update on September 24 and said it applied globally and to all languages. The rollout completed on October 8, 2026.",
+  "Search Engine Land reported the rollout took almost two weeks, while the previous few spam updates took about two days. Google described it as a normal spam update with nothing specifically new."
+ ],
+ "why": [
+  "If your organic traffic dropped between September 24 and October 8, compare the dates in Search Console against this rollout before changing anything else.",
+  "Spam updates target sites that break Google's spam policies. Recovering means fixing the policy problem, then waiting for systems to notice over the following months."
+ ],
+ "sources": [
+  {
+   "name": "Search Engine Land: Google September 2026 spam update done rolling out",
+   "url": "https://searchengineland.com/google-september-2026-spam-update-done-rolling-out-493550"
+  },
+  {
+   "name": "Google Search Status Dashboard: ranking updates",
+   "url": "https://status.search.google.com/products/rGHU1u87FJnkP6W2GwMi/history"
+  }
+ ],
+ "related_tools": [
+  "robots-sitemap-checker",
+  "meta-length-checker",
+  "json-ld-schema-generator"
+ ]
+}

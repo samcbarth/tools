@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regex Tester: Test JavaScript Regular Expressions Online</title>
+<meta name="description" content="Test JavaScript regular expressions with live match highlighting, capture groups, flags and a replace preview. Free and runs in your browser.">
+<link rel="canonical" href="https://tools.samcbarth.com/regex-tester/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Toolbench">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Regex Tester: Test JavaScript Regular Expressions Online">
+<meta property="og:description" content="Test JavaScript regular expressions with live match highlighting, capture groups, flags and a replace preview. Free and runs in your browser.">
+<meta property="og:url" content="https://tools.samcbarth.com/regex-tester/">
+<meta property="og:image" content="https://tools.samcbarth.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e4f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Toolbench Dispatch RSS" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Toolbench Dispatch JSON Feed" href="/news/feed.json">
+<link rel="stylesheet" href="/assets/style.css?v=2d4ed37da8">
+<script>try{var t=localStorage.getItem('tb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Regex Tester",
+ "description": "Test JavaScript regular expressions with live match highlighting, capture groups, flags and a replace preview. Free and runs in your browser.",
+ "url": "https://tools.samcbarth.com/regex-tester/",
+ "applicationCategory": "DeveloperApplication",
+ "operatingSystem": "Any (runs in a web browser)",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Sam Barth",
+  "url": "https://samcbarth.com/"
+ },
+ "dateModified": "2026-11-09"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "Regex Tester: Test JavaScript Regular Expressions Online",
+ "url": "https://tools.samcbarth.com/regex-tester/",
+ "description": "Test JavaScript regular expressions with live match highlighting, capture groups, flags and a replace preview. Free and runs in your browser.",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Toolbench",
+  "url": "https://tools.samcbarth.com/"
+ }
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Toolbench",
+   "item": "https://tools.samcbarth.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Data and developer",
+   "item": "https://tools.samcbarth.com/#data"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Regex Tester"
+  }
+ ]
+}</script>
+<script src="/assets/config.js?v=2d4ed37da8" defer></script>
+<script src="/assets/site.js?v=2d4ed37da8" defer></script>
+<script src="/assets/tools/regex-tester.js?v=2d4ed37da8" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">TB</span>Toolbench</a>
+<nav class="site-nav" aria-label="Main">
+<a href="/" aria-current="page">All tools</a>
+<a href="/news/">News</a>
+<a href="/about/">About</a>
+<button class="theme-btn" type="button">Dark mode</button>
+</nav>
+</div></header>
+<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Toolbench</a></li><li><a href="/#data">Data and developer</a></li><li aria-current="page">Regex Tester</li></ol></nav>
+<div class="layout has-side">
+<main id="main">
+<h1>Regex tester</h1>
+<p class="lede">Type a pattern and some text to see every match highlighted, each capture group in a table, and a live replace preview.</p>
+<p class="privacy-note">Runs entirely in your browser. Nothing you type, paste or open here is uploaded to any server.</p>
+<section class="tool" aria-label="Regex Tester" id="tool">
+<div class="row two">
+<div><label for="x-pat">Pattern <span class="hint">(JavaScript syntax, no slashes)</span></label><input id="x-pat" type="text" class="mono" value="(\w+)@([\w.-]+\.\w+)"></div>
+<div><label for="x-flags">Flags</label>
+<div class="checks" id="x-flags" style="margin:6px 0 0">
+<label class="check"><input type="checkbox" value="g" checked> g global</label>
+<label class="check"><input type="checkbox" value="i"> i ignore case</label>
+<label class="check"><input type="checkbox" value="m"> m multiline</label>
+<label class="check"><input type="checkbox" value="s"> s dot matches newline</label>
+<label class="check"><input type="checkbox" value="u"> u unicode</label>
+</div></div>
+</div>
+<div class="field"><label for="x-text">Test text</label>
+<textarea id="x-text" class="mono">Contact jane@acme.com or bob.smith@mail.globex.io for access.
+Invalid: someone@ and @nowhere.com</textarea></div>
+<div id="x-status" class="status"></div>
+<label>Matches highlighted</label>
+<div id="x-hl" class="out" style="font-family:var(--mono)"></div>
+<div class="table-wrap" id="x-table"></div>
+<div class="field"><label for="x-rep">Replace with <span class="hint">($1, $2 for groups, $&amp; for the whole match)</span></label><input id="x-rep" type="text" class="mono" value="[$1 at $2]"></div>
+<label>Replace result</label>
+<div id="x-repout" class="out"></div>
+<div class="btns"><button class="btn secondary" id="x-copy" type="button">Copy as /regex/flags</button></div>
+
+</section>
+<article class="prose">
+<h2>How do I test a regular expression?</h2>
+<p class="answer">Run the pattern against sample text that includes cases it should match and cases it should not, then check each match and capture group. Type both here and the matches update as you type.</p>
+<ol><li>Type the pattern without the surrounding slashes.</li><li>Tick flags: g for all matches, i to ignore case, m for line anchors, s so dot matches newlines.</li><li>Paste test text with good and bad examples.</li><li>Check highlights and the groups table.</li><li>Try a replacement using $1, $2 for groups.</li></ol>
+<div class="ad-slot" data-slot="after_intro"></div>
+<h2>Examples</h2>
+<h3>Pull the domain from emails</h3><p><strong>Input</strong></p><pre>Pattern: (\w+)@([\w.-]+\.\w+)
+Text: Contact jane@acme.com</pre><p><strong>Result</strong></p><pre>Match: jane@acme.com
+Group 1: jane
+Group 2: acme.com</pre><h3>Reformat dates</h3><p><strong>Input</strong></p><pre>Pattern: (\d{4})-(\d{2})-(\d{2})
+Replace: $2/$3/$1
+Text: 2026-11-09</pre><p><strong>Result</strong></p><pre>11/09/2026</pre>
+
+<div class="ad-slot" data-slot="mid_content"></div>
+<h2>Frequently asked questions</h2>
+<h3>Which regex flavor is this?</h3><p>JavaScript (ECMAScript), as run by your browser. Most syntax is shared with Python, PHP and Java, but lookbehind support and named group syntax can differ.</p><h3>Why does my pattern only find one match?</h3><p>Turn on the g flag. Without it, a regex stops after the first match.</p><h3>How do I match a literal dot or bracket?</h3><p>Escape it with a backslash, like <code>\.</code> or <code>\[</code>.</p><h3>Can a bad regex freeze the page?</h3><p>Some patterns with nested repeats take a very long time on certain text. The tool stops after 5,000 matches, but rewrite patterns like <code>(a+)+</code> if the page slows down.</p>
+<h2>Related news</h2><ul class="news-list"><li><h3><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></h3><div class="meta-line">November 3, 2026</div></li><li><h3><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></h3><div class="meta-line">October 20, 2026</div></li></ul>
+<div class="ad-slot" data-slot="end_content"></div>
+</article>
+<h2>Related tools</h2>
+<div class="cards"><a class="card" href="/json-formatter/"><h3>JSON Formatter and Validator</h3><p>Pretty print, validate and minify JSON with clear error positions.</p></a><a class="card" href="/csv-cleaner/"><h3>CSV Cleaner and Deduper</h3><p>Trim, dedupe and drop blank rows from a CSV without uploading it.</p></a><a class="card" href="/robots-sitemap-checker/"><h3>robots.txt and Sitemap Checker</h3><p>Test robots.txt rules for any bot and validate XML sitemaps.</p></a><a class="card" href="/case-converter/"><h3>Case Converter</h3><p>Switch text between title, sentence, camel, snake and more.</p></a></div>
+</main>
+<aside class="side"><div class="side-inner"><p class="side-title">More Data and developer tools</p><ul class="side-list"><li><a href="/csv-cleaner/">CSV Cleaner and Deduper</a></li><li><a href="/csv-json-converter/">CSV to JSON Converter</a></li><li><a href="/json-formatter/">JSON Formatter and Validator</a></li></ul><p class="side-title">Latest news</p><ul class="side-list"><li><a href="/news/google-ai-plus-loses-pro-models/">Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</a></li><li><a href="/news/hubspot-q3-2026-results/">HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</a></li><li><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></li><li><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></li></ul><div class="ad-slot" data-slot="sidebar"></div></div></aside>
+</div></div>
+<footer class="site-foot"><div class="wrap">
+<div class="foot-links">
+<a href="/">All tools</a><a href="/news/">News</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/feed.xml">RSS</a><a href="/news/feed.json">JSON Feed</a><a href="/llms.txt">llms.txt</a>
+</div>
+<nav class="network" aria-label="samcbarth.com sites"><p>More free sites from samcbarth.com</p><ul><li><a href="https://realestate.samcbarth.com/">Real Estate</a></li><li><span aria-current="true">Tools</span></li><li><a href="https://games.samcbarth.com/">Games</a></li><li><a href="https://streaming.samcbarth.com/">Streaming</a></li><li><a href="https://homerepair.samcbarth.com/">Home Repair</a></li><li><a href="https://deals.samcbarth.com/">Deals</a></li><li><a href="https://news.samcbarth.com/">News</a></li></ul></nav>
+<p class="copyright">&copy; 2026 Sam Barth. Every tool here runs in your browser; your input is not uploaded.</p>
+</div></footer>
+</body>
+</html>

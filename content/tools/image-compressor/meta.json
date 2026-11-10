@@ -1,0 +1,60 @@
+{
+ "slug": "image-compressor",
+ "name": "Image Compressor and WebP Converter",
+ "category": "images",
+ "order": 1,
+ "app_category": "MultimediaApplication",
+ "title": "Image Compressor and WebP Converter (No Upload)",
+ "description": "Compress JPG, PNG and WebP images and convert them to WebP, JPEG or PNG in your browser. Resize to a max width, compare before and after, and download. Nothing is uploaded.",
+ "h1": "Image compressor and WebP converter",
+ "card": "Shrink images and convert to WebP without uploading them.",
+ "lede": "Drop in one or more images, pick WebP or JPEG and a quality, and download smaller files. Your images never leave your device.",
+ "keywords": [
+  "compress image",
+  "webp converter",
+  "jpg to webp",
+  "png to webp",
+  "resize image",
+  "image optimizer"
+ ],
+ "answer_q": "How do I compress an image for the web?",
+ "answer": "Resize it to the largest width it will be shown at, then save it as WebP at around 75 to 85 quality. Drop the image here, keep the defaults, and download the smaller file.",
+ "steps": [
+  "Drop images onto the box or click to choose them.",
+  "Pick WebP for most web use, JPEG for older systems, or PNG for lossless graphics.",
+  "Set quality; 80 is a good start.",
+  "Set a max width, for example 1600 for full-width images or 800 for blog inline images.",
+  "Compare the before and after, then download."
+ ],
+ "examples": [
+  {
+   "title": "Phone photo for a blog post",
+   "text": "A 4032 x 3024 phone photo resized to 1600 pixels wide and saved as WebP at quality 80 is usually a small fraction of the original size. The tool shows the exact saving for your file."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Are my images uploaded?",
+   "a": "No. The browser's canvas does the resizing and encoding on your device."
+  },
+  {
+   "q": "Why did my PNG get bigger?",
+   "a": "PNG is lossless, so re-saving a photo as PNG can grow it. Use WebP or JPEG for photos and keep PNG for logos and screenshots with flat colors."
+  },
+  {
+   "q": "Does it keep EXIF data like location?",
+   "a": "No. Re-encoding through a canvas drops EXIF metadata, including GPS location, which is usually what you want for web images."
+  },
+  {
+   "q": "Do all browsers support WebP?",
+   "a": "All current major browsers display WebP. Saving to WebP depends on your browser's encoder; if it is missing, the tool tells you and you can pick JPEG."
+  }
+ ],
+ "related": [
+  "og-preview",
+  "color-contrast-checker",
+  "qr-code-generator",
+  "meta-length-checker"
+ ],
+ "updated": "2026-11-09"
+}

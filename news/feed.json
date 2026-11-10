@@ -1,0 +1,117 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Toolbench Dispatch",
+  "home_page_url": "https://tools.samcbarth.com/news/",
+  "feed_url": "https://tools.samcbarth.com/news/feed.json",
+  "description": "Marketing tech, SEO and AI search, and developer tools news from tools.samcbarth.com.",
+  "icon": "https://tools.samcbarth.com/assets/og.png",
+  "favicon": "https://tools.samcbarth.com/assets/favicon.svg",
+  "language": "en-US",
+  "authors": [
+    {
+      "name": "Sam Barth",
+      "url": "https://samcbarth.com/"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://tools.samcbarth.com/news/google-ai-plus-loses-pro-models/",
+      "url": "https://tools.samcbarth.com/news/google-ai-plus-loses-pro-models/",
+      "title": "Google AI Plus subscribers lose Pro model choice in AI Mode on November 13",
+      "summary": "Starting November 13, 2026, Google AI Plus subscribers can only pick Flash and Flash-Lite models in the Gemini app and in AI Mode in Google Search. Pro model selection moves to the Google AI Pro plan and above.",
+      "content_text": "Starting November 13, 2026, Google AI Plus subscribers can only pick Flash and Flash-Lite models in the Gemini app and in AI Mode in Google Search. Pro model selection moves to the Google AI Pro plan and above.\n\nNotebookcheck reported that Google is removing Pro model access from its Google AI Plus subscription from November 13, 2026.\n\nAfter the change, AI Plus subscribers can choose Flash and Flash-Lite in the Gemini app and in AI Mode in Google Search. Picking a Pro model will need Google AI Pro, which the report lists at $19.99 a month, or a higher plan.",
+      "date_published": "2026-11-08T12:00:00Z",
+      "image": "https://tools.samcbarth.com/assets/og.png",
+      "tags": [
+        "SEO and AI search",
+        "Google"
+      ],
+      "external_url": "https://www.notebookcheck.net/Google-AI-Plus-loses-Gemini-Pro-models-on-November-13.1445681.0.html"
+    },
+    {
+      "id": "https://tools.samcbarth.com/news/hubspot-q3-2026-results/",
+      "url": "https://tools.samcbarth.com/news/hubspot-q3-2026-results/",
+      "title": "HubSpot reports Q3 2026 revenue of $947.6 million, up 17%",
+      "summary": "HubSpot's third quarter 2026 revenue was $947.6 million, up 17% year over year, and it ended September with 311,704 customers, according to its results release filed with the SEC.",
+      "content_text": "HubSpot's third quarter 2026 revenue was $947.6 million, up 17% year over year, and it ended September with 311,704 customers, according to its results release filed with the SEC.\n\nHubSpot published its third quarter 2026 results on November 4, 2026. Total revenue was $947.6 million, up 17% both as reported and in constant currency. Subscription revenue was $930.2 million.\n\nThe company ended the quarter on September 30, 2026 with 311,704 customers. Average subscription revenue per customer was $12,038.\n\nFor the fourth quarter, HubSpot guided to revenue of $945.0 million to $947.0 million.",
+      "date_published": "2026-11-04T12:00:00Z",
+      "image": "https://tools.samcbarth.com/assets/og.png",
+      "tags": [
+        "Marketing tech",
+        "HubSpot"
+      ],
+      "external_url": "https://www.sec.gov/Archives/edgar/data/1404655/000119312526447249/hubs-ex99_1.htm"
+    },
+    {
+      "id": "https://tools.samcbarth.com/news/hubspot-sunsets-design-manager-serverless-node20/",
+      "url": "https://tools.samcbarth.com/news/hubspot-sunsets-design-manager-serverless-node20/",
+      "title": "HubSpot sets February 2027 shutdown for design manager serverless functions",
+      "summary": "HubSpot is retiring serverless functions built in the design manager and Node.js 20 and earlier for workflow custom code actions. Existing design manager functions stop running on February 1, 2027.",
+      "content_text": "HubSpot is retiring serverless functions built in the design manager and Node.js 20 and earlier for workflow custom code actions. Existing design manager functions stop running on February 1, 2027.\n\nHubSpot's developer changelog announced on November 3, 2026 that serverless functions built in the design manager, and Node.js 20 and earlier for workflow custom code actions, are being sunset. Node.js 24 is now available for custom code actions.\n\nFrom November 3, new design manager serverless functions and new Node.js 20 custom code actions can no longer be created. From November 17, 2026, existing ones can no longer be edited, though they keep running.\n\nOn February 1, 2027, design manager serverless functions stop running and requests to `/_hcms/api/` endpoints fail. HubSpot asks developers to rebuild those functions in developer projects and to move custom code actions to Node.js 24. Projects on older platform versions should be upgraded with `hs project migrate`.",
+      "date_published": "2026-11-03T12:00:00Z",
+      "image": "https://tools.samcbarth.com/assets/og.png",
+      "tags": [
+        "Dev tools",
+        "HubSpot"
+      ],
+      "external_url": "https://developers.hubspot.com/changelog/sunsetting-design-manager-serverless-functions-and-older-node.js-runtimes-for-custom-code-actions"
+    },
+    {
+      "id": "https://tools.samcbarth.com/news/chrome-devtools-november-2026/",
+      "url": "https://tools.samcbarth.com/news/chrome-devtools-november-2026/",
+      "title": "Chrome DevTools update adds more tools for AI coding agents",
+      "summary": "Chrome's November 2026 DevTools update, covering Chrome 155 and 156, expands DevTools for agents with CSS style inspection, configuration file support and chunked trace parsing, and adds a visual position-area editor for CSS anchors.",
+      "content_text": "Chrome's November 2026 DevTools update, covering Chrome 155 and 156, expands DevTools for agents with CSS style inspection, configuration file support and chunked trace parsing, and adds a visual position-area editor for CSS anchors.\n\nThe Chrome for Developers blog published its \"New in DevTools\" round-up for November 2026 on October 20, covering Chrome 155 and 156.\n\nDevTools for agents, the MCP server that lets coding agents drive DevTools, gains CSS style inspection, configuration file support, and chunked trace parsing for large performance traces.\n\nFor people using DevTools directly, the Elements panel gets a visual editor for the CSS anchor `position-area` property, and the Application panel adds diagnostics for Web Install manifests.",
+      "date_published": "2026-10-20T12:00:00Z",
+      "image": "https://tools.samcbarth.com/assets/og.png",
+      "tags": [
+        "Dev tools",
+        "Chrome"
+      ],
+      "external_url": "https://developer.chrome.com/blog/new-in-devtools-november-2026"
+    },
+    {
+      "id": "https://tools.samcbarth.com/news/google-september-2026-spam-update-complete/",
+      "url": "https://tools.samcbarth.com/news/google-september-2026-spam-update-complete/",
+      "title": "Google's September 2026 spam update finished after nearly two weeks",
+      "summary": "Google's September 2026 spam update, its fourth spam update of the year, started September 24 and finished on October 8, 2026, a rollout of almost two weeks.",
+      "content_text": "Google's September 2026 spam update, its fourth spam update of the year, started September 24 and finished on October 8, 2026, a rollout of almost two weeks.\n\nGoogle began rolling out the September 2026 spam update on September 24 and said it applied globally and to all languages. The rollout completed on October 8, 2026.\n\nSearch Engine Land reported the rollout took almost two weeks, while the previous few spam updates took about two days. Google described it as a normal spam update with nothing specifically new.",
+      "date_published": "2026-10-08T12:00:00Z",
+      "image": "https://tools.samcbarth.com/assets/og.png",
+      "tags": [
+        "SEO and AI search",
+        "Google"
+      ],
+      "external_url": "https://searchengineland.com/google-september-2026-spam-update-done-rolling-out-493550"
+    },
+    {
+      "id": "https://tools.samcbarth.com/news/hubspot-domains-tls-1-2/",
+      "url": "https://tools.samcbarth.com/news/hubspot-domains-tls-1-2/",
+      "title": "HubSpot-hosted domains now require TLS 1.2 or newer",
+      "summary": "HubSpot automatically raised the minimum TLS version for domains it hosts to TLS 1.2 on October 14, 2026, for accounts that had allowed TLS 1.0 or 1.1. No action was required.",
+      "content_text": "HubSpot automatically raised the minimum TLS version for domains it hosts to TLS 1.2 on October 14, 2026, for accounts that had allowed TLS 1.0 or 1.1. No action was required.\n\nHubSpot posted on October 6, 2026 that domain security settings would move to a minimum of TLS 1.2. The change went live on October 14, 2026.\n\nIt affects accounts that had set the minimum TLS version for HubSpot-hosted domains to 1.0 or 1.1. HubSpot said the update is automatic and needs no action.",
+      "date_published": "2026-10-06T12:00:00Z",
+      "image": "https://tools.samcbarth.com/assets/og.png",
+      "tags": [
+        "Marketing tech",
+        "HubSpot",
+        "Security"
+      ],
+      "external_url": "https://developers.hubspot.com/changelog/upcoming-automatic-update-hubspot-domain-security-settings-to-tls-1.2"
+    },
+    {
+      "id": "https://tools.samcbarth.com/news/hubspot-pipelines-api-v1-sunset/",
+      "url": "https://tools.samcbarth.com/news/hubspot-pipelines-api-v1-sunset/",
+      "title": "HubSpot Pipelines API v1 shuts off December 4, 2026",
+      "summary": "HubSpot will sunset its Pipelines API v1 on December 4, 2026. Integrations still calling it need to move to a 2026-03 or newer version of the Pipelines API.",
+      "content_text": "HubSpot will sunset its Pipelines API v1 on December 4, 2026. Integrations still calling it need to move to a 2026-03 or newer version of the Pipelines API.\n\nHubSpot announced on August 14, 2026 that the Pipelines API v1 will be sunset on December 4, 2026.\n\nHubSpot recommends migrating to the Pipelines API 2026-09 version, auditing code for any v1 pipeline calls, and finishing the move well before the deadline. Versions 2026-03 and newer are supported.",
+      "date_published": "2026-08-14T12:00:00Z",
+      "image": "https://tools.samcbarth.com/assets/og.png",
+      "tags": [
+        "Dev tools",
+        "HubSpot"
+      ],
+      "external_url": "https://developers.hubspot.com/changelog/pipelines-api-v1-sunset"
+    }
+  ]
+}

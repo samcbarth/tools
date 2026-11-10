@@ -28,7 +28,17 @@ NEWS_NAME = "Toolbench Dispatch"
 TAGLINE = "Free browser tools for marketers, developers and small business"
 AUTHOR = "Sam Barth"
 BUILD_DATE = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-ASSET_V = datetime.now(timezone.utc).strftime("%Y%m%d%H%M")
+def _asset_version():
+    """Cache-busting token that only changes when a file under assets/ changes."""
+    import hashlib
+    h = hashlib.sha1()
+    for f in sorted((ROOT / "assets").rglob("*")):
+        if f.is_file() and f.name != "og.png":
+            h.update(f.read_bytes())
+    return h.hexdigest()[:10]
+
+
+ASSET_V = _asset_version()
 
 GTM = '''<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
 <script>

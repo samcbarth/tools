@@ -1,0 +1,65 @@
+{
+ "slug": "csv-json-converter",
+ "name": "CSV to JSON Converter",
+ "category": "data",
+ "order": 2,
+ "app_category": "DeveloperApplication",
+ "title": "CSV to JSON Converter (and JSON to CSV), Free and Private",
+ "description": "Convert CSV to JSON with typed numbers and booleans and optional nested keys, or JSON to CSV with flattened columns. Copy or download. Runs in your browser.",
+ "h1": "CSV to JSON and JSON to CSV converter",
+ "card": "Convert CSV to JSON and back, with types and nested keys.",
+ "lede": "Paste CSV to get a JSON array of objects, or switch direction to turn JSON into a CSV with one column per key.",
+ "keywords": [
+  "csv to json",
+  "json to csv",
+  "convert",
+  "api",
+  "spreadsheet",
+  "export"
+ ],
+ "answer_q": "How do I convert CSV to JSON?",
+ "answer": "Treat the first row as keys and turn each following row into an object with those keys. Paste your CSV here and the JSON appears on the right, with numbers and true or false converted to real types.",
+ "steps": [
+  "Choose CSV to JSON or JSON to CSV.",
+  "Paste your data or open a file.",
+  "Set options: typed values, dot-key nesting, or flattening.",
+  "Copy or download the output.",
+  "Use Use output as input to round-trip and check the data."
+ ],
+ "examples": [
+  {
+   "title": "CSV to JSON",
+   "input": "name,seats,active\nAcme,5,true",
+   "output": "[\n  {\n    \"name\": \"Acme\",\n    \"seats\": 5,\n    \"active\": true\n  }\n]"
+  },
+  {
+   "title": "Nested keys",
+   "text": "With nesting on, a header named `address.city` becomes `{\"address\": {\"city\": ...}}`. In the other direction, flattening turns nested objects back into dot columns."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does it handle commas inside quotes?",
+   "a": "Yes. The parser follows the common CSV rules: quoted fields can hold commas, line breaks and doubled quotes."
+  },
+  {
+   "q": "Why did a ZIP code lose its leading zero?",
+   "a": "Values with a leading zero, like 01234, stay as text. Turn off Convert numbers if other ID columns must stay exactly as typed."
+  },
+  {
+   "q": "What JSON shapes can I convert to CSV?",
+   "a": "An array of objects works best. An object holding one array is also accepted. Arrays inside a record are written into one cell as JSON text."
+  },
+  {
+   "q": "Is my data uploaded?",
+   "a": "No. The conversion runs in your browser."
+  }
+ ],
+ "related": [
+  "json-formatter",
+  "csv-cleaner",
+  "email-list-cleaner",
+  "regex-tester"
+ ],
+ "updated": "2026-11-09"
+}

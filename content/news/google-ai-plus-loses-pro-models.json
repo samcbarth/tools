@@ -1,0 +1,28 @@
+{
+ "title": "Google AI Plus subscribers lose Pro model choice in AI Mode on November 13",
+ "date": "2026-11-08",
+ "tags": [
+  "SEO and AI search",
+  "Google"
+ ],
+ "summary": "Starting November 13, 2026, Google AI Plus subscribers can only pick Flash and Flash-Lite models in the Gemini app and in AI Mode in Google Search. Pro model selection moves to the Google AI Pro plan and above.",
+ "body": [
+  "Notebookcheck reported that Google is removing Pro model access from its Google AI Plus subscription from November 13, 2026.",
+  "After the change, AI Plus subscribers can choose Flash and Flash-Lite in the Gemini app and in AI Mode in Google Search. Picking a Pro model will need Google AI Pro, which the report lists at $19.99 a month, or a higher plan."
+ ],
+ "why": [
+  "AI Mode answers depend on the model behind them. Fewer people choosing the Pro models in AI Mode could change how long and detailed some answers are, and which sources get cited.",
+  "For AI search visibility, the basics still apply: clear, answer-first pages, accurate structured data, and an [llms.txt file](/llms-txt-generator/) that points to your best content."
+ ],
+ "sources": [
+  {
+   "name": "Notebookcheck: Google AI Plus loses Gemini Pro models on November 13",
+   "url": "https://www.notebookcheck.net/Google-AI-Plus-loses-Gemini-Pro-models-on-November-13.1445681.0.html"
+  }
+ ],
+ "related_tools": [
+  "llms-txt-generator",
+  "json-ld-schema-generator",
+  "meta-length-checker"
+ ]
+}

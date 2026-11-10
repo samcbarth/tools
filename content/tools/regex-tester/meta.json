@@ -1,0 +1,67 @@
+{
+ "slug": "regex-tester",
+ "name": "Regex Tester",
+ "category": "data",
+ "order": 4,
+ "app_category": "DeveloperApplication",
+ "title": "Regex Tester: Test JavaScript Regular Expressions Online",
+ "description": "Test JavaScript regular expressions with live match highlighting, capture groups, flags and a replace preview. Free and runs in your browser.",
+ "h1": "Regex tester",
+ "card": "Test regular expressions with highlights, groups and replace.",
+ "lede": "Type a pattern and some text to see every match highlighted, each capture group in a table, and a live replace preview.",
+ "keywords": [
+  "regex",
+  "regular expression",
+  "regexp",
+  "pattern",
+  "javascript",
+  "match",
+  "replace"
+ ],
+ "answer_q": "How do I test a regular expression?",
+ "answer": "Run the pattern against sample text that includes cases it should match and cases it should not, then check each match and capture group. Type both here and the matches update as you type.",
+ "steps": [
+  "Type the pattern without the surrounding slashes.",
+  "Tick flags: g for all matches, i to ignore case, m for line anchors, s so dot matches newlines.",
+  "Paste test text with good and bad examples.",
+  "Check highlights and the groups table.",
+  "Try a replacement using $1, $2 for groups."
+ ],
+ "examples": [
+  {
+   "title": "Pull the domain from emails",
+   "input": "Pattern: (\\w+)@([\\w.-]+\\.\\w+)\nText: Contact jane@acme.com",
+   "output": "Match: jane@acme.com\nGroup 1: jane\nGroup 2: acme.com"
+  },
+  {
+   "title": "Reformat dates",
+   "input": "Pattern: (\\d{4})-(\\d{2})-(\\d{2})\nReplace: $2/$3/$1\nText: 2026-11-09",
+   "output": "11/09/2026"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Which regex flavor is this?",
+   "a": "JavaScript (ECMAScript), as run by your browser. Most syntax is shared with Python, PHP and Java, but lookbehind support and named group syntax can differ."
+  },
+  {
+   "q": "Why does my pattern only find one match?",
+   "a": "Turn on the g flag. Without it, a regex stops after the first match."
+  },
+  {
+   "q": "How do I match a literal dot or bracket?",
+   "a": "Escape it with a backslash, like `\\.` or `\\[`."
+  },
+  {
+   "q": "Can a bad regex freeze the page?",
+   "a": "Some patterns with nested repeats take a very long time on certain text. The tool stops after 5,000 matches, but rewrite patterns like `(a+)+` if the page slows down."
+  }
+ ],
+ "related": [
+  "json-formatter",
+  "csv-cleaner",
+  "robots-sitemap-checker",
+  "case-converter"
+ ],
+ "updated": "2026-11-09"
+}

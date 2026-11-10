@@ -1,0 +1,61 @@
+{
+ "slug": "llms-txt-generator",
+ "name": "llms.txt Generator",
+ "category": "seo",
+ "order": 3,
+ "app_category": "DeveloperApplication",
+ "title": "llms.txt Generator: Create an llms.txt File for AI Search",
+ "description": "Generate an llms.txt file in the proposed llmstxt.org format: site name, summary and sectioned links for AI assistants. Copy or download it. Runs in your browser.",
+ "h1": "llms.txt generator",
+ "card": "Write an llms.txt file that points AI assistants to your key pages.",
+ "lede": "Enter your site name, a one-line summary and your key pages grouped by section, and get an llms.txt file in the proposed format.",
+ "keywords": [
+  "llms.txt",
+  "ai search",
+  "aeo",
+  "geo",
+  "chatgpt",
+  "llm",
+  "ai crawler"
+ ],
+ "answer_q": "What is an llms.txt file and how do I make one?",
+ "answer": "llms.txt is a proposed plain Markdown file at your site root that gives AI tools a short summary of your site and links to its most useful pages. Fill in this form and upload the result so it loads at yoursite.com/llms.txt.",
+ "steps": [
+  "Enter your site name and URL.",
+  "Write a one-sentence summary of what the site or business does.",
+  "List your key pages, one per line, as Title | URL | note, with ## lines for section names.",
+  "Put nice-to-have pages under a section called Optional.",
+  "Download the file and upload it to your site root."
+ ],
+ "examples": [
+  {
+   "title": "Output",
+   "output": "# Acme Plumbing\n\n> Licensed plumbers serving Oklahoma City since 1998.\n\n## Services\n- [Water heater installation](https://acmeplumbing.com/services/water-heaters): Tank and tankless\n\n## Optional\n- [Blog](https://acmeplumbing.com/blog)"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Do AI search engines use llms.txt?",
+   "a": "It is a community proposal published at llmstxt.org, not an official standard, and AI companies have not all said they read it. It is cheap to add and harmless, which is why many sites publish one."
+  },
+  {
+   "q": "Is llms.txt the same as robots.txt?",
+   "a": "No. robots.txt tells crawlers what they may fetch. llms.txt is a reading guide that points to good content. Blocking AI crawlers is still done in robots.txt."
+  },
+  {
+   "q": "Where do I put the file?",
+   "a": "At the root of your domain so it loads at `/llms.txt`. In HubSpot you can host it through a URL redirect to a file in the file manager, or a template set to plain text."
+  },
+  {
+   "q": "What does the Optional section mean?",
+   "a": "The proposal says links under a section named Optional can be skipped when a tool needs a shorter context."
+  }
+ ],
+ "related": [
+  "robots-sitemap-checker",
+  "json-ld-schema-generator",
+  "meta-length-checker",
+  "slug-generator"
+ ],
+ "updated": "2026-11-09"
+}

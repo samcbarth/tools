@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Toolbench Dispatch</title>
+  <link>https://tools.samcbarth.com/news/</link>
+  <atom:link href="https://tools.samcbarth.com/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Marketing tech, SEO and AI search, and developer tools news from Toolbench.</description>
+  <language>en-us</language>
+  <lastBuildDate>Tue, 10 Nov 2026 02:02:05 +0000</lastBuildDate>
+  <item>
+    <title>Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</title>
+    <link>https://tools.samcbarth.com/news/google-ai-plus-loses-pro-models/</link>
+    <guid isPermaLink="true">https://tools.samcbarth.com/news/google-ai-plus-loses-pro-models/</guid>
+    <pubDate>Sun, 08 Nov 2026 12:00:00 +0000</pubDate>
+    <description>Starting November 13, 2026, Google AI Plus subscribers can only pick Flash and Flash-Lite models in the Gemini app and in AI Mode in Google Search. Pro model selection moves to the Google AI Pro plan and above.</description>
+    <category>SEO and AI search</category><category>Google</category>
+  </item>
+  <item>
+    <title>HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</title>
+    <link>https://tools.samcbarth.com/news/hubspot-q3-2026-results/</link>
+    <guid isPermaLink="true">https://tools.samcbarth.com/news/hubspot-q3-2026-results/</guid>
+    <pubDate>Wed, 04 Nov 2026 12:00:00 +0000</pubDate>
+    <description>HubSpot&#x27;s third quarter 2026 revenue was $947.6 million, up 17% year over year, and it ended September with 311,704 customers, according to its results release filed with the SEC.</description>
+    <category>Marketing tech</category><category>HubSpot</category>
+  </item>
+  <item>
+    <title>HubSpot sets February 2027 shutdown for design manager serverless functions</title>
+    <link>https://tools.samcbarth.com/news/hubspot-sunsets-design-manager-serverless-node20/</link>
+    <guid isPermaLink="true">https://tools.samcbarth.com/news/hubspot-sunsets-design-manager-serverless-node20/</guid>
+    <pubDate>Tue, 03 Nov 2026 12:00:00 +0000</pubDate>
+    <description>HubSpot is retiring serverless functions built in the design manager and Node.js 20 and earlier for workflow custom code actions. Existing design manager functions stop running on February 1, 2027.</description>
+    <category>Dev tools</category><category>HubSpot</category>
+  </item>
+  <item>
+    <title>Chrome DevTools update adds more tools for AI coding agents</title>
+    <link>https://tools.samcbarth.com/news/chrome-devtools-november-2026/</link>
+    <guid isPermaLink="true">https://tools.samcbarth.com/news/chrome-devtools-november-2026/</guid>
+    <pubDate>Tue, 20 Oct 2026 12:00:00 +0000</pubDate>
+    <description>Chrome&#x27;s November 2026 DevTools update, covering Chrome 155 and 156, expands DevTools for agents with CSS style inspection, configuration file support and chunked trace parsing, and adds a visual position-area editor for CSS anchors.</description>
+    <category>Dev tools</category><category>Chrome</category>
+  </item>
+  <item>
+    <title>Google&#x27;s September 2026 spam update finished after nearly two weeks</title>
+    <link>https://tools.samcbarth.com/news/google-september-2026-spam-update-complete/</link>
+    <guid isPermaLink="true">https://tools.samcbarth.com/news/google-september-2026-spam-update-complete/</guid>
+    <pubDate>Thu, 08 Oct 2026 12:00:00 +0000</pubDate>
+    <description>Google&#x27;s September 2026 spam update, its fourth spam update of the year, started September 24 and finished on October 8, 2026, a rollout of almost two weeks.</description>
+    <category>SEO and AI search</category><category>Google</category>
+  </item>
+  <item>
+    <title>HubSpot-hosted domains now require TLS 1.2 or newer</title>
+    <link>https://tools.samcbarth.com/news/hubspot-domains-tls-1-2/</link>
+    <guid isPermaLink="true">https://tools.samcbarth.com/news/hubspot-domains-tls-1-2/</guid>
+    <pubDate>Tue, 06 Oct 2026 12:00:00 +0000</pubDate>
+    <description>HubSpot automatically raised the minimum TLS version for domains it hosts to TLS 1.2 on October 14, 2026, for accounts that had allowed TLS 1.0 or 1.1. No action was required.</description>
+    <category>Marketing tech</category><category>HubSpot</category><category>Security</category>
+  </item>
+  <item>
+    <title>HubSpot Pipelines API v1 shuts off December 4, 2026</title>
+    <link>https://tools.samcbarth.com/news/hubspot-pipelines-api-v1-sunset/</link>
+    <guid isPermaLink="true">https://tools.samcbarth.com/news/hubspot-pipelines-api-v1-sunset/</guid>
+    <pubDate>Fri, 14 Aug 2026 12:00:00 +0000</pubDate>
+    <description>HubSpot will sunset its Pipelines API v1 on December 4, 2026. Integrations still calling it need to move to a 2026-03 or newer version of the Pipelines API.</description>
+    <category>Dev tools</category><category>HubSpot</category>
+  </item>
+</channel>
+</rss>

@@ -1,0 +1,61 @@
+{
+ "slug": "og-preview",
+ "name": "Open Graph Preview",
+ "category": "marketing",
+ "order": 4,
+ "app_category": "DeveloperApplication",
+ "title": "Open Graph Preview: Check Link Cards Before You Share",
+ "description": "Preview how your page looks as a link card when shared, check og:title, og:description and og:image, and copy ready-made Open Graph tags. Runs in your browser.",
+ "h1": "Open Graph preview and tag checker",
+ "card": "See your social link card and fix og:title, og:image and more.",
+ "lede": "Type your Open Graph tags or paste a page's HTML to see a large and small link card, with checks on length and image size.",
+ "keywords": [
+  "open graph",
+  "og image",
+  "og:title",
+  "social preview",
+  "link preview",
+  "twitter card",
+  "meta tags"
+ ],
+ "answer_q": "How do I check my Open Graph tags?",
+ "answer": "Paste your page's HTML head here, or type the tags, and the tool shows the link card plus warnings for missing or oversized values. A good card has an og:title under about 70 characters, a 1200 x 630 pixel og:image, and an absolute og:url.",
+ "steps": [
+  "Choose Paste page HTML and paste the source of your page, or type the values directly.",
+  "Look at the large and small card previews.",
+  "Fix anything marked Fix or Check in the list.",
+  "Copy the generated tags into your page's head.",
+  "After publishing, re-scrape the URL in each platform's own debugger so it drops its cached card."
+ ],
+ "examples": [
+  {
+   "title": "Minimal tag set",
+   "output": "<meta property=\"og:title\" content=\"Free UTM Builder\">\n<meta property=\"og:description\" content=\"Build clean UTM links.\">\n<meta property=\"og:url\" content=\"https://example.com/utm-builder/\">\n<meta property=\"og:image\" content=\"https://example.com/share.png\">\n<meta name=\"twitter:card\" content=\"summary_large_image\">"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What size should an og:image be?",
+   "a": "1200 x 630 pixels (a 1.91 to 1 ratio) works for large cards on most platforms. Keep text away from the edges, since some platforms crop."
+  },
+  {
+   "q": "Why does my old image still show after I changed it?",
+   "a": "Platforms cache link cards. Use the platform's own sharing debugger or post inspector to request a fresh scrape."
+  },
+  {
+   "q": "Can this tool fetch my live page?",
+   "a": "No. Browsers block one site from reading another site's HTML, and this tool never routes your URL through a server. Paste the HTML from View Source instead."
+  },
+  {
+   "q": "Does X (Twitter) use Open Graph tags?",
+   "a": "X reads its own `twitter:` tags first and falls back to Open Graph for title, description and image. A `twitter:card` tag sets the card size."
+  }
+ ],
+ "related": [
+  "meta-length-checker",
+  "json-ld-schema-generator",
+  "utm-builder",
+  "image-compressor"
+ ],
+ "updated": "2026-11-09"
+}

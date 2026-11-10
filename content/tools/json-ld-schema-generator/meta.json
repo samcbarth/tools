@@ -1,0 +1,61 @@
+{
+ "slug": "json-ld-schema-generator",
+ "name": "JSON-LD Schema Generator",
+ "category": "seo",
+ "order": 2,
+ "app_category": "DeveloperApplication",
+ "title": "JSON-LD Schema Generator: Local Business, Article, Product",
+ "description": "Generate valid JSON-LD structured data for a local business, article or product. Fill in a form, copy the script tag, and paste it into your page. Runs in your browser.",
+ "h1": "JSON-LD schema generator",
+ "card": "Create LocalBusiness, Article and Product structured data.",
+ "lede": "Pick a schema type, fill in the fields you have, and copy a ready-to-paste JSON-LD script tag. Empty fields are left out automatically.",
+ "keywords": [
+  "json-ld",
+  "schema markup",
+  "structured data",
+  "local business schema",
+  "product schema",
+  "article schema",
+  "rich results"
+ ],
+ "answer_q": "How do I add schema markup to my page?",
+ "answer": "Create a JSON-LD script with the schema.org type that matches your page, then paste it into the page's HTML. This tool builds that script from a form so you do not have to write the JSON by hand.",
+ "steps": [
+  "Choose Local business, Article or Product.",
+  "Fill in the fields. Required ones are marked.",
+  "Copy the code.",
+  "Paste it into the head or body of the matching page, or into your CMS's header HTML setting for that page.",
+  "After publishing, run the page through Google's Rich Results Test and the Schema Markup Validator."
+ ],
+ "examples": [
+  {
+   "title": "Local business output (shortened)",
+   "output": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"LocalBusiness\",\n  \"name\": \"Acme Plumbing\",\n  \"telephone\": \"+1-405-555-0100\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"addressLocality\": \"Oklahoma City\",\n    \"addressRegion\": \"OK\"\n  }\n}\n</script>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "Does schema markup improve rankings?",
+   "a": "Google says structured data helps it understand a page and can make the page eligible for rich results. It is not described as a direct ranking boost."
+  },
+  {
+   "q": "Should I add a rating to Product schema?",
+   "a": "Only if the page shows real reviews from customers. Marking up ratings that are not visible on the page breaks Google's structured data guidelines."
+  },
+  {
+   "q": "Where does JSON-LD go in HubSpot?",
+   "a": "In HubSpot, add it to the page's Settings, Advanced, Head HTML, or to a module in the template if every page of that type needs it."
+  },
+  {
+   "q": "Can I have more than one schema block on a page?",
+   "a": "Yes. Pages often carry several, for example BreadcrumbList plus Article. Each should describe content that is on the page."
+  }
+ ],
+ "related": [
+  "llms-txt-generator",
+  "og-preview",
+  "meta-length-checker",
+  "json-formatter"
+ ],
+ "updated": "2026-11-09"
+}

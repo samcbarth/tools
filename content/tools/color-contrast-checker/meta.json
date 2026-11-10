@@ -1,0 +1,62 @@
+{
+ "slug": "color-contrast-checker",
+ "name": "Color Contrast Checker",
+ "category": "images",
+ "order": 2,
+ "app_category": "DesignApplication",
+ "title": "Color Contrast Checker: WCAG AA and AAA Ratio Test",
+ "description": "Check the contrast ratio between text and background colors against WCAG 2 AA and AAA, preview the text, and get the nearest passing color. Runs in your browser.",
+ "h1": "Color contrast checker",
+ "card": "Test text and background colors against WCAG AA and AAA.",
+ "lede": "Pick a text and background color to get the WCAG contrast ratio, pass or fail for each level, and a suggested fix when it fails.",
+ "keywords": [
+  "contrast ratio",
+  "wcag",
+  "accessibility",
+  "a11y",
+  "color checker",
+  "aa",
+  "aaa"
+ ],
+ "answer_q": "What contrast ratio do I need for accessible text?",
+ "answer": "WCAG 2 level AA needs at least 4.5:1 for normal text and 3:1 for large text (24 pixels, or about 18.66 pixels bold). Level AAA needs 7:1 and 4.5:1. Enter your colors to see your ratio.",
+ "steps": [
+  "Enter or pick the text color.",
+  "Enter or pick the background color.",
+  "Read the ratio and the pass or fail table.",
+  "If normal text fails AA, try the suggested color.",
+  "Re-check hover, disabled and placeholder states too."
+ ],
+ "examples": [
+  {
+   "title": "Gray text on white",
+   "input": "Text #999999 on #ffffff",
+   "output": "2.84:1. Fails AA for normal text. Suggested: a darker gray such as #767676 or darker."
+  }
+ ],
+ "faq": [
+  {
+   "q": "How is the ratio calculated?",
+   "a": "With the WCAG 2 formula: (lighter relative luminance + 0.05) divided by (darker + 0.05), using sRGB gamma-corrected luminance."
+  },
+  {
+   "q": "Does placeholder text need to pass?",
+   "a": "WCAG applies contrast requirements to text that conveys information, which includes placeholder text people rely on to understand a field."
+  },
+  {
+   "q": "What about text on images?",
+   "a": "Check against the lightest and darkest parts of the image behind the text, or add a solid or semi-transparent overlay."
+  },
+  {
+   "q": "Is this the same as WCAG 3 or APCA?",
+   "a": "No. This uses the WCAG 2 ratio, which is what current accessibility laws and audits reference."
+  }
+ ],
+ "related": [
+  "image-compressor",
+  "qr-code-generator",
+  "og-preview",
+  "case-converter"
+ ],
+ "updated": "2026-11-09"
+}

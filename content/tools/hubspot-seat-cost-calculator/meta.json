@@ -1,0 +1,74 @@
+{
+ "slug": "hubspot-seat-cost-calculator",
+ "name": "HubSpot Seat Cost Calculator",
+ "category": "marketing",
+ "order": 3,
+ "app_category": "BusinessApplication",
+ "updated": "2026-11-09",
+ "title": "HubSpot Seat Cost Calculator: Estimate Your Monthly Bill",
+ "description": "Estimate HubSpot cost by hub, tier and seat count using the prices on HubSpot's public pricing pages, including required onboarding fees. Last checked November 9, 2026.",
+ "h1": "HubSpot seat cost calculator",
+ "card": "Estimate HubSpot monthly and first-year cost by hub and seats.",
+ "lede": "Pick the hubs and tiers you are considering, enter seats, and see the monthly, yearly and first-year cost with onboarding.",
+ "keywords": [
+  "hubspot pricing",
+  "hubspot cost",
+  "seats",
+  "sales hub",
+  "marketing hub",
+  "service hub",
+  "crm cost"
+ ],
+ "answer_q": "How much does HubSpot cost per seat?",
+ "answer": "On HubSpot's public pricing pages, checked November 9, 2026, with annual billing in USD: Starter starts at $7 per seat per month as a limited-time new-customer offer (list $20), Sales Hub and Service Hub Professional start at $90 per seat, and Enterprise starts at $150 per seat. Marketing Hub is priced per portal: Professional starts at $800 per month with 3 core seats, and Enterprise at $3,600 per month with 5.",
+ "steps": [
+  "Set a tier for each hub you want, or leave it at None.",
+  "Enter how many people need a paid seat in each hub.",
+  "Change any price box if you have a quote from HubSpot.",
+  "Leave onboarding on to see the true first-year total.",
+  "Compare the per-month, per-year and first-year numbers."
+ ],
+ "examples": [
+  {
+   "title": "Small sales team on Professional",
+   "text": "5 Sales Hub Professional seats at $90 is $450 per month, $5,400 per year, plus the $1,500 one-time Professional onboarding fee, for $6,900 in year one."
+  },
+  {
+   "title": "Marketing Hub Professional with 5 users",
+   "text": "The $800 base includes 3 core seats. 2 extra core seats at $45 each add $90, for $890 per month and $10,680 per year, plus $3,000 onboarding."
+  }
+ ],
+ "sections": [
+  {
+   "h": "Where do these prices come from?",
+   "p": [
+    "Every default number comes from HubSpot's public pricing pages for Marketing Hub, Sales Hub and Service Hub, viewed with annual billing in USD on November 9, 2026. HubSpot shows a crossed-out higher price next to several of these, and it changes offers often, so treat the result as an estimate and confirm with a quote.",
+    "Not included: HubSpot Credits beyond what each plan includes, extra marketing contacts, add-ons, discounts, taxes and currency changes. [Check HubSpot's pricing page](https://www.hubspot.com/pricing/sales) for the current numbers."
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Is onboarding required?",
+   "a": "HubSpot's pricing pages say Professional and Enterprise come with a required one-time onboarding fee: $1,500 or $3,500 for Sales Hub and Service Hub, and $3,000 or $7,000 for Marketing Hub, as of November 9, 2026."
+  },
+  {
+   "q": "Are HubSpot Credits included?",
+   "a": "Plans include a set number of HubSpot Credits for AI features and agents. The Marketing Hub pricing page listed 500 for Starter, 3,000 for Professional and 5,000 for Enterprise on November 9, 2026. Extra credits cost more and are not in this estimate."
+  },
+  {
+   "q": "Why is the Starter price so low?",
+   "a": "The $7 Starter price is labeled on HubSpot's site as a limited-time offer for new customers. Tick the box to calculate with the $20 list price instead."
+  },
+  {
+   "q": "How often is this updated?",
+   "a": "The last-checked date at the top of the tool shows when the defaults were compared with HubSpot's site. You can type in any price yourself."
+  }
+ ],
+ "related": [
+  "utm-builder",
+  "email-list-cleaner",
+  "csv-cleaner",
+  "timestamp-converter"
+ ]
+}

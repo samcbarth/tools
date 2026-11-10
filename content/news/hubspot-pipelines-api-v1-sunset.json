@@ -1,0 +1,27 @@
+{
+ "title": "HubSpot Pipelines API v1 shuts off December 4, 2026",
+ "date": "2026-08-14",
+ "tags": [
+  "Dev tools",
+  "HubSpot"
+ ],
+ "summary": "HubSpot will sunset its Pipelines API v1 on December 4, 2026. Integrations still calling it need to move to a 2026-03 or newer version of the Pipelines API.",
+ "body": [
+  "HubSpot announced on August 14, 2026 that the Pipelines API v1 will be sunset on December 4, 2026.",
+  "HubSpot recommends migrating to the Pipelines API 2026-09 version, auditing code for any v1 pipeline calls, and finishing the move well before the deadline. Versions 2026-03 and newer are supported."
+ ],
+ "why": [
+  "Deal and ticket pipeline syncs in older custom integrations and middleware often still use v1 endpoints. Those calls will fail after December 4.",
+  "Search your code and your automation platform scenarios for `/crm-pipelines/v1/` before the deadline."
+ ],
+ "sources": [
+  {
+   "name": "HubSpot Developer Changelog: Pipelines API V1 Sunset: December 4, 2026",
+   "url": "https://developers.hubspot.com/changelog/pipelines-api-v1-sunset"
+  }
+ ],
+ "related_tools": [
+  "json-formatter",
+  "csv-json-converter"
+ ]
+}

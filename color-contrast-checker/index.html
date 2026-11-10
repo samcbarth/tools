@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Color Contrast Checker: WCAG AA and AAA Ratio Test</title>
+<meta name="description" content="Check the contrast ratio between text and background colors against WCAG 2 AA and AAA, preview the text, and get the nearest passing color. Runs in your browser.">
+<link rel="canonical" href="https://tools.samcbarth.com/color-contrast-checker/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Toolbench">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Color Contrast Checker: WCAG AA and AAA Ratio Test">
+<meta property="og:description" content="Check the contrast ratio between text and background colors against WCAG 2 AA and AAA, preview the text, and get the nearest passing color. Runs in your browser.">
+<meta property="og:url" content="https://tools.samcbarth.com/color-contrast-checker/">
+<meta property="og:image" content="https://tools.samcbarth.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e4f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Toolbench Dispatch RSS" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Toolbench Dispatch JSON Feed" href="/news/feed.json">
+<link rel="stylesheet" href="/assets/style.css?v=2d4ed37da8">
+<script>try{var t=localStorage.getItem('tb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "Color Contrast Checker",
+ "description": "Check the contrast ratio between text and background colors against WCAG 2 AA and AAA, preview the text, and get the nearest passing color. Runs in your browser.",
+ "url": "https://tools.samcbarth.com/color-contrast-checker/",
+ "applicationCategory": "DesignApplication",
+ "operatingSystem": "Any (runs in a web browser)",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Sam Barth",
+  "url": "https://samcbarth.com/"
+ },
+ "dateModified": "2026-11-09"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "Color Contrast Checker: WCAG AA and AAA Ratio Test",
+ "url": "https://tools.samcbarth.com/color-contrast-checker/",
+ "description": "Check the contrast ratio between text and background colors against WCAG 2 AA and AAA, preview the text, and get the nearest passing color. Runs in your browser.",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Toolbench",
+  "url": "https://tools.samcbarth.com/"
+ }
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Toolbench",
+   "item": "https://tools.samcbarth.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Images and design",
+   "item": "https://tools.samcbarth.com/#images"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Color Contrast Checker"
+  }
+ ]
+}</script>
+<script src="/assets/config.js?v=2d4ed37da8" defer></script>
+<script src="/assets/site.js?v=2d4ed37da8" defer></script>
+<script src="/assets/tools/color-contrast-checker.js?v=2d4ed37da8" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">TB</span>Toolbench</a>
+<nav class="site-nav" aria-label="Main">
+<a href="/" aria-current="page">All tools</a>
+<a href="/news/">News</a>
+<a href="/about/">About</a>
+<button class="theme-btn" type="button">Dark mode</button>
+</nav>
+</div></header>
+<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Toolbench</a></li><li><a href="/#images">Images and design</a></li><li aria-current="page">Color Contrast Checker</li></ol></nav>
+<div class="layout has-side">
+<main id="main">
+<h1>Color contrast checker</h1>
+<p class="lede">Pick a text and background color to get the WCAG contrast ratio, pass or fail for each level, and a suggested fix when it fails.</p>
+<p class="privacy-note">Runs entirely in your browser. Nothing you type, paste or open here is uploaded to any server.</p>
+<section class="tool" aria-label="Color Contrast Checker" id="tool">
+<div class="row two">
+<div><label for="n-fg">Text color</label><input id="n-fgp" type="color" value="#5b5f66" aria-label="Pick text color"> <input id="n-fg" type="text" value="#5b5f66" style="width:140px" class="mono"></div>
+<div><label for="n-bg">Background color</label><input id="n-bgp" type="color" value="#ffffff" aria-label="Pick background color"> <input id="n-bg" type="text" value="#ffffff" style="width:140px" class="mono"></div>
+</div>
+<div class="btns"><button class="btn ghost" id="n-swap" type="button">Swap colors</button></div>
+<div class="swatch" id="n-sw"><div class="big">Large text sample (24px bold)</div><p style="margin:.4em 0 0">Normal body text sample at 16px. The quick brown fox jumps over the lazy dog.</p></div>
+<div class="stats" id="n-stats"></div>
+<div id="n-res"></div>
+<div id="n-fix" class="status"></div>
+
+</section>
+<article class="prose">
+<h2>What contrast ratio do I need for accessible text?</h2>
+<p class="answer">WCAG 2 level AA needs at least 4.5:1 for normal text and 3:1 for large text (24 pixels, or about 18.66 pixels bold). Level AAA needs 7:1 and 4.5:1. Enter your colors to see your ratio.</p>
+<ol><li>Enter or pick the text color.</li><li>Enter or pick the background color.</li><li>Read the ratio and the pass or fail table.</li><li>If normal text fails AA, try the suggested color.</li><li>Re-check hover, disabled and placeholder states too.</li></ol>
+<div class="ad-slot" data-slot="after_intro"></div>
+<h2>Examples</h2>
+<h3>Gray text on white</h3><p><strong>Input</strong></p><pre>Text #999999 on #ffffff</pre><p><strong>Result</strong></p><pre>2.84:1. Fails AA for normal text. Suggested: a darker gray such as #767676 or darker.</pre>
+
+<div class="ad-slot" data-slot="mid_content"></div>
+<h2>Frequently asked questions</h2>
+<h3>How is the ratio calculated?</h3><p>With the WCAG 2 formula: (lighter relative luminance + 0.05) divided by (darker + 0.05), using sRGB gamma-corrected luminance.</p><h3>Does placeholder text need to pass?</h3><p>WCAG applies contrast requirements to text that conveys information, which includes placeholder text people rely on to understand a field.</p><h3>What about text on images?</h3><p>Check against the lightest and darkest parts of the image behind the text, or add a solid or semi-transparent overlay.</p><h3>Is this the same as WCAG 3 or APCA?</h3><p>No. This uses the WCAG 2 ratio, which is what current accessibility laws and audits reference.</p>
+<h2>Related news</h2><ul class="news-list"><li><h3><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></h3><div class="meta-line">October 20, 2026</div></li></ul>
+<div class="ad-slot" data-slot="end_content"></div>
+</article>
+<h2>Related tools</h2>
+<div class="cards"><a class="card" href="/image-compressor/"><h3>Image Compressor and WebP Converter</h3><p>Shrink images and convert to WebP without uploading them.</p></a><a class="card" href="/qr-code-generator/"><h3>QR Code Generator</h3><p>Make QR codes for links, Wi-Fi and email as PNG or SVG.</p></a><a class="card" href="/og-preview/"><h3>Open Graph Preview</h3><p>See your social link card and fix og:title, og:image and more.</p></a><a class="card" href="/case-converter/"><h3>Case Converter</h3><p>Switch text between title, sentence, camel, snake and more.</p></a></div>
+</main>
+<aside class="side"><div class="side-inner"><p class="side-title">More Images and design tools</p><ul class="side-list"><li><a href="/image-compressor/">Image Compressor and WebP Converter</a></li></ul><p class="side-title">Latest news</p><ul class="side-list"><li><a href="/news/google-ai-plus-loses-pro-models/">Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</a></li><li><a href="/news/hubspot-q3-2026-results/">HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</a></li><li><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></li><li><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></li></ul><div class="ad-slot" data-slot="sidebar"></div></div></aside>
+</div></div>
+<footer class="site-foot"><div class="wrap">
+<div class="foot-links">
+<a href="/">All tools</a><a href="/news/">News</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/feed.xml">RSS</a><a href="/news/feed.json">JSON Feed</a><a href="/llms.txt">llms.txt</a>
+</div>
+<nav class="network" aria-label="samcbarth.com sites"><p>More free sites from samcbarth.com</p><ul><li><a href="https://realestate.samcbarth.com/">Real Estate</a></li><li><span aria-current="true">Tools</span></li><li><a href="https://games.samcbarth.com/">Games</a></li><li><a href="https://streaming.samcbarth.com/">Streaming</a></li><li><a href="https://homerepair.samcbarth.com/">Home Repair</a></li><li><a href="https://deals.samcbarth.com/">Deals</a></li><li><a href="https://news.samcbarth.com/">News</a></li></ul></nav>
+<p class="copyright">&copy; 2026 Sam Barth. Every tool here runs in your browser; your input is not uploaded.</p>
+</div></footer>
+</body>
+</html>

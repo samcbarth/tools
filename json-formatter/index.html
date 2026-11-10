@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KMS4X55L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JSON Formatter and Validator: Pretty Print or Minify JSON</title>
+<meta name="description" content="Format, validate and minify JSON in your browser. Shows the line and column of syntax errors, can sort keys, and downloads the result. Nothing is uploaded.">
+<link rel="canonical" href="https://tools.samcbarth.com/json-formatter/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:site_name" content="Toolbench">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JSON Formatter and Validator: Pretty Print or Minify JSON">
+<meta property="og:description" content="Format, validate and minify JSON in your browser. Shows the line and column of syntax errors, can sort keys, and downloads the result. Nothing is uploaded.">
+<meta property="og:url" content="https://tools.samcbarth.com/json-formatter/">
+<meta property="og:image" content="https://tools.samcbarth.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b6e4f">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Toolbench Dispatch RSS" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Toolbench Dispatch JSON Feed" href="/news/feed.json">
+<link rel="stylesheet" href="/assets/style.css?v=2d4ed37da8">
+<script>try{var t=localStorage.getItem('tb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "JSON Formatter and Validator",
+ "description": "Format, validate and minify JSON in your browser. Shows the line and column of syntax errors, can sort keys, and downloads the result. Nothing is uploaded.",
+ "url": "https://tools.samcbarth.com/json-formatter/",
+ "applicationCategory": "DeveloperApplication",
+ "operatingSystem": "Any (runs in a web browser)",
+ "isAccessibleForFree": true,
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "author": {
+  "@type": "Person",
+  "name": "Sam Barth",
+  "url": "https://samcbarth.com/"
+ },
+ "dateModified": "2026-11-09"
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "JSON Formatter and Validator: Pretty Print or Minify JSON",
+ "url": "https://tools.samcbarth.com/json-formatter/",
+ "description": "Format, validate and minify JSON in your browser. Shows the line and column of syntax errors, can sort keys, and downloads the result. Nothing is uploaded.",
+ "isPartOf": {
+  "@type": "WebSite",
+  "name": "Toolbench",
+  "url": "https://tools.samcbarth.com/"
+ }
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Toolbench",
+   "item": "https://tools.samcbarth.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Data and developer",
+   "item": "https://tools.samcbarth.com/#data"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "JSON Formatter and Validator"
+  }
+ ]
+}</script>
+<script src="/assets/config.js?v=2d4ed37da8" defer></script>
+<script src="/assets/site.js?v=2d4ed37da8" defer></script>
+<script src="/assets/tools/json-formatter.js?v=2d4ed37da8" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">TB</span>Toolbench</a>
+<nav class="site-nav" aria-label="Main">
+<a href="/" aria-current="page">All tools</a>
+<a href="/news/">News</a>
+<a href="/about/">About</a>
+<button class="theme-btn" type="button">Dark mode</button>
+</nav>
+</div></header>
+<div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Toolbench</a></li><li><a href="/#data">Data and developer</a></li><li aria-current="page">JSON Formatter and Validator</li></ol></nav>
+<div class="layout has-side">
+<main id="main">
+<h1>JSON formatter and validator</h1>
+<p class="lede">Paste JSON to format it with 2 spaces, 4 spaces or tabs, minify it, or find exactly where a syntax error is.</p>
+<p class="privacy-note">Runs entirely in your browser. Nothing you type, paste or open here is uploaded to any server.</p>
+<section class="tool" aria-label="JSON Formatter and Validator" id="tool">
+<div class="field"><label for="f-in">Paste JSON</label>
+<textarea id="f-in" class="mono" style="min-height:200px">{"name":"Acme","plans":[{"tier":"Pro","seats":5},{"tier":"Starter","seats":2}],"active":true,"owner":null}</textarea>
+<input id="f-file" type="file" accept=".json,.txt,application/json" aria-label="Open a JSON file"></div>
+<div class="row">
+<div><label for="f-indent">Indent</label><select id="f-indent"><option value="2">2 spaces</option><option value="4">4 spaces</option><option value="tab">Tab</option></select></div>
+<div style="align-self:end"><label class="check"><input id="f-sort" type="checkbox"> Sort keys A to Z</label></div>
+</div>
+<div class="btns">
+<button class="btn" id="f-format" type="button">Format</button>
+<button class="btn secondary" id="f-min" type="button">Minify</button>
+<button class="btn ghost" id="f-copy" type="button">Copy result</button>
+<button class="btn ghost" id="f-dl" type="button">Download</button>
+</div>
+<div id="f-status" class="status" aria-live="polite"></div>
+<label for="f-out">Result</label>
+<textarea id="f-out" class="mono" readonly style="min-height:200px"></textarea>
+
+</section>
+<article class="prose">
+<h2>How do I validate and format JSON?</h2>
+<p class="answer">Parse it with a strict JSON parser; if it parses, re-print it with indentation. Paste your JSON here and it is checked and formatted as you type, with the line and column of any error.</p>
+<ol><li>Paste JSON or open a .json file.</li><li>Read the status line: valid, or the error and where it is.</li><li>Pick an indent and whether to sort keys.</li><li>Press Format or Minify.</li><li>Copy or download the result.</li></ol>
+<div class="ad-slot" data-slot="after_intro"></div>
+<h2>Examples</h2>
+<h3>A common error</h3><p><strong>Input</strong></p><pre>{&quot;name&quot;: &quot;Acme&quot;, &quot;seats&quot;: 5,}</pre><p><strong>Result</strong></p><pre>Invalid JSON. Look for a trailing comma before } or ].</pre><h3>Minified</h3><p><strong>Input</strong></p><pre>{
+  &quot;a&quot;: 1,
+  &quot;b&quot;: [1, 2]
+}</pre><p><strong>Result</strong></p><pre>{&quot;a&quot;:1,&quot;b&quot;:[1,2]}</pre>
+
+<div class="ad-slot" data-slot="mid_content"></div>
+<h2>Frequently asked questions</h2>
+<h3>Why is my JSON invalid when it works in JavaScript?</h3><p>JSON is stricter than JavaScript: keys need double quotes, strings cannot use single quotes, and trailing commas and comments are not allowed.</p><h3>Does sorting keys change the data?</h3><p>No. Object key order has no meaning in JSON. Sorting just makes two files easier to compare.</p><h3>Can it handle large files?</h3><p>Files of several megabytes are fine. Very large files depend on your device&#x27;s memory.</p><h3>Is my JSON sent anywhere?</h3><p>No. Parsing and formatting happen in your browser.</p>
+<h2>Related news</h2><ul class="news-list"><li><h3><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></h3><div class="meta-line">November 3, 2026</div></li><li><h3><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></h3><div class="meta-line">October 20, 2026</div></li><li><h3><a href="/news/hubspot-pipelines-api-v1-sunset/">HubSpot Pipelines API v1 shuts off December 4, 2026</a></h3><div class="meta-line">August 14, 2026</div></li></ul>
+<div class="ad-slot" data-slot="end_content"></div>
+</article>
+<h2>Related tools</h2>
+<div class="cards"><a class="card" href="/csv-json-converter/"><h3>CSV to JSON Converter</h3><p>Convert CSV to JSON and back, with types and nested keys.</p></a><a class="card" href="/json-ld-schema-generator/"><h3>JSON-LD Schema Generator</h3><p>Create LocalBusiness, Article and Product structured data.</p></a><a class="card" href="/regex-tester/"><h3>Regex Tester</h3><p>Test regular expressions with highlights, groups and replace.</p></a><a class="card" href="/timestamp-converter/"><h3>Unix Timestamp Converter</h3><p>Turn epoch timestamps into dates and dates into timestamps.</p></a></div>
+</main>
+<aside class="side"><div class="side-inner"><p class="side-title">More Data and developer tools</p><ul class="side-list"><li><a href="/csv-cleaner/">CSV Cleaner and Deduper</a></li><li><a href="/csv-json-converter/">CSV to JSON Converter</a></li><li><a href="/regex-tester/">Regex Tester</a></li></ul><p class="side-title">Latest news</p><ul class="side-list"><li><a href="/news/google-ai-plus-loses-pro-models/">Google AI Plus subscribers lose Pro model choice in AI Mode on November 13</a></li><li><a href="/news/hubspot-q3-2026-results/">HubSpot reports Q3 2026 revenue of $947.6 million, up 17%</a></li><li><a href="/news/hubspot-sunsets-design-manager-serverless-node20/">HubSpot sets February 2027 shutdown for design manager serverless functions</a></li><li><a href="/news/chrome-devtools-november-2026/">Chrome DevTools update adds more tools for AI coding agents</a></li></ul><div class="ad-slot" data-slot="sidebar"></div></div></aside>
+</div></div>
+<footer class="site-foot"><div class="wrap">
+<div class="foot-links">
+<a href="/">All tools</a><a href="/news/">News</a><a href="/about/">About</a><a href="/contact/">Contact</a>
+<a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms</a><a href="/feed.xml">RSS</a><a href="/news/feed.json">JSON Feed</a><a href="/llms.txt">llms.txt</a>
+</div>
+<nav class="network" aria-label="samcbarth.com sites"><p>More free sites from samcbarth.com</p><ul><li><a href="https://realestate.samcbarth.com/">Real Estate</a></li><li><span aria-current="true">Tools</span></li><li><a href="https://games.samcbarth.com/">Games</a></li><li><a href="https://streaming.samcbarth.com/">Streaming</a></li><li><a href="https://homerepair.samcbarth.com/">Home Repair</a></li><li><a href="https://deals.samcbarth.com/">Deals</a></li><li><a href="https://news.samcbarth.com/">News</a></li></ul></nav>
+<p class="copyright">&copy; 2026 Sam Barth. Every tool here runs in your browser; your input is not uploaded.</p>
+</div></footer>
+</body>
+</html>
