@@ -1,0 +1,21 @@
+<div class="field"><label for="u-url">Website URL <span class="hint">(the page people land on)</span></label>
+<input id="u-url" type="url" placeholder="https://example.com/pricing" autocomplete="off"></div>
+<div class="row">
+<div><label for="u-source">Campaign source <span class="hint">utm_source, required</span></label><input id="u-source" type="text" placeholder="linkedin"></div>
+<div><label for="u-medium">Campaign medium <span class="hint">utm_medium, required</span></label><input id="u-medium" type="text" placeholder="social" list="u-mediums"></div>
+<div><label for="u-campaign">Campaign name <span class="hint">utm_campaign</span></label><input id="u-campaign" type="text" placeholder="spring-launch"></div>
+</div>
+<datalist id="u-mediums"><option value="email"><option value="social"><option value="paid_social"><option value="cpc"><option value="display"><option value="affiliate"><option value="referral"><option value="organic"><option value="sms"><option value="qr"></datalist>
+<div class="row">
+<div><label for="u-term">Campaign term <span class="hint">utm_term, optional</span></label><input id="u-term" type="text" placeholder="crm software"></div>
+<div><label for="u-content">Campaign content <span class="hint">utm_content, optional</span></label><input id="u-content" type="text" placeholder="hero-button"></div>
+<div><label for="u-id">Campaign ID <span class="hint">utm_id, optional</span></label><input id="u-id" type="text" placeholder="q2-2026"></div>
+</div>
+<div class="checks">
+<label class="check"><input id="u-lower" type="checkbox" checked> Force lowercase</label>
+<label class="check"><input id="u-spaces" type="checkbox" checked> Replace spaces with hyphens</label>
+</div>
+<label for="u-out">Your tagged URL</label>
+<div id="u-out" class="out" aria-live="polite"></div>
+<div class="btns"><button class="btn" id="u-copy" type="button">Copy URL</button><button class="btn ghost" id="u-reset" type="button">Clear</button></div>
+<div id="u-warn" class="status"></div>

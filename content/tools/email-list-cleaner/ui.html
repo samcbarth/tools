@@ -1,0 +1,16 @@
+<div class="field"><label for="e-in">Paste emails <span class="hint">(one per line, comma separated, or a whole CSV or email thread)</span></label>
+<textarea id="e-in" class="mono" placeholder="Jane.Doe@Example.com, bob@gmial.com&#10;&lt;info@acme.io&gt;&#10;not-an-email"></textarea>
+<input id="e-file" type="file" accept=".csv,.txt,text/plain,text/csv" aria-label="Open a CSV or text file"></div>
+<div class="checks">
+<label class="check"><input id="e-lower" type="checkbox" checked> Lowercase</label>
+<label class="check"><input id="e-dedupe" type="checkbox" checked> Remove duplicates</label>
+<label class="check"><input id="e-typos" type="checkbox" checked> Fix common domain typos</label>
+<label class="check"><input id="e-role" type="checkbox"> Remove role addresses (info@, sales@...)</label>
+<label class="check"><input id="e-sort" type="checkbox"> Sort A to Z</label>
+</div>
+<div class="btns"><button class="btn" id="e-run" type="button">Clean list</button></div>
+<div class="stats" id="e-stats"></div>
+<label for="e-out">Clean list</label>
+<textarea id="e-out" class="mono" readonly></textarea>
+<div class="btns"><button class="btn secondary" id="e-copy" type="button">Copy</button><button class="btn secondary" id="e-csv" type="button">Download CSV</button></div>
+<details><summary>Removed or changed entries</summary><div id="e-log" class="out"></div></details>

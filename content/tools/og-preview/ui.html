@@ -1,0 +1,30 @@
+<div class="tabs" role="tablist">
+<button type="button" role="tab" aria-selected="true" data-mode="fields">Type the tags</button>
+<button type="button" role="tab" aria-selected="false" data-mode="html">Paste page HTML</button>
+</div>
+<div id="o-fields">
+<div class="field"><label for="o-title">og:title</label><input id="o-title" type="text" value="Free UTM Builder for Clean Campaign Links"></div>
+<div class="field"><label for="o-desc">og:description</label><textarea id="o-desc" style="min-height:70px">Build consistent, lowercase UTM links for email, social and ads. Runs in your browser.</textarea></div>
+<div class="row two">
+<div><label for="o-image">og:image URL</label><input id="o-image" type="url" placeholder="https://example.com/share.png"></div>
+<div><label for="o-url">og:url</label><input id="o-url" type="url" value="https://example.com/utm-builder/"></div>
+</div>
+<div class="row two">
+<div><label for="o-site">og:site_name</label><input id="o-site" type="text" value="Example"></div>
+<div><label for="o-card">twitter:card</label><select id="o-card"><option>summary_large_image</option><option>summary</option></select></div>
+</div>
+</div>
+<div id="o-html" hidden>
+<div class="field"><label for="o-src">Paste the page source <span class="hint">(View Source, then copy the &lt;head&gt;)</span></label>
+<textarea id="o-src" class="mono" placeholder="&lt;meta property=&quot;og:title&quot; content=&quot;...&quot;&gt;"></textarea></div>
+<div class="btns"><button class="btn" id="o-parse" type="button">Read tags</button></div>
+</div>
+<h3>Large image card</h3>
+<div class="og-card" id="o-large"><div class="og-img"></div><div class="og-body"><div class="og-host"></div><div class="og-title"></div><div class="og-desc"></div></div></div>
+<h3>Small card</h3>
+<div class="og-card" id="o-small" style="display:flex;max-width:520px"><div class="og-img" style="width:120px;flex:none;aspect-ratio:1"></div><div class="og-body"><div class="og-host"></div><div class="og-title"></div><div class="og-desc"></div></div></div>
+<h3>Checks</h3>
+<div id="o-checks"></div>
+<h3>Tags to paste in your &lt;head&gt;</h3>
+<pre id="o-code"></pre>
+<div class="btns"><button class="btn secondary" id="o-copy" type="button">Copy tags</button></div>

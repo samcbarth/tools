@@ -1,0 +1,13 @@
+<p class="hint" style="margin-top:0">Default prices are the "starts at" rates HubSpot's public pricing pages showed for annual billing in USD, last checked <strong>November 9, 2026</strong>. Every price box is editable, so you can match a quote you were given.</p>
+<div class="table-wrap"><table id="h-table">
+<thead><tr><th>Product</th><th>Tier</th><th>Seats</th><th>Price</th><th>Monthly</th></tr></thead>
+<tbody>
+<tr data-p="starter"><td>Starter Customer Platform<br><span class="hint">per seat</span></td><td><select class="h-tier"><option value="none">None</option><option value="starter" selected>Starter</option></select></td><td><input class="h-seats" type="number" min="0" value="3" aria-label="Starter seats"></td><td><input class="h-price" type="number" min="0" step="0.01" aria-label="Starter price per seat"></td><td class="h-sub"></td></tr>
+<tr data-p="marketing"><td>Marketing Hub<br><span class="hint">base price plus extra core seats</span></td><td><select class="h-tier"><option value="none" selected>None</option><option value="pro">Professional</option><option value="ent">Enterprise</option></select></td><td><input class="h-seats" type="number" min="0" value="3" aria-label="Marketing core seats"></td><td><input class="h-price" type="number" min="0" step="0.01" aria-label="Marketing base price"><br><span class="hint h-extra"></span></td><td class="h-sub"></td></tr>
+<tr data-p="sales"><td>Sales Hub<br><span class="hint">per seat</span></td><td><select class="h-tier"><option value="none" selected>None</option><option value="pro">Professional</option><option value="ent">Enterprise</option></select></td><td><input class="h-seats" type="number" min="0" value="2" aria-label="Sales seats"></td><td><input class="h-price" type="number" min="0" step="0.01" aria-label="Sales price per seat"></td><td class="h-sub"></td></tr>
+<tr data-p="service"><td>Service Hub<br><span class="hint">per seat</span></td><td><select class="h-tier"><option value="none" selected>None</option><option value="pro">Professional</option><option value="ent">Enterprise</option></select></td><td><input class="h-seats" type="number" min="0" value="2" aria-label="Service seats"></td><td><input class="h-price" type="number" min="0" step="0.01" aria-label="Service price per seat"></td><td class="h-sub"></td></tr>
+</tbody></table></div>
+<label class="check"><input id="h-list" type="checkbox"> Use Starter list price ($20) instead of the limited-time new-customer price ($7)</label>
+<label class="check"><input id="h-onb" type="checkbox" checked> Include required one-time onboarding fees</label>
+<div class="stats" id="h-stats"></div>
+<div id="h-notes" class="status"></div>
