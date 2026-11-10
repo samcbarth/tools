@@ -4,27 +4,13 @@
   var CFG = window.SITE_CONFIG || {};
   var root = document.documentElement;
 
-  /* ---------- theme ---------- */
-  try {
-    var saved = localStorage.getItem('tb-theme');
-    if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
-  } catch (e) {}
-  function currentTheme() {
-    var t = root.getAttribute('data-theme');
-    if (t) return t;
-    return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
+  /* ---------- sticky header turns translucent once scrolled ---------- */
   document.addEventListener('DOMContentLoaded', function () {
-    var b = document.querySelector('.theme-btn');
-    if (b) {
-      var label = function () { b.textContent = currentTheme() === 'dark' ? 'Light mode' : 'Dark mode'; };
-      label();
-      b.addEventListener('click', function () {
-        var next = currentTheme() === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-theme', next);
-        try { localStorage.setItem('tb-theme', next); } catch (e) {}
-        label();
-      });
+    var head = document.querySelector('.site-head');
+    if (head) {
+      var onScroll = function () { head.classList.toggle('scrolled', window.scrollY > 8); };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
     }
     renderAds();
     renderContactForm();
@@ -64,9 +50,34 @@
     s.async = true;
     s.onload = function () {
       slot.innerHTML = '';
-      window.hbspt.forms.create({ region: CFG.HUBSPOT_REGION, portalId: CFG.HUBSPOT_PORTAL, formId: CFG.HUBSPOT_CONTACT_FORM, target: '#contact-form' });
+      window.hbspt.forms.create({
+        region: CFG.HUBSPOT_REGION, portalId: CFG.HUBSPOT_PORTAL, formId: CFG.HUBSPOT_CONTACT_FORM, target: '#contact-form',
+        onFormReady: function () { styleFormFrame(slot); }
+      });
     };
     document.body.appendChild(s);
+  }
+  /* The embed renders in a same-origin iframe with the portal's light form styles; restyle it for the dark brand. */
+  var FORM_CSS = [
+    'body{background:transparent;color:#fff;font-family:Inter,"Helvetica Neue",Helvetica,Arial,sans-serif}',
+    '.hs-form label,.hs-form legend{color:#fff!important;font-weight:700!important;font-size:14px!important}',
+    '.hs-form .hs-form-required{color:#8e7cc3!important}',
+    '.hs-form .hs-field-desc,.hs-form .legal-consent-container,.hs-form .legal-consent-container p,.hs-form .hs-richtext{color:rgba(255,255,255,.72)!important;font-weight:400!important}',
+    '.hs-form .hs-input:not([type=checkbox]):not([type=radio]){background:#0d0d0d!important;color:#fff!important;border:1px solid rgba(255,255,255,.4)!important;border-radius:4px!important}',
+    '.hs-form .hs-input:focus{outline:2px solid #8e7cc3!important;border-color:#8e7cc3!important}',
+    '.hs-form .hs-error-msg,.hs-form .hs-error-msgs label{color:#ff8a80!important;font-weight:400!important}',
+    '.hs-form .hs-button{min-height:52px!important;padding:0 28px!important;border-radius:50px!important;background:#9a00ff!important;border:1px solid #9a00ff!important;color:#fff!important;font:700 14px/1 Inter,Arial,sans-serif!important;text-transform:uppercase!important;letter-spacing:.06em!important;cursor:pointer}',
+    '.submitted-message,.submitted-message p{color:#fff!important}',
+    'a{color:#8e7cc3!important}'
+  ].join('');
+  function styleFormFrame(slot) {
+    var fr = slot.querySelector('iframe');
+    var doc = fr ? fr.contentDocument : document;
+    if (!doc || doc.getElementById('tb-form-css')) return;
+    var st = doc.createElement('style');
+    st.id = 'tb-form-css';
+    st.textContent = FORM_CSS;
+    (doc.head || doc.documentElement).appendChild(st);
   }
 
   /* ---------- index search ---------- */

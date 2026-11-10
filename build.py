@@ -146,12 +146,15 @@ def shell(*, path, title, description, body, jsonld, og_type="website", scripts=
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{image}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0b6e4f">
+<meta name="theme-color" content="#000000">
+<meta name="color-scheme" content="dark">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{NEWS_NAME} RSS" href="/feed.xml">
 <link rel="alternate" type="application/feed+json" title="{NEWS_NAME} JSON Feed" href="/news/feed.json">
 <link rel="stylesheet" href="/assets/style.css?v={ASSET_V}">
-<script>try{{var t=localStorage.getItem('tb-theme');if(t)document.documentElement.setAttribute('data-theme',t)}}catch(e){{}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@900&family=Inter:wght@400;500;700&display=swap">
 {ld}
 <script src="/assets/config.js?v={ASSET_V}" defer></script>
 <script src="/assets/site.js?v={ASSET_V}" defer></script>
@@ -160,12 +163,11 @@ def shell(*, path, title, description, body, jsonld, og_type="website", scripts=
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head"><div class="wrap">
-<a class="brand" href="/"><span class="brand-mark" aria-hidden="true">TB</span>{SITE_NAME}</a>
+<a class="brand" href="/"><span class="brand-dot" aria-hidden="true"></span>{SITE_NAME}</a>
 <nav class="site-nav" aria-label="Main">
 {nav("/", "All tools", "tools")}
 {nav("/news/", "News", "news")}
 {nav("/about/", "About", "about")}
-<button class="theme-btn" type="button">Dark mode</button>
 </nav>
 </div></header>
 {body}
@@ -498,7 +500,7 @@ def og_image():
     except ImportError:
         print("Pillow not installed; skipping og.png")
         return
-    img = Image.new("RGB", (1200, 630), "#0b6e4f")
+    img = Image.new("RGB", (1200, 630), "#000000")
     d = ImageDraw.Draw(img)
 
     def font(size, bold=False):
@@ -508,11 +510,11 @@ def og_image():
             except OSError:
                 continue
         return ImageFont.load_default()
-    d.rounded_rectangle((80, 80, 180, 180), 18, fill="#ffffff")
-    d.text((101, 102), "TB", fill="#0b6e4f", font=font(52, True))
+    d.rectangle((0, 0, 1200, 8), fill="#9a00ff")
+    d.ellipse((80, 120, 112, 152), fill="#9a00ff")
     d.text((80, 230), SITE_NAME, fill="#ffffff", font=font(96, True))
-    d.text((80, 360), "Free browser tools for marketing,", fill="#e2f2ec", font=font(48))
-    d.text((80, 420), "SEO and data work. Nothing uploaded.", fill="#e2f2ec", font=font(48))
+    d.text((80, 360), "Free browser tools for marketing,", fill="#c8c8c8", font=font(48))
+    d.text((80, 420), "SEO and data work. Nothing uploaded.", fill="#c8c8c8", font=font(48))
     d.text((80, 540), "tools.samcbarth.com", fill="#ffffff", font=font(36, True))
     img.save(out, optimize=True)
 
