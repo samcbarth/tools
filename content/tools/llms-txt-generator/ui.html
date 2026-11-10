@@ -1,0 +1,21 @@
+<div class="row two">
+<div><label for="l-name">Site or project name</label><input id="l-name" type="text" value="Acme Plumbing"></div>
+<div><label for="l-url">Site URL <span class="hint">(used to make relative links absolute)</span></label><input id="l-url" type="url" value="https://acmeplumbing.com"></div>
+</div>
+<div class="field"><label for="l-sum">One-line summary <span class="hint">(becomes the &gt; blockquote)</span></label>
+<input id="l-sum" type="text" value="Licensed plumbers serving Oklahoma City since 1998, with same-day repair and water heater installs."></div>
+<div class="field"><label for="l-details">Extra details <span class="hint">(optional plain paragraphs)</span></label>
+<textarea id="l-details" style="min-height:70px">Service area: Oklahoma City, Edmond and Norman. Emergency calls answered 24/7.</textarea></div>
+<div class="field"><label for="l-links">Links, grouped by section <span class="hint">(a line starting with ## starts a section; then one link per line as: Title | URL | optional note)</span></label>
+<textarea id="l-links" class="mono">## Services
+Water heater installation | /services/water-heaters | Tank and tankless, same-week install
+Drain cleaning | /services/drains
+## Company
+About us | /about
+Pricing | /pricing | Flat-rate price list
+## Optional
+Blog | /blog</textarea></div>
+<label for="l-out">llms.txt</label>
+<textarea id="l-out" class="mono" readonly></textarea>
+<div class="btns"><button class="btn" id="l-copy" type="button">Copy</button><button class="btn secondary" id="l-dl" type="button">Download llms.txt</button></div>
+<div id="l-status" class="status"></div>

@@ -1,0 +1,22 @@
+<div class="row two">
+<div><label for="x-pat">Pattern <span class="hint">(JavaScript syntax, no slashes)</span></label><input id="x-pat" type="text" class="mono" value="(\w+)@([\w.-]+\.\w+)"></div>
+<div><label for="x-flags">Flags</label>
+<div class="checks" id="x-flags" style="margin:6px 0 0">
+<label class="check"><input type="checkbox" value="g" checked> g global</label>
+<label class="check"><input type="checkbox" value="i"> i ignore case</label>
+<label class="check"><input type="checkbox" value="m"> m multiline</label>
+<label class="check"><input type="checkbox" value="s"> s dot matches newline</label>
+<label class="check"><input type="checkbox" value="u"> u unicode</label>
+</div></div>
+</div>
+<div class="field"><label for="x-text">Test text</label>
+<textarea id="x-text" class="mono">Contact jane@acme.com or bob.smith@mail.globex.io for access.
+Invalid: someone@ and @nowhere.com</textarea></div>
+<div id="x-status" class="status"></div>
+<label>Matches highlighted</label>
+<div id="x-hl" class="out" style="font-family:var(--mono)"></div>
+<div class="table-wrap" id="x-table"></div>
+<div class="field"><label for="x-rep">Replace with <span class="hint">($1, $2 for groups, $&amp; for the whole match)</span></label><input id="x-rep" type="text" class="mono" value="[$1 at $2]"></div>
+<label>Replace result</label>
+<div id="x-repout" class="out"></div>
+<div class="btns"><button class="btn secondary" id="x-copy" type="button">Copy as /regex/flags</button></div>

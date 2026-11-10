@@ -1,0 +1,25 @@
+<div class="field"><label for="c-in">Paste CSV <span class="hint">(or open a file; the first row should be headers)</span></label>
+<textarea id="c-in" class="mono">Email, First Name ,Company,Phone
+jane@acme.com,Jane,Acme Inc,405-555-0100
+ JANE@ACME.COM ,jane,Acme Inc,405-555-0100
+bob@globex.com,Bob ,Globex,
+,,,
+sam@initech.com,Sam,"Initech, LLC",405-555-0199</textarea>
+<input id="c-file" type="file" accept=".csv,.tsv,.txt,text/csv" aria-label="Open a CSV file"></div>
+<div class="row">
+<div><label for="c-delim">Delimiter</label><select id="c-delim"><option value="auto">Detect</option><option value=",">Comma</option><option value=";">Semicolon</option><option value="&#9;">Tab</option><option value="|">Pipe</option></select></div>
+<div><label for="c-key">Dedupe on column</label><select id="c-key"><option value="__row">Whole row</option></select></div>
+</div>
+<div class="checks">
+<label class="check"><input id="c-trim" type="checkbox" checked> Trim spaces</label>
+<label class="check"><input id="c-blank" type="checkbox" checked> Remove empty rows</label>
+<label class="check"><input id="c-dedupe" type="checkbox" checked> Remove duplicates</label>
+<label class="check"><input id="c-ci" type="checkbox" checked> Ignore case when deduping</label>
+<label class="check"><input id="c-headers" type="checkbox" checked> Tidy header names</label>
+</div>
+<div class="btns"><button class="btn" id="c-run" type="button">Clean CSV</button></div>
+<div class="stats" id="c-stats"></div>
+<div class="table-wrap" id="c-preview"></div>
+<label for="c-out">Clean CSV</label>
+<textarea id="c-out" class="mono" readonly></textarea>
+<div class="btns"><button class="btn secondary" id="c-copy" type="button">Copy</button><button class="btn secondary" id="c-dl" type="button">Download CSV</button></div>

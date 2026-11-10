@@ -1,0 +1,45 @@
+<div class="tabs" role="tablist">
+<button type="button" role="tab" aria-selected="true" data-tab="robots">robots.txt</button>
+<button type="button" role="tab" aria-selected="false" data-tab="sitemap">Sitemap</button>
+</div>
+<div id="r-robots">
+<div class="row two">
+<div><label for="r-site">Site to fetch <span class="hint">(optional)</span></label><input id="r-site" type="url" placeholder="https://example.com"></div>
+<div style="align-self:end"><button class="btn secondary" id="r-fetch" type="button">Fetch robots.txt</button></div>
+</div>
+<div class="field"><label for="r-text">robots.txt content <span class="hint">(fetched, or pasted)</span></label>
+<textarea id="r-text" class="mono">User-agent: *
+Disallow: /admin/
+Disallow: /*?sessionid=
+Allow: /admin/public/
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://example.com/sitemap.xml</textarea></div>
+<div class="row two">
+<div><label for="r-ua">User agent to test</label><input id="r-ua" type="text" value="Googlebot" list="r-uas"></div>
+<div><label for="r-path">URL or path to test</label><input id="r-path" type="text" value="/admin/settings"></div>
+</div>
+<datalist id="r-uas"><option value="Googlebot"><option value="Bingbot"><option value="GPTBot"><option value="ClaudeBot"><option value="PerplexityBot"><option value="Google-Extended"><option value="CCBot"></datalist>
+<div id="r-verdict" class="out"></div>
+<h3>What the file says</h3>
+<div id="r-report"></div>
+</div>
+<div id="r-sitemap" hidden>
+<div class="row two">
+<div><label for="x-url">Sitemap URL to fetch <span class="hint">(optional)</span></label><input id="x-url" type="url" placeholder="https://example.com/sitemap.xml"></div>
+<div style="align-self:end"><button class="btn secondary" id="x-fetch" type="button">Fetch sitemap</button></div>
+</div>
+<div class="field"><label for="x-text">Sitemap XML <span class="hint">(fetched, or pasted)</span></label>
+<textarea id="x-text" class="mono">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;&lt;loc&gt;https://example.com/&lt;/loc&gt;&lt;lastmod&gt;2026-11-01&lt;/lastmod&gt;&lt;/url&gt;
+  &lt;url&gt;&lt;loc&gt;https://example.com/pricing&lt;/loc&gt;&lt;lastmod&gt;11/01/2026&lt;/lastmod&gt;&lt;/url&gt;
+  &lt;url&gt;&lt;loc&gt;/about&lt;/loc&gt;&lt;/url&gt;
+  &lt;url&gt;&lt;loc&gt;https://example.com/pricing&lt;/loc&gt;&lt;/url&gt;
+&lt;/urlset&gt;</textarea></div>
+<div class="stats" id="x-stats"></div>
+<div id="x-report"></div>
+</div>
+<div id="r-status" class="status"></div>

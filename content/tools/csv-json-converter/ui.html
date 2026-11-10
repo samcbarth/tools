@@ -1,0 +1,24 @@
+<div class="tabs" role="tablist">
+<button type="button" role="tab" aria-selected="true" data-dir="c2j">CSV to JSON</button>
+<button type="button" role="tab" aria-selected="false" data-dir="j2c">JSON to CSV</button>
+</div>
+<div class="row two">
+<div class="field"><label for="k-in" id="k-in-label">CSV input</label>
+<textarea id="k-in" class="mono">name,email,plan,seats,active
+Acme,ops@acme.com,Pro,5,true
+"Globex, Inc",it@globex.com,Starter,2,false</textarea>
+<input id="k-file" type="file" accept=".csv,.json,.txt" aria-label="Open a file"></div>
+<div class="field"><label for="k-out" id="k-out-label">JSON output</label>
+<textarea id="k-out" class="mono" readonly></textarea></div>
+</div>
+<div class="checks" id="k-c2j-opts">
+<label class="check"><input id="k-types" type="checkbox" checked> Convert numbers and true/false</label>
+<label class="check"><input id="k-nested" type="checkbox"> Nest keys with dots (address.city)</label>
+<label class="check"><input id="k-arrays" type="checkbox"> Output arrays instead of objects</label>
+</div>
+<div class="checks" id="k-j2c-opts" hidden>
+<label class="check"><input id="k-flat" type="checkbox" checked> Flatten nested objects to dot keys</label>
+<label class="check"><span>Delimiter</span> <select id="k-delim" style="width:auto"><option value=",">Comma</option><option value=";">Semicolon</option><option value="&#9;">Tab</option></select></label>
+</div>
+<div class="btns"><button class="btn" id="k-copy" type="button">Copy output</button><button class="btn secondary" id="k-dl" type="button">Download</button><button class="btn ghost" id="k-swap" type="button">Use output as input</button></div>
+<div id="k-status" class="status"></div>

@@ -1,0 +1,16 @@
+<div class="field"><label for="f-in">Paste JSON</label>
+<textarea id="f-in" class="mono" style="min-height:200px">{"name":"Acme","plans":[{"tier":"Pro","seats":5},{"tier":"Starter","seats":2}],"active":true,"owner":null}</textarea>
+<input id="f-file" type="file" accept=".json,.txt,application/json" aria-label="Open a JSON file"></div>
+<div class="row">
+<div><label for="f-indent">Indent</label><select id="f-indent"><option value="2">2 spaces</option><option value="4">4 spaces</option><option value="tab">Tab</option></select></div>
+<div style="align-self:end"><label class="check"><input id="f-sort" type="checkbox"> Sort keys A to Z</label></div>
+</div>
+<div class="btns">
+<button class="btn" id="f-format" type="button">Format</button>
+<button class="btn secondary" id="f-min" type="button">Minify</button>
+<button class="btn ghost" id="f-copy" type="button">Copy result</button>
+<button class="btn ghost" id="f-dl" type="button">Download</button>
+</div>
+<div id="f-status" class="status" aria-live="polite"></div>
+<label for="f-out">Result</label>
+<textarea id="f-out" class="mono" readonly style="min-height:200px"></textarea>
