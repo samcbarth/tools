@@ -46,7 +46,11 @@ GTM = '''<script async src="https://www.googletagmanager.com/gtag/js?id=G-VCRBNP
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-VCRBNP313Y');
-</script>'''
+</script>
+<!-- monetag -->
+<script src="https://5gvci.com/act/files/tag.min.js?z=12242931" data-cfasync="false" async></script>
+<script>(function(s){s.dataset.zone='12242932',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+<script>(function(s){s.dataset.zone='12242933',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>'''
 
 NETWORK = [
     ("realestate", "Real Estate"),
